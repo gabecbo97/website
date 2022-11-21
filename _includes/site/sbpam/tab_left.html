@@ -1,0 +1,275 @@
+<style>
+  .container_feature {
+    position: relative;
+    color: gray;
+    font-size: 20px;
+    height: 600px;
+    margin-top: 50px;
+  }
+  .grid {
+    list-style: none;
+    margin-left: -40px;
+  }
+  .gc {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -0.25em;
+    min-height: 1px;
+    padding-left: 40px;
+    vertical-align: top;
+  }
+  .gc--1-of-5 {
+    width: 33.33333%;
+  }
+  .gc--2-of-5 {
+    width: 66.66666%;
+  }
+  .naccs {
+    position: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .naccs .menu div {
+    padding: 15px 20px 15px 40px;
+    margin-bottom: 10px;
+    color: #707070;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    width: 600px;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-left: -100px;
+  }
+  .naccs .menu div:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.459);
+    color: #303f9f;
+  }
+  .naccs .menu div span.light {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    background-color: #707070;
+    border-radius: 100%;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .naccs .menu div.active span.light {
+    background-color: #303f9f;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    border-radius: 0;
+  }
+  .naccs .menu div.active {
+    color: #303f9f;
+    padding: 15px 20px 15px 20px;
+  }
+  ul.nacc {
+    position: relative;
+    height: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  ul.nacc li {
+    opacity: 0;
+    transform: translateX(50px);
+    position: absolute;
+    list-style: none;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 600px;
+    margin-left: 280px;
+    text-align: justify;
+  }
+  ul.nacc li.active {
+    transition-delay: 0.3s;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  ul.nacc li p {
+    margin: 0;
+  }
+  #txt {
+    margin: -10vh 40vw 0 -40vw;
+  }
+  #imagem {
+    -webkit-box-shadow: 2px 4px 48px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 48px -19px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 48px -19px rgba(0, 0, 0, 0.75);
+  }
+
+  @media only screen and (max-width: 1600px) {
+    #txt {
+      margin: -8vh 48vw 0 -48vw;
+    }
+  }
+
+  @media only screen and (max-width: 1499px) {
+    .container_feature {
+      display: none;
+    }
+  }
+</style>
+<div class="container container_feature mb-5">
+  <div class="naccs">
+    <div class="grid">
+      <div class="gc gc--1-of-5">
+        <div class="menu">
+          <div class="active">
+            <span class="light"></span
+            ><span>Elimine todos os privilégios permanentes</span>
+          </div>
+          <div>
+            <span class="light"></span
+            ><span>Recupere o controle sobre contas privilegiadas</span>
+          </div>
+          <div>
+            <span class="light"></span
+            ><span>Aumente a responsabilidade do administrador</span>
+          </div>
+          <div>
+            <span class="light"></span
+            ><span
+              >Minimize sua superfície de ataque com limpeza automática</span
+            >
+          </div>
+          <div>
+            <span class="light"></span
+            ><span>Proteja suas contas de serviço</span>
+          </div>
+        </div>
+      </div>
+      <div class="gc gc--2-of-5">
+        <ul class="nacc">
+          <li class="active">
+            <div>
+              <img
+                id="imagem"
+                src="/assets/img/sbpam/slides/left_1.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+              <br />
+              <br />
+              <p id="txt">
+                Reduza os riscos de segurança de acesso privilegiado removendo
+                contas privilegiadas permanentes. Em vez disso, crie contas sob
+                demanda que tenham acesso apenas o suficiente para a tarefa em
+                questão e sejam excluídas automaticamente depois disso. Como
+                alternativa, eleve as permissões de acesso do usuário para uma
+                conta existente apenas o suficiente para executar uma tarefa
+                necessária e revogue os direitos adicionais automaticamente
+                quando a sessão terminar.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                id="imagem"
+                src="/assets/img/sbpam/slides/left_2.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+              <br />
+              <br />
+              <p id="txt">
+                Saiba exatamente quem tem acesso a sistemas críticos, rastreie a
+                associação no poderoso grupo de administradores de domínio no
+                Active Directory, obtenha uma lista de contas de serviço e muito
+                mais, para que você possa reduzir o acesso elevado ao mínimo
+                absoluto e manter um estado de acesso de privilégio mínimo para
+                manter riscos de segurança de identidade baixos.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                id="imagem"
+                src="/assets/img/sbpam/slides/left_3.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+              <br />
+              <br />
+              <p id="txt">
+                Reduza os riscos de segurança, como o risco de dados
+                confidenciais serem expostos porque um usuário com privilégios
+                modificou indevidamente as configurações do sistema, seja de
+                forma mal-intencionada ou por engano. Veja exatamente qual
+                atividade privilegiada está acontecendo em seus sistemas com
+                monitoramento de sessão ao vivo ou retrospectivo.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                id="imagem"
+                src="/assets/img/sbpam/slides/left_4.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+              <br />
+              <br />
+              <p id="txt">
+                Reduza o risco de passar o hash, Golden Ticket e ataques
+                relacionados com a eliminação automática de tíquetes Kerberos
+                após cada sessão privilegiada. Evite o acesso remoto
+                privilegiado não autorizado, desativando automaticamente o RDP
+                no servidor após a conclusão de uma tarefa administrativa.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                id="imagem"
+                src="/assets/img/sbpam/slides/left_5.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+              <br />
+              <br />
+              <p id="txt">
+                Como o serviço e as contas internas estão sempre ativas e têm
+                acesso à infraestrutura e aplicativos críticos, eles são um alvo
+                atraente para invasores. Proteja essas contas alternando suas
+                senhas em um único lugar; receba um alerta se o processo for
+                interrompido para que você possa pausar o processo e reverter
+                quaisquer alterações indesejadas.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).on("click", ".naccs .menu div", function () {
+    var numberIndex = $(this).index();
+
+    if (!$(this).is("active")) {
+      $(".naccs .menu div").removeClass("active");
+      $(".naccs ul li").removeClass("active");
+
+      $(this).addClass("active");
+      $(".naccs ul")
+        .find("li:eq(" + numberIndex + ")")
+        .addClass("active");
+
+      var listItemHeight = $(".naccs ul")
+        .find("li:eq(" + numberIndex + ")")
+        .innerHeight();
+      $(".naccs ul").height(listItemHeight + "px");
+    }
+  });
+</script>

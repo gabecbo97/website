@@ -1,0 +1,182 @@
+<style>
+  .modal-window {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    display: none;
+    background-color: rgba(144, 198, 219, 0.7);
+    height: 100%;
+  }
+  .modal-content {
+    z-index: 99999;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 440px;
+    padding: 30px 15px 10px 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.2);
+    border-bottom: 20px solid #0094a9;
+    border-style: inset;
+  }
+  .modal-window.show {
+    display: block !important;
+  }
+  .modal-close-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    padding: 8px;
+    top: 5px;
+    opacity: 0.3;
+  }
+  .modal-close-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .small-logo {
+    width: 120px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  #form-download-request input.form-control {
+    color: #606060 !important;
+  }
+</style>
+<div class="modal-window">
+  <div class="modal-content">
+    <img
+      src="/assets/img/common/close.svg"
+      class="modal-close-button"
+      onclick="toggleModal()"
+    />
+    <h3 class="mx-auto">
+      <img
+        src="/assets/img/common/pdf.svg"
+        style="width: 70px;margin:5px 10px;"
+      />
+    </h3>
+    <h3 class="text-teal mx-auto">
+      {{ include.documenttitle }}
+    </h3>
+    <div class="download-form-container px-4 py-2">
+      <form id="form-download-request" data-document="alo">
+        <div class="form-row mx-4 my-4">
+          <input
+            class="form-control"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Insira seu e-mail profissional"
+            required
+          />
+          <button
+            role="submit"
+            class="form-control btn btn-aiq mt-4 text-bolder"
+          >
+            Baixar PDF
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <img src="/assets/img/common/aiqon.svg" class="small-logo" />
+  </div>
+</div>
+<script>
+  function downloadRequest(document) {
+    toggleModal();
+    doc_id = document;
+  }
+  //
+  function toggleModal() {
+    let modal = document.querySelector(".modal-window");
+    if (modal.classList.contains("show")) {
+      modal.classList.remove("show");
+    } else {
+      modal.classList.add("show");
+    }
+  }
+  //
+  const downloadForm = document.getElementById("form-download-request");
+  downloadForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    saveDownloadRequest();
+  });
+  //
+  function saveDownloadRequest() {
+    const downloadFormUrl =
+      "https://us-central1-aiqondb.cloudfunctions.net/api/dlrequest";
+
+    fetch(downloadFormUrl, {
+      method: "post",
+      body: JSON.stringify(returnFormData()),
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      credentials: "same-origin"
+    })
+      .then(downloadFormSuccess())
+      .catch(function(err) {
+        console.log("Ocorreu um erro: ", err);
+      });
+  }
+  //
+  var doc_id;
+  function returnFormData() {
+    let downloadFormJson = {
+      file_id: doc_id
+    };
+    switch (doc_id) {
+      case 1:
+        downloadFormJson.file_url =
+          "https://aiqon.com.br/docs/001_-_Verismic_Power_Manager_-_Estudo_de_Precisao.pdf";
+        break;
+      case 2:
+        downloadFormJson.file_url =
+          "https://aiqon.com.br/docs/002_-_Netwrix_Auditor_-_Guia_de_estudos_CISSP.pdf";
+        break;
+      case 3:
+        downloadFormJson.file_url =
+          "https://aiqon.com.br/docs/003_-_Netwrix_Auditor_-_Seguranca_de_Dados.pdf";
+        break;
+      case 4:
+        downloadFormJson.file_url =
+          "https://aiqon.com.br/docs/004_-_Netwrix_Auditor_-_Data_Classification_EN.pdf";
+        break;
+      case 5:
+        downloadFormJson.file_url =
+          "https://aiqon.com.br/docs/005_-_Verismic_Power_Manager_-_Economia_de_verdade.pdf";
+        break;
+      case 6:
+        downloadFormJson.file_url =
+          "https://aiqon.com.br/docs/006_-_Cloud_Management_Suite_-_On-premise_ou_Nuvem.pdf";
+        break;
+      default:
+        downloadFormJson.file_url = "https://aiqon.com.br";
+        break;
+    }
+    const downloadFormData = new FormData(downloadForm);
+    for (const pair of downloadFormData) {
+      downloadFormJson[pair[0]] = pair[1];
+    }
+    return downloadFormJson;
+  }
+  function downloadFormSuccess() {
+    const downloadFormContainer = document.querySelector(
+      ".download-form-container"
+    );
+    const formFields = document.querySelectorAll("input");
+    for (field of formFields) {
+      field.value = "";
+    }
+    downloadFormContainer.innerHTML = `<h4 class="text-teal">Obrigado!</h4>
+      <p>O link para download do arquivo foi enviado para o seu e-mail.</p>`;
+  }
+</script>

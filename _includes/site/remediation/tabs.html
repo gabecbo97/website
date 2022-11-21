@@ -1,0 +1,213 @@
+<style> 
+
+    .container_feature {
+        position: relative;
+        color: gray;
+        font-size: 20px;
+        height: 600px;
+        margin-top: 50px;
+        
+   }
+    .grid {
+        list-style: none;
+        margin-left: -40px;
+   }
+    .gc {
+        box-sizing: border-box;
+        display: inline-block;
+        margin-right: -0.25em;
+        min-height: 1px;
+        padding-left: 40px;
+        vertical-align: top;
+   }
+    .gc--1-of-3 {
+        width: 33.33333%;
+   }
+    .gc--2-of-3 {
+        width: 66.66666%;
+   }
+    .naccs {
+        position: center;
+        width: 100%;
+        margin-left: 0;
+        
+   }
+    .naccs .menu div {
+        padding: 15px 20px 15px 40px;
+        margin-bottom: 10px;
+        color: #707070;
+        background: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: relative;
+        vertical-align: middle;
+        width: 600px;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        margin-left: -100px;
+        
+   }
+    .naccs .menu div:hover {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.459);
+      color: #303f9f ;
+   }
+    .naccs .menu div span.light {
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: 24px;
+        left: 15px;
+        background-color: #707070;
+        border-radius: 100%;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+    .naccs .menu div.active span.light {
+        background-color: #303f9f;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        top: 0;
+        border-radius: 0;
+   }
+    .naccs .menu div.active {
+        color: #303f9f;
+        padding: 15px 20px 15px 20px;
+   }
+    ul.nacc {
+        position: relative;
+        height: 0px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+    ul.nacc li {
+        opacity: 0;
+        transform: translateX(50px);
+        position: absolute;
+        list-style: none;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 600px;
+        margin-left: 280px;
+        text-align: justify;
+   }
+    ul.nacc li.active {
+        transition-delay: 0.3s;
+        z-index: 2;
+        opacity: 1;
+        transform: translateX(0px);
+   }
+    ul.nacc li p {
+        margin: 0;
+   } 
+   #txt{
+       margin-right: 760px;
+       margin-left: -760px;
+       margin-top: -220px;
+   }
+   #imagem{
+    -webkit-box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+   }
+   
+    </style>
+   <div class="container_feature">
+       <div class="naccs">
+        <div class="grid">
+         <div class="gc gc--1-of-3">
+          <div class="menu">
+           <div class="active"><span class="light"></span><span>Identifique o conteúdo valioso e se desfaça dos dados desnecessários</span></div>
+           <div><span class="light"></span><span>Simplifique a migração de dados críticos para a quarentena</span></div>
+           <div><span class="light"></span><span>Identifique e revogue as permissões excessivas</span></div>
+          </div>
+         </div>
+         <div class="gc gc--2-of-3">
+          <ul class="nacc">
+           <li class="active">
+            <div>
+             <img id="imagem"
+             src="/assets/img/remediation/identify.webp"
+            style="max-width: 100%; "
+             class="mx-auto my-auto"/>
+           <br>
+           <br>
+             <p id="txt">A remediação de dados começa 
+                 com o entendimento dos dados que você 
+                 possui e a limpeza dos dados que você 
+                 armazena. Muitas vezes, as empresas
+                dão tanta atenção aos dados redundantes, 
+                obsoletos ou triviais quanto eles dão 
+                para o conteúdo valioso que precisa de 
+                uma proteção maior para o negócio ou por 
+                motivos legais. As capacidades de análise 
+                de arquivo da nossa solução de mitigação de 
+                risco automatiza o trabalho de classificar o 
+                conteúdo dos dados pela qualidade e pelo valor 
+                deles, assim você pode focar em assegurar os 
+                dados realmente importantes para facilitar a 
+                limpeza de dados.</p>
+            </div>
+           </li>
+           <li>
+            <div>
+             <img id="imagem"
+             src="/assets/img/remediation/migration.webp"
+             style="max-width: 100%;"
+             class="mx-auto my-auto"/>
+             <br>
+             <br>
+             <p id="txt"> Você precisa manter um olho nos 
+                 dados sensíveis armazenados fora de um lugar 
+                 seguro. Porém, alternar entre diversas estruturas 
+                 de dados em múltiplos sistemas não é a maneira 
+                 mais viável de realizar essa tarefa. Com o fluxo 
+                 de trabalho da remediação de dados que oferecemos, 
+                 você pode avistar automaticamente os dados críticos 
+                 em locais não-seguros e movê-los para uma área de 
+                 quarentena segura até que que se tenha informações 
+                 precisas sobre o que será feito com estes dados.</p>
+            </div>
+           </li>
+           <li>
+            <div>
+             <img id="imagem"
+             src="/assets/img/remediation/permissions.webp"
+             style="max-width: 100%;"
+             class="mx-auto my-auto"/>
+             <br>
+             <br>
+             <p id="txt">Muitas empresas não sabem quanto dos seus 
+                 dados sensíveis estão acessíveis a grandes grupos 
+                 de usuários e elas não tem uma forma de encontrá-los 
+                 rapidamente. Com esse vão na governança de acesso aos 
+                 dados eles podem acabar com problemas de conformidade 
+                 e vazamento de dados. O fluxo de trabalho da remediação 
+                 de dados da nossa solução simplifica o aspecto de 
+                 gerenciamento de dados removendo de forma automática 
+                 as permissões a dados sensíveis de grupos como o 
+                 “everyone”, incluindo o acesso herdado.</p>
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+   </div>
+      <script>
+          $(document).on("click", ".naccs .menu div", function() {
+       var numberIndex = $(this).index();
+   
+       if (!$(this).is("active")) {
+           $(".naccs .menu div").removeClass("active");
+           $(".naccs ul li").removeClass("active");
+   
+           $(this).addClass("active");
+           $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+   
+           var listItemHeight = $(".naccs ul")
+               .find("li:eq(" + numberIndex + ")")
+               .innerHeight();
+           $(".naccs ul").height(listItemHeight + "px");
+       }
+   });
+      </script>

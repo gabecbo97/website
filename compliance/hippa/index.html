@@ -1,0 +1,123 @@
+---
+layout: default
+title: Compliance
+---
+
+<div class="container-fluid content-hippa">
+  <h1 class="text-center text-white">HIPPA</h1>
+</div>
+<div class="container text-center text-gray py-5">
+  <h1 class="text-center mb-5">
+    Descubra quais requisitos de privacidade e segurança do HIPAA você pode
+    atender
+  </h1>
+  <p>
+    A Lei de Responsabilidade e Portabilidade de Seguro Saúde (HIPAA) estabelece
+    os padrões nacionais dos Estados Unidos para proteger a segurança de
+    informações eletrônicas de saúde individualmente identificáveis. Os
+    requisitos se aplicam a prestadores de serviços de saúde, organizações de
+    informações de saúde e outras entidades cobertas e associados de negócios
+    que as armazenam, transmitem ou gerenciam informações de saúde protegidas. O
+    software de segurança HIPAA pode ajudá-lo a resolver os requisitos da lei
+    relativas à privacidade e segurança de informações de saúde protegidas
+    eletrônicamente, como os direitos dos indivíduos de acessar ou alterar suas
+    informações de saúde protegidas.
+  </p>
+</div>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 content-border">
+      <h5 class="text-gray">
+        <b class="text-compliance">Parte 164:</b> Segurança e privacidade
+      </h5>
+      <ul>
+        <li class="list-content">
+          <b class="text-compliance">Subparte C:</b> Padrões de segurança para a
+          proteção de informações de saúde protegidas eletrônicas
+          <ul>
+            <br />
+            <li>§ 164.308: salvaguardas administrativas</li>
+            <li>§ 164.312: salvaguardas técnicas</li>
+            <li>
+              § 164.316: Políticas e procedimentos e requisitos de documentação
+            </li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Subparte D:</b> Notificação em caso de
+          violação de informações de saúde protegidas não seguras
+          <ul>
+            <br />
+            <li>§ 164.404: Notificação para indivíduos</li>
+            <li>§ 164.410: Notificação por um parceiro comercial</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Subparte E:</b> Privacidade de informações
+          de saúde individualmente identificáveis
+          <ul>
+            <br />
+            <li>
+              § 164.524: Acesso de indivíduos a informações de saúde protegidas
+            </li>
+            <li>§ 164.526: Alteração de informações de saúde protegidas</li>
+            <li>
+              § 164.528: Contabilidade de divulgações de informações protegidas
+              de saúde
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md text-center">
+      <img
+        src="/assets/img/compliance/hipaa.svg"
+        class="img-fluid img-hippa"
+        alt=""
+      />
+      <p class="compliance-desc">
+        <b>Saiba mais</b> sobre como a AIQON pode ajudá-lo a cumprir os
+        requisitos da <b>HIPAA.</b>
+      </p>
+      <p>
+        {% include site/modal_form_compliance.html title="HIPAA" id="hippa_form "%}
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .content-hippa {
+    padding: 25vh 0 10vh 0;
+    height: 50vh;
+    background: url("/assets/img/compliance/hippa/medical.png") bottom no-repeat;
+    background-size: cover;
+  }
+  .img-hippa {
+    max-width: 300px;
+  }
+  .compliance-desc {
+    padding: 0 10vh 0 10vh;
+    justify-self: center;
+  }
+  .content-border {
+    border-right: 2px solid rgba(128, 128, 128, 0.295);
+    padding-right: 5vw;
+  }
+  .content-border ul li {
+    list-style: none;
+    color: gray;
+  }
+  .list-content {
+    margin: 4vh 0 4vh 0;
+  }
+  .text-compliance {
+    color: #006fc1;
+  }
+  @media screen and (max-width: 764px) {
+    .content-border {
+      border-right: none;
+      border-bottom: 2px solid rgba(128, 128, 128, 0.295);
+    }
+  }
+</style>

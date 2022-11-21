@@ -1,0 +1,161 @@
+---
+layout: default
+title: FISMA
+---
+
+<div class="container-fluid content-fisma">
+  <h1 class="text-center text-white">FISMA</h1>
+</div>
+<div class="container text-center text-gray py-5">
+  <h1 class="text-center mb-5">
+    Descubra quais requisitos específicos do FISMA você pode atender com a
+    AIQON.
+  </h1>
+  <p>
+    O Federal Information Security Management Act (FISMA) define uma estrutura
+    para garantir a eficácia dos controles de segurança sobre a informação e os
+    sistemas de informação que dão suporte às operações federais. Para atingir a
+    conformidade com a FISMA, todas as agências federais e organizações que
+    trabalham em nome das agências do governo federal dos EUA devem atender aos
+    requisitos mínimos de segurança definidos no padrão de segurança denominado
+    FIPS 200.</p>
+    <p> O Instituto Nacional de Padrões e Tecnologia (NIST) emite padrões,
+    diretrizes e outras publicações para ajudar essas agências federais e outras
+    organizações a alcançar e manter a conformidade com a FISMA. Em particular,
+    o NIST SP 800-53 fornece controles de segurança da informação que suportam
+    totalmente o FIPS 200 e permitem que as organizações atendam aos requisitos
+    de segurança da informação FISMA. O software de conformidade FISMA da AIQON
+    ajuda a implementar e validar os seguintes controles de segurança NIST SP
+    800-53:
+  </p>
+</div>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 content-border">
+      <ul>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">Família: Controle de Acesso (AC)</b>
+          </p>
+          <ul>
+            <li>AC-2; AC-3; AC-6; AC-7; AC-17; AC-18; AC-20</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance"
+              >Família: Auditoria e Responsabilidade (AU)</b
+            >
+          </p>
+          <ul>
+            <li>
+              AU-3; AU-4; AU-5; AU-6; AU-7; AU-8; AU-9; AU-11; AU-12; AU-14
+            </li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance"
+              >Família: Gerenciamento de Configuração (CM)</b
+            >
+          </p>
+          <ul>
+            <li>CM-2; CM-3; CM-5; CM-6; CM-11</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">Família: Identificação e Autenticação</b>
+          </p>
+          <ul>
+            <li>IA-2; IA-3; IA-4; IA-5</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">Família: Resposta a Incidentes (IR)</b>
+          </p>
+          <ul>
+            <li>IR-4; IR-5; IR-9</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">Família: Segurança de Pessoal (PS)</b>
+          </p>
+          <ul>
+            <li>PS-4; PS-5</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">Família: Avaliação de Risco (RA)</b>
+          </p>
+          <ul>
+            <li>RA-2; RA-3</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance"
+              >Família: Sistema e Integridade da Informação (SI)</b
+            >
+          </p>
+          <ul>
+            <li>SI-4; SI-12</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md text-center">
+      <img
+        src="/assets/img/compliance/fisma.svg"
+        class="img-fluid img-sox mb-5 mt-5"
+        alt=""
+      />
+      <p class="compliance-desc">
+        <b>Saiba mais</b> sobre como a AIQON pode ajudá-lo a cumprir os
+        requisitos da <b>FISMA.</b>
+      </p>
+      <p>
+        {% include site/modal_form_compliance.html title="FISMA" id="fisma_form "%}
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .content-fisma {
+    padding: 25vh 0 10vh 0;
+    height: 50vh;
+    background: url("/assets/img/compliance/fisma_back.png") center no-repeat;
+    background-size: cover;
+  }
+  .img-sox {
+    max-width: 300px;
+  }
+  .compliance-desc {
+    padding: 0 10vh 0 10vh;
+    justify-self: center;
+  }
+  .content-border {
+    border-right: 2px solid rgba(128, 128, 128, 0.295);
+    padding-right: 5vw;
+  }
+  .content-border ul li {
+    list-style: none;
+    color: gray;
+  }
+  .list-content {
+    margin: 4vh 0 4vh 0;
+  }
+  .text-compliance {
+    color: #006fc1;
+  }
+  @media screen and (max-width: 764px) {
+    .content-border {
+      border-right: none;
+      border-bottom: 2px solid rgba(128, 128, 128, 0.295);
+    }
+  }
+</style>

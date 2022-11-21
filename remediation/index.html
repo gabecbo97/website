@@ -1,0 +1,189 @@
+---
+layout: default
+title: Remediação de dados
+---
+
+<div class="container-fluid" style="background: linear-gradient(
+  153deg,
+  rgba(15, 12, 41, 1) 19%,
+  rgba(48, 43, 99, 1) 42%,
+  rgba(36, 36, 62, 1) 65%
+);  height: 500px; padding-top: 14vh; color: white;">
+<canvas class="background"></canvas>
+    <br>
+    <br>
+    <div class="row">
+      <div
+        class="col -solution-hero d-flex flex-column justify-content-center align-items-center text-center "
+      >
+        <!--<img src="/assets/img/obsidian/logo.png" />--> 
+        <h1 id="solucao" style="font-size: 40px; "> <b>Remediação de dados</b></h1>
+        <br>
+        <p id="text-secudary" style="font-size: 20px; max-width: 800px;">
+            Evite vazamento de dados e multas 
+            por não cumprimentos de conformidade 
+            criando um processo de remediação de 
+            dados apropriado
+        </p>
+        
+        <br>
+        
+        <p>{% include site/modal_form.html  title="Remediação de dados" id="remediation_form "%}</p>
+      </div>
+    </div>
+    
+   </div>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="banner mx-auto text-center">
+        <h3></h3>
+        <p class="text-secondary">
+            A maioria das organizações, de pequenas 
+            empresas a empresas, utiliza uma grande 
+            quantidade de dados comerciais, que quase 
+            sempre inclui informações confidenciais. 
+            Para proteger essas informações da exposição 
+            inadequada, não basta entender onde elas residem;
+            você também precisa saber quais problemas colocam 
+            os dados em risco e corrigi-los rapidamente. 
+            Temos a solução para você poder reduzir a 
+            exposição de seus dados sensíveis, movendo-os 
+            para um ambiente seguro, redigindo conteúdo 
+            confidencial e muito mais.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+
+  <div class="container">
+    <br>
+    <h1 class="text-center mb-3" style="color: #707070;"> <b>Estabelecer fluxos de trabalho de correção de dados para reduzir a exposição de dados críticos</b></h1>
+    <p style="  color: #707070; font-size: 20px; "class="text-center mb-5">
+        Suponha que você ou o seu gerente 
+        descobrisse que há um conteúdo 
+        sensível em uma pasta reservada 
+        para dados antigos que não são 
+        importantes, pasta essa que vários 
+        usuários tem acesso. Você conseguiria 
+        revogar os direitos de acesso a tempo 
+        de reduzir o risco de alguém roubar 
+        esse conteúdo valioso? A remediação 
+        inteligente de dados da nossa solução 
+        de mitigação de risco minimiza a 
+        exposição dos seus dados criando 
+        fortes processos de remediação.
+    </p>
+  </div>
+</div>
+</div>
+{% include site/remediation/tab.html %}
+<div class="container-fluid -features" 
+style="background-color: #fdfcfc;" 
+id="trial_obs">
+<br>
+<br>
+<br>
+
+<div class="container" id="trial_obs">
+  {% include site/remediation/tabs.html %}
+</div>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+  <div class="container" id="trial_obs">
+    {% include site/remediation/tabss.html %}
+    
+    </div>
+    
+  
+    <div class="container-fluid -features" 
+    style="background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(189,195,199,1) 43%, rgba(189,195,199,1) 99%); height: 500px;" 
+    id="trial_obs">
+        <div class="row">
+          <div class="col col-xl-4 col-sm-12 mx-auto py-3">
+            <h2 style="color: white; margin-top: 200px; "><b>Veja como você pode gerenciar os seus dados</b> </h2>
+          </div>
+          <div
+            class="col col-xl-8 col-sm-12 d-flex justify-content-center align-items-center flex-column py-3 xs-hide"
+          >
+          <iframe width="700" height="400" src="https://www.youtube.com/embed/PwtDfrI7y3Y" frameborder="0"
+          style="margin-left: 200px; margin-top: 30px;"
+           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+           allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+<br>
+<br>
+<br>
+<div class="container"  >
+  <h2 style="color: #707070; text-align: center;" >Deseja saber mais sobre os dados do seu
+  </br> ambiente? </h2>
+  <div class="image-block text-lightblue flex-column text-center"  >
+    <a href="#" class="btn btn-rms my-5" id="next_feature" >
+      <img src="/assets/img/rms/inventory.png" alt="" >
+      Domestique seus dados não estruturados com a análise de arquivos
+    </a>
+   
+  </div>
+</div>
+
+<style>
+ 
+  @media only screen and (max-width: 1500px) {
+    #trial_obs{
+      display: none;
+    }
+    #trial_obs p{
+      display: none;
+    } 
+    #next_feature{
+      width: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 1499px) {
+  
+    #showOnlyMobile{
+ display: none;
+
+}
+#colapse{
+  display: none;
+
+}
+#formHidden{
+       display:none
+    }
+    #next_feature_b{
+      width: 240px;
+      display: none;
+    }
+ 
+  
+ /*Content Animation*/
+ @keyframes fadeInScale {
+   0% {
+     transform: scale(0.9);
+     opacity: 0;
+   }
+   
+   100% {
+     transform: scale(1);
+     opacity: 1;
+   }
+ }
+}
+ 
+
+</style>
+      

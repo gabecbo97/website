@@ -1,0 +1,291 @@
+<script>
+  // Tabs
+  const tabBtns = document.querySelectorAll(".tabs__btn");
+  const tabPanes = document.getElementsByClassName("tabs__pane");
+
+  let fadeTime = 200;
+
+  function fadeOut(target) {
+    target.style.opacity = 1;
+    target.style.transition = `opacity ${fadeTime}ms`;
+    target.style.opacity = 0;
+    setTimeout(() => {
+      target.style.display = "none";
+    }, fadeTime);
+  }
+
+  function fadeIn(target) {
+    target.style.opacity = 0;
+    target.style.transition = `opacity ${fadeTime}ms`;
+    target.style.opacity = 1;
+    setTimeout(() => {
+      target.style.display = "block";
+    }, fadeTime);
+  }
+  function triggerTab(elt) {
+    elt.preventDefault();
+
+    tabBtns.forEach((btn) => {
+      btn.classList.remove("is-active");
+      btn.setAttribute("aria-selected", false);
+    });
+
+    [].forEach.call(tabPanes, (pane) => {
+      fadeOut(pane);
+    });
+
+    elt.target.classList.add("is-active");
+    elt.target.setAttribute("aria-selected", true);
+    let clickedTab = elt.target.dataset.tabTarget;
+    fadeIn(document.querySelector(`#${clickedTab}`));
+  }
+
+  tabBtns.forEach((tab) => {
+    tab.addEventListener("click", triggerTab);
+  });
+</script>
+
+<div class="wrapper mt-5">
+  <h1 class="text-center mb-5">Inventário</h1>
+  <div class="tabs">
+    <nav class="tabs__nav text-center" role="tablist">
+      <button
+        class="tabs__btn is-active"
+        data-tab-target="tab-4"
+        type="button"
+        role="tab"
+        aria-selected="true"
+      >
+        Usuários
+      </button>
+      <button
+        class="tabs__btn"
+        data-tab-target="tab-5"
+        type="button"
+        role="tab"
+        aria-selected="false"
+      >
+        Dispositivos
+      </button>
+      <button
+        class="tabs__btn"
+        data-tab-target="tab-6"
+        type="button"
+        role="tab"
+        aria-selected="false"
+      >
+        Acessos a Apps de Terceiros
+      </button>
+    </nav>
+    <div class="tabs__content">
+      <div class="tabs__pane is-visible" id="tab-4" role="tabpanel-2">
+        <div class="row">
+          <div class="col-md-7">
+            <img src="/assets/img/sspm/tabs/user.png" class="img-tabs" alt="" />
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/assets/img/sspm/tabs/icon-user.svg"
+              class="icon-tabs"
+              alt=""
+            />
+            <h3 class="title-tabs">Inventário do usuário</h3>
+            <p class="txt-tabs">
+              <b
+                >Obtenha uma visão abrangente dos usuários em todos os
+                aplicativos SaaS conectados.</b
+              >
+              De qual SaaS o usuário está usando (ou está desativado), por meio
+              de funções de privilégio do usuário e, finalmente, quais
+              verificações de segurança o usuário mostra na verificação com
+              falha. O Adaptive Shield permite o gerenciamento e a investigação
+              de usuários contínuos em todos os aplicativos SaaS, especialmente
+              útil para proteger usuários confidenciais, como administradores e
+              executivos de TI.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__pane" id="tab-5" role="tabpanel-2">
+        <div class="row">
+          <div class="col-md-7">
+            <img
+              src="/assets/img/sspm/tabs/device.png"
+              class="img-tabs"
+              alt=""
+            />
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/assets/img/sspm/tabs/icon-device.svg"
+              class="icon-tabs"
+              alt=""
+            />
+            <h3 class="title-tabs">Inventário de dispositivos</h3>
+            <p class="txt-tabs">
+              <b>Correlacione o risco de usuários de SaaS e seus endpoints</b>
+              Por meio do inventário de dispositivos, você obtém visibilidade
+              dos dispositivos que têm acesso aos aplicativos SaaS da empresa e
+              gerencia os riscos com base na pontuação de higiene do
+              dispositivo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__pane" id="tab-6" role="tabpanel-2">
+        <div class="row">
+          <div class="col-md-7">
+            <img
+              src="/assets/img/sspm/tabs/terceiros.png"
+              class="img-tabs"
+              alt=""
+            />
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/assets/img/sspm/tabs/icon-apps.svg"
+              class="icon-tabs"
+              alt=""
+            />
+            <h3 class="title-tabs">Acesso a aplicativos de terceiros</h3>
+            <p class="txt-tabs">
+              <b
+                >Obtenha visibilidade de aplicativos de terceiros integrados à
+                sua pilha de SaaS</b
+              >
+              O acesso a aplicativos de terceiros é o novo arquivo executável.
+              Um processo inócuo, as pessoas não pensam duas vezes ao conectar
+              um aplicativo de que precisam com seu espaço de trabalho do Google
+              ou ambiente M365 etc. No entanto, essa comunicação SaaS para SaaS
+              é uma ameaça emergente no cenário corporativo de segurança
+              cibernética.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wrapper {
+    width: 80vw;
+    margin-inline: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    all: unset;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000;
+    line-height: 1.2;
+  }
+  h1 strong {
+    display: block;
+    font-weight: 500;
+    color: #999;
+    font-size: 1rem;
+  }
+
+  .tabs {
+    border-radius: 0.25rem;
+  }
+  .tabs__nav {
+    justify-content: space-around;
+    margin-top: -15px;
+  }
+  .tabs__btns {
+    position: relative;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+    font-size: 1.3rem;
+  }
+  .tabs__btns:not(.is-active) {
+    opacity: 0.6;
+    border: none;
+    outline: none;
+  }
+  .tabs__btns:not(.is-active):hover {
+    opacity: 1;
+    border: none;
+    outline: none;
+  }
+  .tabs__btns.is-active {
+    color: var(--color-accent);
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: rgb(180, 32, 168);
+    -webkit-box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .tabs__btns.is-active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+  }
+  .tabs__btns:first-child.is-active {
+    border: none;
+    outline: none;
+  }
+  .tabs__panes {
+    z-index: 10000;
+    display: none;
+    padding: 2rem 1.25rem;
+    background-color: white;
+    -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .tabs__panes.is-visible {
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  p + p {
+    margin-top: 1rem;
+  }
+  .img-tabs {
+    max-width: 800px;
+  }
+  .icon-tabs {
+    max-width: 100px;
+  }
+  .title-tabs {
+    font-weight: bold;
+    padding-top: 5vh;
+  }
+  .txt-tabs {
+    font-weight: lighter;
+    color: gray;
+    font-size: 20px;
+  }
+  .tabs__btns {
+    font-weight: bold;
+  }
+  @media only screen and (max-width: 768px) {
+    .img-sspm {
+      max-width: 300px !important;
+    }
+  }
+</style>

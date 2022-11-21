@@ -1,0 +1,30 @@
+.container-fluid.-download {
+  background-color: #fff;
+  > .row {
+    max-width: 1200px;
+  }
+}
+.downloadblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 20px;
+  img {
+    margin: 0 auto;
+    max-width: 180px;
+    border-radius: 3px;
+    border: 1px solid rgba(36, 42, 48, 0.123);
+    box-shadow: 3px 10px 43px 0 rgba(0,0,0,.1);
+  }
+  p {
+    color: $gray;
+    margin: 10px auto;
+    max-width: 150px;
+    font-size: 0.75em;
+    text-align: center;
+  }
+  a {
+    margin: 5px auto;
+  }
+}

@@ -1,0 +1,192 @@
+---
+layout: card
+title: Cartão
+---
+
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+  //Maruf al Bashir Reza
+  $(window).on('load', function () { // makes sure the whole site is loaded 
+      $('#status').fadeOut(); // will first fade out the loading animation 
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+      $('body').delay(350).css({ 'overflow': 'visible' });
+  })
+</script>
+<div class="container card2-content">
+  <div class="row justify-content-center text-center gradient-color text-white">
+    <div class="col-md-8 mt-5">
+      <h2 class="mt-4">Thiago N Felippe</h2>
+      <p>CEO AIQON IT</p>
+    </div>
+  </div>
+  <div class="row justify-content-center text-center contact-content">
+    <div class="col-md-2">
+      <img
+        src="/assets/img/card-2/smartfone.svg"
+        class="contact-icons"
+        alt=""
+      />
+    </div>
+    <div class="col-md-8">
+      <img
+        src="/assets/img/card-2/card-profile-2.png"
+        class="photo-profile"
+        alt=""
+      />
+    </div>
+    <div class="col-md-2">
+      <img
+        src="/assets/img/card-2/linkedin_circle.svg"
+        class="contact-icons"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="row text-center info-content mt-5">
+    <div class="col-md">
+      <h3>Sobre</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        recusandae saepe a optio, qui accusantium unde doloribus illum!
+        Assumenda laudantium corrupti aspernatur laborum consequatur impedit
+        accusantium odit aperiam? Labore, quos.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center text-center analist-content mt-3">
+    <div class="col-md-2" style="border-right: 1px solid gray">POST</div>
+    <div class="col-md-2" style="border-right: 1px solid gray">FOLLOWERS</div>
+    <div class="col-md-2">FOLLOWING</div>
+  </div>
+  <div class="row link-contact">
+    <div class="col-md-8 mb-3 mt-5">
+      <img
+        src="/assets/img/cartao/icons/e-mail.svg"
+        class="icon-link-contact"
+        alt=""
+      />e-mail@aiqon.com.br
+    </div>
+    <div class="col-md-8 mb-3">
+      <img
+        src="/assets/img/cartao/icons/e-mail.svg"
+        class="icon-link-contact"
+        alt=""
+      />Especialidade
+    </div>
+    <div class="col-md-8 mb-3">
+      <img
+        src="/assets/img/cartao/icons/e-mail.svg"
+        class="icon-link-contact"
+        alt=""
+      />Lorem
+    </div>
+  </div>
+  <div class="row content-follow justify-content-center text-center">
+    <div class="col-md-8 follow">Siga a AIQON</div>
+  </div>
+  <div
+    class="row justify-content-center text-center mt-5 mb-5"
+    style="flex-wrap: nowrap"
+  >
+    <div class="col-md-3">
+      Siga-nos no
+      <img
+        src="/assets/img/cartao/icons/linkedin.svg"
+        alt=""
+        class="follow-icon"
+      />
+    </div>
+    <div class="col-md-3">
+      Siga-nos no
+      <img
+        src="/assets/img/cartao/icons/instagram.svg"
+        alt=""
+        class="follow-icon"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .photo-profile {
+    max-width: 150px;
+  }
+
+  .gradient-color {
+    background: linear-gradient(
+      355deg,
+      rgba(0, 0, 0, 0) 38%,
+      rgba(0, 148, 164, 1) 39%,
+      rgba(2, 82, 82, 1) 78%
+    );
+    height: 40vh;
+  }
+
+  .contact-content {
+    margin-top: -20vh;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .contact-icons {
+    max-width: 50px;
+    
+  }
+  .analist-content {
+    flex-wrap: nowrap;
+  }
+  .icon-link-contact {
+    max-width: 20px;
+    margin-right: 5px;
+  }
+  .content-follow {
+    padding: 0 10vw 0 10vw;
+    margin-top: 5vh;
+    height: 5vh;
+  }
+  .follow {
+    background-color: teal;
+    color: white;
+    border-radius: 50px;
+    padding-top: 1vh;
+  }
+  .follow-icon {
+    max-width: 20px;
+    margin-left: 5px;
+  }
+  /* loading pré loading */
+
+    /* Preloader */
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        /* change if the mask should be a color other than white */
+        z-index: 99;
+        /* makes sure it stays on top */
+    }
+
+    #status {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        /* centers the loading animation horizontally on the screen */
+        top: 50%;
+        /* centers the loading animation vertically on the screen */
+        background-image: url('/assets/img/cartao/icons/preloader.gif');
+        /* path to your loading animation */
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: -100px 0 0 -100px;
+        background-size: contain;
+        /* is width and height divided by two */
+    }
+</style>

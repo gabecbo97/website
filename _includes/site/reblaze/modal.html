@@ -1,0 +1,35 @@
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-reblaze" data-toggle="modal" data-target="#ExemploModalCentralizado">
+    Teste grátis
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Reblaze - AIQON</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {% include site/reblaze/form.html title="" id="reblaze_form" %}
+        </div>
+        <div class="modal-footer">
+          <div class="row"><img src="/assets/img/common/aiqon.svg" alt="" style="max-width: 100px; margin-right: 110px;"></div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .modal-content{
+      height: 560px;
+    }
+    .modal-footer{
+      border-color: transparent;
+      margin-bottom: unset;
+    }
+  
+  </style>

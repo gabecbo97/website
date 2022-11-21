@@ -1,0 +1,142 @@
+<script>
+  document.addEventListener("touchstart", function () {}, true);
+
+  var pickerBtn = $(".language--picker");
+  var closeBtn = $(".language--close");
+  var languageContainer = $(".language--container");
+
+  pickerBtn.addClass("shown");
+
+  pickerBtn.click(function () {
+    languageContainer.addClass("shown");
+  });
+
+  closeBtn.click(function () {
+    languageContainer.removeClass("shown");
+  });
+</script>
+<span class="language--picker">
+  <span class="language--text"><i class="flag-us"></i><i class="flag-es"></i></span>
+</span>
+
+<div class="language--container">
+  <ul>
+    <li><a target="_blank" rel="external alternate noreferrer" href="https://translate.google.com.br/translate?sl=pt&tl=en&u=aiqon.com.br&client=webapp">English</a></li>
+    <li><a target="_blank" rel="external alternate noreferrer" href="https://translate.google.com.br/translate?sl=pt&tl=es&hl=en&u=aiqon.com.br&client=webapp">Espanol</a></li>
+  </ul>
+  <span class="language--close">X</span>
+</div>
+
+<style>
+#gt-nvframe{
+    display: none !important;
+}
+
+.flag-us{
+    content: url(/assets/img/translate/us.png);
+}
+.flag-es{
+    content: url(/assets/img/translate/spain.png);
+}
+
+  .language--picker {
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 0.5em;
+    position: fixed;
+    left: 1em;
+    top: 1em;
+    z-index: 1000000;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #7f7f7f;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .language--picker:hover,
+  .language--picker:active {
+    background-color: #ffc72a;
+  }
+  .language--picker.shown {
+    opacity: 1;
+  }
+  .language--container {
+    transition: bottom 0.2s ease-in-out;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    padding: 0.5em 1em;
+    background-color: gray;
+    z-index: 15;
+    color: white;
+    font-size: 1.1em;
+    box-shadow: 0 0 5px #7f7f7f;
+  }
+  @media only screen and (max-width: 615px) {
+    .language--container {
+      font-size: 0.95em;
+    }
+  }
+  .language--container.shown {
+    bottom: 0;
+  }
+  .language--container ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .language--container ul li {
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    margin: 0 0.5em;
+  }
+  @media only screen and (max-width: 615px) {
+    .language--container ul li {
+      margin: 0;
+    }
+  }
+  .language--container ul li a {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid;
+    border-color: white;
+    padding: 0.25em 0.7em;
+    text-decoration: none;
+    color: white;
+  }
+  .language--container ul li a:hover,
+  .language--container ul li a:active {
+    color: teal;
+    border-color: teal;
+    background-color: white;
+  }
+  .language--container ul li.language--active {
+    font-weight: 600;
+  }
+  .language--container ul li.language--active a {
+    color: teal;
+  }
+  .language--close {
+    position: absolute;
+    left: 1em;
+    font-size: 1.2em;
+    margin-top: 0.4em;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 615px) {
+    .language--close {
+      margin-top: 0.5em;
+    }
+  }
+  .language--close:hover {
+    color: #ffc72a;
+  }
+</style>

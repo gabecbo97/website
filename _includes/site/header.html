@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#71C6C1" />
+  <link rel="icon" type="image/x-icon" href="{{'/assets/img/common/favicon.png' | prepend: site.baseurl}}" />
+  <title>
+    {% if page.title == null %} {{ site.title }} {% elsif page.title != null
+    %} {{ site.title | prepend: ' - ' | prepend: page.title }} {% endif %}
+  </title>
+  {% if page.layout == "default" or page.layout == "modulo"%}
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRXVCX9');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="stylesheet" href="{{'/assets/scss/main.css' | prepend: site.baseurl}} " />
+  {% elsif page.layout == "notfound" %}
+  <link rel="stylesheet" href="{{'/assets/scss/404.css' | prepend: site.baseurl}} " />
+  {% elsif page.layout == "blog" or page.layout == "post" %}
+  <link rel="stylesheet" href="{{'/assets/scss/blog.css' | prepend: site.baseurl}} " />
+  {% else %}
+  <link rel="stylesheet" href="{{'/assets/scss/main.css' | prepend: site.baseurl}} " />
+  <link rel="stylesheet" href="{{'/assets/scss/blog.css' | prepend: site.baseurl}} " />
+  <link rel="canonical" href="https://aiqon.com.br/" />
+  
+  {% endif %}
+  <!--RD COOKIE -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d922d34e-9dce-44d1-809a-f2a8d99ca011"
+    data-blockingmode="auto" type="text/javascript"></script>
+
+  <!-- END RD COOKIE-->
+    <!-- ConveyThis code -->
+<script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(e) {
+		ConveyThis_Initializer.init({
+			api_key: "pub_919145205446be1f236af8f76857d40a"
+		});
+	});
+</script>
+
+ 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+  <script>
+    window.onload = function () {
+      Particles.init
+        ({
+          selector: '.background',
+          color: '#fff'
+
+        });
+    };
+    particlesJS.load('.background', 'particlesjs-config.json');
+
+  </script>
+
+
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  {% seo %}
+ <!---->
+  <script id="CookieDeclaration" src="https://consent.cookiebot.com/d922d34e-9dce-44d1-809a-f2a8d99ca011/cd.js"
+    type="text/javascript" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://kit.fontawesome.com/190dc90484.js" crossorigin="anonymous"></script>
+</head>
+
+</head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRXVCX9" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+ <!--{% include site/google-translate.html %}-->
+ <script src="https://app.dilingual.com/js/inject.js"></script>
+ 
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<style> 
+
+    .container_feature {
+        position: relative;
+        color: gray;
+        font-size: 20px;
+        height: 600px;
+        margin-top: 50px;
+        
+   }
+    .grid {
+        list-style: none;
+        margin-left: -40px;
+   }
+    .gc {
+        box-sizing: border-box;
+        display: inline-block;
+        margin-right: -0.25em;
+        min-height: 1px;
+        padding-left: 40px;
+        vertical-align: top;
+   }
+    .gc--1-of-3 {
+        width: 33.33333%;
+   }
+    .gc--2-of-3 {
+        width: 66.66666%;
+   }
+    .naccs {
+        position: center;
+        width: 100%;
+        margin-left: 0;
+        
+   }
+    .naccs .menu div {
+        padding: 15px 20px 15px 40px;
+        margin-bottom: 10px;
+        color: #707070;
+        background: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: relative;
+        vertical-align: middle;
+        width: 600px;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        margin-left: -100px;
+        
+   }
+    .naccs .menu div:hover {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.459);
+      color: #303f9f ;
+   }
+    .naccs .menu div span.light {
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: 24px;
+        left: 15px;
+        background-color: #707070;
+        border-radius: 100%;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+    .naccs .menu div.active span.light {
+        background-color: #303f9f;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        top: 0;
+        border-radius: 0;
+   }
+    .naccs .menu div.active {
+        color: #303f9f;
+        padding: 15px 20px 15px 20px;
+   }
+    ul.nacc {
+        position: relative;
+        height: 0px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+    ul.nacc li {
+        opacity: 0;
+        transform: translateX(50px);
+        position: absolute;
+        list-style: none;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 600px;
+        margin-left: 280px;
+        text-align: justify;
+   }
+    ul.nacc li.active {
+        transition-delay: 0.3s;
+        z-index: 2;
+        opacity: 1;
+        transform: translateX(0px);
+   }
+    ul.nacc li p {
+        margin: 0;
+   } 
+   #txt{
+       margin-right: 760px;
+       margin-left: -760px;
+       margin-top: -270px;
+   }
+   #imagem{
+    -webkit-box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+   }
+   
+    </style>
+   <div class="container_feature">
+       <div class="naccs">
+        <div class="grid">
+         <div class="gc gc--1-of-3">
+          <div class="menu">
+           <div class="active"><span class="light"></span><span>Entenda seu armazenamento de dados</span></div>
+           <div><span class="light"></span><span>Reduza o custo de armazenamento limpando informações de baixo valor</span></div>
+          </div>
+         </div>
+         <div class="gc gc--2-of-3">
+          <ul class="nacc">
+           <li class="active">
+            <div>
+             <img id="imagem"
+             src="/assets/img/rms/image1_1.webp"
+            style="max-width: 100%; "
+             class="mx-auto my-auto"/>
+           <br>
+           <br>
+             <p id="txt"> A primeira etapa é entender os 
+                 tipos de dados em suas várias soluções de 
+                 armazenamento, como armazenamentos em 
+                 várias nuvens e servidores locais. 
+                 Obtenha informações detalhadas sobre os 
+                 tipos de dados armazenados em seu ambiente, 
+                 incluindo informações pessoais e propriedade 
+                 intelectual, e exatamente onde eles estão 
+                 localizados. Com essas informações em mãos, 
+                 você poderá priorizar melhor seus esforços 
+                 de gerenciamento de dados e colocar seu plano 
+                 de otimização no caminho certo.</p>
+               
+             
+            </div>
+           </li>
+           <li>
+            <div>
+             <img id="imagem"
+             src="/assets/img/rms/duplicate_1_2.webp"
+             style="max-width: 100%;"
+             class="mx-auto my-auto"/>
+             <br>
+             <br>
+             <p id="txt"> Muitas organizações dedicam tanto 
+                 dinheiro e esforço ao armazenamento e manutenção 
+                 de dados duplicados, obsoletos e triviais quanto 
+                 ao conteúdo de alto valor. Encontre e livre-se 
+                 automaticamente de todos os arquivos de baixa 
+                 qualidade ou baixo valor, como duplicatas ou 
+                 versões antigas de documentos, para que você 
+                 possa investir seu tempo e esforço nos dados 
+                 que realmente importam e economizar em despesas 
+                 de armazenamento.</p>
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+   </div>
+      <script>
+          $(document).on("click", ".naccs .menu div", function() {
+       var numberIndex = $(this).index();
+   
+       if (!$(this).is("active")) {
+           $(".naccs .menu div").removeClass("active");
+           $(".naccs ul li").removeClass("active");
+   
+           $(this).addClass("active");
+           $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+   
+           var listItemHeight = $(".naccs ul")
+               .find("li:eq(" + numberIndex + ")")
+               .innerHeight();
+           $(".naccs ul").height(listItemHeight + "px");
+       }
+   });
+      </script>

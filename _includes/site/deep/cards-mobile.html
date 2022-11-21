@@ -1,0 +1,262 @@
+<script>
+  (function ($) {
+    "use strict";
+    // Auto-scroll
+    $("#myCarousel").carousel({
+      interval: 5000,
+    });
+
+    // Control buttons
+    $(".next").click(function () {
+      $(".carousel").carousel("next");
+      return false;
+    });
+    $(".prev").click(function () {
+      $(".carousel").carousel("prev");
+      return false;
+    });
+
+    // On carousel scroll
+    $("#myCarousel").on("slide.bs.carousel", function (e) {
+      var $e = $(e.relatedTarget);
+      var idx = $e.index();
+      var itemsPerSlide = 3;
+      var totalItems = $(".carousel-item").length;
+      if (idx >= totalItems - (itemsPerSlide - 1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i = 0; i < it; i++) {
+          // append slides to end
+          if (e.direction == "left") {
+            $(".carousel-item").eq(i).appendTo(".carousel-inner");
+          } else {
+            $(".carousel-item").eq(0).appendTo(".carousel-inner");
+          }
+        }
+      }
+    });
+  })(jQuery);
+</script>
+<div class="container-fluid mobile-screen">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner row w-100 mx-auto">
+      <div class="carousel-item col-md-4 active">
+        <div class="card">
+          <div class="card-body">
+            <img src="/assets/img/deep-22/prevent.svg" class="img-bandge" alt="" />
+            <h4 class="card-title">
+              Plataforma de prevenção de instinto profundo
+            </h4>
+            <p class="card-text">
+              Interrompa ameaças desconhecidas antes que elas cheguem ao seu
+              ambiente com a mais alta precisão e a menor taxa de falsos
+              positivos do setor.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="/assets/img/deep-22/apps.svg" class="img-bandge" alt="" />
+            <h4 class="card-title">
+              Prevenção de instinto profundo para aplicativos
+            </h4>
+            <p class="card-text">
+              Evite arquivos maliciosos em trânsito, carregados de aplicativos
+              da Web, antes que eles cheguem ao endpoint, servidor ou entrem no
+              armazenamento.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="/assets/img/deep-22/endpoints.svg" class="img-bandge" alt="" />
+            <h4 class="card-title">
+              Prevenção de instinto profundo para endpoints
+            </h4>
+            <p class="card-text">
+              Prevenção de arquivos maliciosos no endpoint, pré-execução
+              verificada em 20ms com precisão de >99%.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Tablet and up */
+
+  .card {
+    background: linear-gradient(
+      0deg,
+      rgba(222, 255, 91, 1) 0%,
+      rgba(255, 255, 255, 1) 1%
+    );
+    border-radius: 1px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (min-width: 768px) {
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item {
+      display: block;
+    }
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item {
+      -webkit-transition: none;
+      transition: none;
+    }
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .carousel-inner
+      .active.carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -50%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  /* Desktop and up */
+
+  @media screen and (min-width: 992px) {
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+    }
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item,
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item
+      + .carousel-item {
+      -webkit-transition: none;
+      transition: none;
+    }
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .carousel-inner
+      .active.carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .desktop-screen {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .mobile-screen {
+      display: none;
+    }
+  }
+</style>

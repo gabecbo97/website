@@ -1,0 +1,209 @@
+<div class="container align-itens-center">
+    
+  
+  
+ <!-- Button trigger modal -->
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/hcaFVlPXnjc" data-target="#myModal" id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 1AD.svg" alt="" style="max-width: 50px;"> <span>Active Directory</span> 
+</button>
+  
+   <!-- Button trigger modal -->
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/4Wp0HTl3I-8" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 11AZURE.svg" alt="" style="max-width: 50px;"> <span>Azure AD </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/XZRy-oVfPvg" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 5EXCHANGE.svg" alt="" style="max-width: 50px;"> <span>Exchange </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/bO9dns-mFQE" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 13OFFICE.svg" alt="" style="max-width: 50px;"> <span>Office 365 </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Q1slPH2jXBc" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 2SQL.svg" alt="" style="max-width: 50px;"> <span>SQL Server </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/-atpCQKDfzg" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 3WINDOWS SERVER.svg" alt="" style="max-width: 50px;"> <span>Windows Server </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/GpfQICAcN0g" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 10SHARE.svg" alt="" style="max-width: 50px;"> <span>Sharepoint </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/3fRhorAnWwg" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 7ORACLE.svg" alt="" style="max-width: 50px;"> <span>Oracle Database</span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/1SHimEHiXH8" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 8FILE SERVER.svg" alt="" style="max-width: 50px;"> <span> File Server </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/E0FxtXLM3-4" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 4EMC.svg" alt="" style="max-width: 50px;"> <span> EMC </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Em1HI-o36gA" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 6NETAPP.svg" alt="" style="max-width: 50px;"> <span> NetApp </span> 
+</button>
+<button type="button" class="buttons video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/bwRDlBaew8Q" data-target="#myModal"id="buttons">
+    <img src="/assets/img/netwrix/modulos/Asset 12VMWARE.svg" alt="" style="max-width: 50px;"> <span> VMware </span> 
+</button>
+  
+  
+   
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div id="modal-content">
+
+      
+      <div id="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
+  
+  
+  <br>
+  <br>
+</div>
+
+<style>
+   .buttons {
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: gray;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin: 5px;
+  height: 80px;
+  
+
+  
+}
+.buttons:hover{
+-webkit-box-shadow: 0px 0px 59px -13px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 59px -13px rgba(255,255,255,1);
+box-shadow: 0px 0px 59px -13px rgba(255,255,255,1);
+}
+
+.buttons img{
+    float: left;
+    position: relative;
+}
+
+
+.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  margin-top: 9px;
+}
+
+.buttons span:after {
+  content: '\25B6';
+  
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttons:hover span {
+  padding-right: 25px;
+}
+
+.buttons:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    
+
+    #modal-content{
+        height: 560px;
+        
+    }
+   
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+      
+  }
+
+
+
+#modal-body {
+  position:relative;
+  padding:0px;
+  z-index: 10000000000000000;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+@media only screen and (max-width: 1500px){
+    .buttons{
+        width: 80%;
+        margin-left: 7%;
+    }
+}
+
+
+</style>
+
+<script>
+    $(document).ready(function() {
+
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+})
+  
+
+
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+    
+
+
+  
+  
+// document ready  
+});
+</script>

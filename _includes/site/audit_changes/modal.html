@@ -1,0 +1,35 @@
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-obsidian" data-toggle="modal" data-target="#ExemploModalCentralizado">
+    Teste grátis
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">AIQON</h5>
+          
+        </div>
+        <div class="modal-body">
+          {% include site/audit_changes/form.html title="Auditoria de Alterações" id="audit_changes" %}
+        </div>
+        <div class="modal-footer">
+          <div class="row"><img src="/assets/img/common/aiqon.svg" alt="" style="max-width: 100px; margin-right: 260px;"></div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .modal-content{
+      height: auto;
+      
+    }
+    .modal-footer{
+      border-color: transparent;
+      margin-bottom: 10px;
+      height: 3px;
+    }
+  
+  </style>

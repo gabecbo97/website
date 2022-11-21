@@ -1,0 +1,13 @@
+_site
+.sass-cache
+.jekyll-metadata
+node_modules
+aiqondb-firebase-adminsdk.json
+*.pdf
+*.zip
+functions/
+*.txt
+firebase.json
+firestore.indexes.json
+firestore.rules
+aiqon-trial.git

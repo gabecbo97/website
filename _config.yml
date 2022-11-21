@@ -1,0 +1,42 @@
+#Site settings
+title: AIQON - The Definitive Cybersecurity
+description: >- # this means to ignore newlines until "baseurl:"
+  Temos as soluções em segurança, economia e eficiência que a sua empresa precisa para crescer.
+baseurl: "" 
+url: "https://aiqon.com.br" 
+lang: pt-br
+twitter:
+  username: aiqonit
+facebook:
+  publisher: https://facebook.com/aiqonit
+social:
+  name: AIQON`
+  links:
+    - https://www.linkedin.com/company/aiqon-it
+logo:  /assets/img/common/aiqon.svg
+#collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+#seo
+defaults:
+  - scope:
+      path: ""
+    values:
+      url: 'https://aiqon.com.br'
+      image: /assets/img/common/card.png
+      canonical_url: 'https://aiqon.com.br'
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+sass:
+  style: compressed
+  load_paths:
+  - assets/scss
+  - node_modules/
+  - node_modules/bootstrap/scss
+
+exclude: []

@@ -1,0 +1,238 @@
+  <div class="container-fluid py-5" id="tabs-vertical">
+  <div class="row justify-content-center">
+    <nav>
+      <ul class="tab_goup">
+        <li class="tab_item" data-role="thumb-1">
+          <h5>Revise continuamente as permissões para dados confidenciais</h5>
+          <section data-role="content-1">
+            <img
+              src="/assets/img/governanca_home/revise.svg"
+              class="img-fluid img-tab"
+              alt="Revisão de dados"
+            />
+          </section>
+        </li>
+      </ul>
+      <ul class="tab_goup">
+        <li class="tab_item" data-role="thumb-2">
+          <h5>
+            Detectar tentativas de escalonamento de privilégios em seu ambiente
+            de TI híbrido
+          </h5>
+          <section data-role="content-2">
+            <img
+              src="/assets/img/governanca_home/detect.svg"
+              class="img-fluid img-tab"
+              alt="TI Hídrido"
+            />
+          </section>
+        </li>
+      </ul>
+      <ul class="tab_goup">
+        <li class="tab_item" data-role="thumb-3">
+          <h5>
+            Garanta que suas políticas de governança de acesso a dados sejam
+            seguidas
+          </h5>
+          <section data-role="content-3">
+            <img
+              src="/assets/img/governanca_home/data_acess.svg"
+              class="img-fluid img-tab"
+              alt="Governança e Segurança de Dados"
+            />
+          </section>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!--MOBILE-->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h5 class="text-center">
+                Revise continuamente as permissões para dados confidenciais
+              </h5>
+            </button>
+          </h5>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#accordion"
+        >
+          <div class="card-body text-center">
+            <img
+              src="/assets/img/governanca_home/revise.svg"
+              class="img-fluid img-tab"
+              alt="Revisão"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <h5 class="text-center">
+                Detectar tentativas de escalonamento de privilégios em seu
+                ambiente de TI híbrido
+              </h5>
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#accordion"
+        >
+          <div class="card-body text-center">
+            <img
+              src="/assets/img/governanca_home/detect.svg"
+              class="img-fluid img-tab"
+              alt="Detecção"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <h5 class="text-center">
+                Garanta que suas políticas de governança de acesso a dados sejam
+                seguidas
+              </h5>
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          aria-labelledby="headingThree"
+          data-parent="#accordion"
+        >
+          <div class="card-body text-center">
+            <img
+              src="/assets/img/governanca_home/data_acess.svg"
+              class="img-fluid img-tab"
+              alt="Auditoria de acesso"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tab_goup,
+  .tab_item {
+    list-style: none;
+  }
+  nav {
+    width: 90%;
+    height: 500px;
+    padding-top: 10vh;
+    position: relative;
+  }
+  .tab_item {
+    width: 40%;
+    min-height: 5vh;
+    color: gray;
+  }
+  .tab_item:hover {
+    border-right: 5px solid teal;
+  }
+  section {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: -1vw;
+    top: -9999px;
+    text-align: center;
+    z-index: 10;
+    margin-left: -9999px;
+  }
+
+  .tab_item[data-role="thumb-1"],
+  section[data-role="content-1"] {
+    z-index: 1;
+    top: 2%;
+  }
+
+  .tab_item[data-role="thumb-2"]:hover section[data-role="content-2"] {
+    top: 2%;
+  }
+  .tab_item[data-role="thumb-3"]:hover section[data-role="content-3"] {
+    top: 2%;
+  }
+  .img-tab {
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .img-tab {
+    max-width: 500px;
+  }  
+  nav{
+      padding-top: 4vh;
+      margin-left: -9vw;
+  }
+  }
+
+  /* CSS MOBILE */
+
+  @media screen and (max-width: 990px) {
+    #tabs-vertical {
+      display: none;
+    }
+    .img-tab {
+      max-width: 300px;
+    }
+  }
+  @media screen and (min-width: 990px) {
+    #accordion {
+      display: none;
+    }
+  }
+  #accordion {
+    width: 90vw;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+  }
+  .btn-link {
+    color: gray;
+  }
+  .btn-link:active {
+    list-style: none;
+    background-color: rgba(0, 128, 128, 0.226);
+  }
+</style>

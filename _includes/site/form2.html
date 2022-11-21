@@ -1,0 +1,339 @@
+<style>
+  .form-control {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+  }
+  .form-control:focus {
+    background-color: unset;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    color: white;
+  }
+  .-trial-container-obsidian {
+    width: 500px;
+    padding: 100px 20px 0px 20px;
+    background-color: white;
+    border-radius: 1mm;
+    
+  }
+
+  .-trial-container-obsidian h1,
+  .-trial-container-obsidian h4 {
+    color: gray;
+    font-weight: 80px;
+    text-align: center;
+  }
+
+  .-trial-form-obsidian {
+    padding: 2px;
+    width: 80%;
+    max-width: 300px;
+    margin: 200 auto;
+  }
+
+  .-trial-form-obsidian input {
+    margin: 5px;
+    text-decoration: gray;
+  }
+  .-trial-form-obsidian input::placeholder {
+    color: gray;
+    opacity: 0.7;
+    font-size: 15px;
+  }
+  .-trial-form-obsidian input[type="number"]::-webkit-inner-spin-button,
+  .-trial-form-obsidian input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  #formSuccessMessage {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+  }
+  .cargo_select {
+    margin: 3px 0 4px 3px;
+  }
+  .form-check-label {
+    color: gray;
+  }
+  .form-check-input {
+    padding-left: 1vh;
+  }
+  .form-privacy {
+    color: rgba(128, 128, 128, 0.678);
+  }
+
+  @media (max-width: 768px) {
+    .-trial-container-obsidian {
+      width: auto;
+      padding: 70mm;
+      background-color: white;
+      border-radius: 1mm;
+      height: auto;
+    }
+
+    .-trial-container-obsidian h4 {
+      font-size: 1em;
+    }
+    .-trial-container-obsidian .form-control {
+      font-size: 0.9em;
+    }
+  }
+</style>
+<div
+  class="container-fluid p-0 m-0 -trial-container-obsidian"
+  id="-trial-container-obsidian"
+  style="background-color:{{ include.color }}"
+>
+  <div class="row">
+    <div
+      class="col d-flex flex-column justify-content-center align-items-center"
+    >
+      <br />
+      <h3 style="color: black">{{include.title}}</h3>
+      <p style="color: black; text-align: center; max-width: 80%">
+        Duas semanas para você testar todas as funcionalidades no seu ambiente.
+      </p>
+      <form class="-trial-form-obsidian pb-5" id="{{ include.id }}">
+        <br />
+        <div class="form-row">
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="Primeiro nome."
+              class="form-control"
+              type="text"
+              name="firstname"
+              id="name"
+              placeholder="Nome"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite seu nome.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="Sobrenome"
+              class="form-control"
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Sobrenome"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite seu sobrenome.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <select
+              id="Cargo"
+              class="form-control cargo_select"
+              style="color: rgba(128, 128, 128, 0.781)"
+            >
+              <option disabled selected>Cargo</option>
+              <option value="Analista">Analista</option>
+              <option value="Auditor">Auditor</option>
+              <option value="Advogado">Advogado</option>
+              <option value="CEO">CEO</option>
+              <option value="Coordenador">Coordenador</option>
+              <option value="DBA">DBA</option>
+              <option value="Diretor">Diretor</option>
+              <option value="Engenheiro">Engenheiro</option>
+              <option value="Gerente">Gerente</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Técnico">Técnico</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <select
+              id="Departamento"
+              class="form-control cargo_select"
+              style="color: rgba(128, 128, 128, 0.781)"
+            >
+              <option disabled selected>Departamento</option>
+              <option value="Administrativo/Financeiro">
+                Administrativo/Financeiro
+              </option>
+              <option value="Auditoria/Compliance">Auditoria/Compliance</option>
+              <option value="Jurídico">Jurídico</option>
+              <option value="Logística/Compras">Logística/Compras</option>
+              <option value="Pesquisa e Desenvolvimento">
+                Pesquisa e Desenvolvimento
+              </option>
+              <option value="Projetos">Projetos</option>
+              <option value="Segurança da Informação">
+                Segurança da Informação
+              </option>
+              <option value="TI e Infraestruturao">TI e Infraestrutura</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="E-mail profissional."
+              class="form-control"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="E-mail profissional"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="E-mail profissional."
+              class="form-control"
+              type="text"
+              name="company"
+              id="company"
+              placeholder="Empresa"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="Número de telefone."
+              class="form-control"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Telefone"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite seu telefone.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="Ramal."
+              class="form-control"
+              type="number"
+              name="branch"
+              id="branch"
+              placeholder="Ramal"
+              max-length="5"
+            />
+          </div>
+        </div>
+        <div class="form-row py-3">
+          <div class="form-check">
+            <label style="color: gray">
+              <input
+                type="checkbox"
+                data-privacy="true"
+                name="communications"
+                value="1"
+                required
+              />
+
+              Eu concordo em receber comunicações e ofertas personalizadas de
+              acordo com meus interesses.
+            </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label style="color: gray">
+            <input
+              type="hidden"
+              data-privacy="true"
+              name="privacy_policy"
+              value="1"
+            />
+            Ao informar meus dados, eu concordo com a
+            <a  href="/politica/" target="_blank">Política de Privacidade</a>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div
+            class="col d-flex justify-content-center align-items-center py-3"
+          >
+            <input
+              style="
+                background-color: rgba(255, 0, 0, 0.767);
+                border-radius: 1mm;
+              "
+              type="submit"
+              value="Solicitar teste"
+              class="btn btn-obsidian"
+              onclick="formSuccess()"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="../../assets/js/dist/jquery.min.js"></script>
+<script src="../../assets/js/formMask.js"></script>
+<script src="/assets/js/phoneMask.js"></script>
+<script>
+  const form = document.getElementById("trialForm");
+  const url = "https://us-central1-aiqondb.cloudfunctions.net/api/trial";
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("Enviando formulário...");
+
+    const formData = new FormData(this);
+    const origin = window.location.pathname;
+    const trialRequestJson = {};
+
+    for (const pair of formData) {
+      trialRequestJson[pair[0]] = pair[1];
+    }
+    trialRequestJson["origin"] = origin;
+    fetch(url, {
+      method: "post",
+      body: JSON.stringify(trialRequestJson),
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "same-origin",
+    })
+      .then(formSuccess())
+
+      .catch(function (err) {
+        console.log("Ocorreu um erro: ", err);
+      });
+  });
+
+  /* function formSuccess() {
+       const form = document.querySelector(".-trial-container")
+      const formFields = document.querySelectorAll("input")
+       for (field of formFields) {
+        field.value = ""
+       }
+       form.innerHTML = `<p id='formSuccessMessage'>
+           Mensagem enviada! <br> Entraremos em contato em breve.
+         </p>`
+      window.location.href = "/obrigado"
+    }*/
+</script>

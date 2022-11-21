@@ -1,0 +1,198 @@
+---
+layout: default
+title: Auditoria de Alterações
+---
+
+<div class="container-fluid" style="background: linear-gradient(
+  90deg,
+  rgba(0, 0, 70, 1) 5%,
+  rgba(28, 181, 224, 1) 94%
+); height: 500px; padding-top: 14vh; color: white;">
+<canvas class="background"></canvas>
+    <br>
+    <br>
+    <div class="row">
+      <div
+        class="col -solution-hero d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <!--<img src="/assets/img/obsidian/logo.png" />--> 
+        <h1 id="solucao" style="font-size: 40px; ">Auditoria de Alterações</h1>
+        <p id="text_secudary" style="font-size: 25px; margin-left: 1px;">
+            Aprimore a configuração e a auditoria de alterações para reduzir riscos e custos de TI
+        </p>
+       
+        <p><a>{% include site/audit_changes/modal.html %}</a></p>
+      </div>
+    </div>
+   </div>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="banner mx-auto text-center">
+        <h3>Visibilidade das alterações do ambiente</h3>
+        <p class="text-secondary">
+            Se você não tem visibilidade de quem 
+            mudou o quê, quando e onde cada alteração 
+            foi feita e a configuração atual de seus 
+            sistemas, é apenas uma questão de tempo 
+            até que sua organização sofra uma interrupção 
+            do sistema ou violação de dados. Obtenha 
+            informações acionáveis ​​sobre todas as alterações 
+            feitas em seu ambiente híbrido e veja claramente 
+            as configurações atuais e passadas de seus sistemas 
+            críticos.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+<div class="row mb-5" >
+    <div class="row mw-1200 mx-auto d-flex justify-content-center pt-5">
+      <div class="image-block-rms flex-column text-center">
+        <img src="/assets/img/audit-changes/changes.png" />
+        <h5></h5>
+        <p><b>Alterações de arquivos</b>
+        </p>
+      </div>
+      <div class="image-block-rms flex-column text-center">
+        <img src="/assets/img/audit-changes/database.png" />
+        <h5></h5>
+        <p>
+          <b>Alterações em banco de dados</b>
+        </p>
+      </div>
+      <div class="image-block-rms flex-column text-center">
+        <img  src="/assets/img/audit-changes/device.png"/>
+        <h5></h5>
+        <p>
+          ,<b>Alterações em dispositivos de rede</b>
+        </p>
+      </div>
+    </div>
+      </div>
+  <div class="container">
+    <br>
+    <h1 class="text-center mb-3" style="color: #707070;"> <b>Aprimore a segurança, mantenha a continuidade dos negócios e prove estar em conformidade</b></h1>
+    <p style="  color: #707070; font-size: 20px; "class="text-center mb-5">
+        A condução da auditoria de alterações e da linha de base 
+        da configuração usando ferramentas nativas é um processo 
+        extremamente pesado e demorado. Além disso, é fácil 
+        ignorar as configurações incorretas da Diretiva de Grupo 
+        e perder eventos críticos, como alterações nas permissões 
+        de arquivo ou bloqueios de conta de usuário. Tenha todas as 
+        informações necessárias na ponta dos dedos para detectar 
+        rapidamente atividades suspeitas e fornecer a melhor resposta 
+        a incidentes para evitar vazamentos de dados confidenciais e 
+        interrupções prolongadas de negócios.
+    </p>
+  </div>
+</div>
+</div>
+{% include site/audit_changes/tab.html %}
+<div class="container-fluid -features" 
+style="background-color: #fdfcfc;" 
+id="trial_obs">
+<br>
+<br>
+<br>
+
+<div class="container" id="trial_obs">
+  {% include site/audit_changes/tabs.html %}
+</div>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+  <div class="container" id="trial_obs">
+    {% include site/audit_changes/tabss.html %}
+    
+    </div>
+    
+  
+<div class="container-fluid -features" 
+style="background: linear-gradient(90deg, rgba(28,181,224,1) 5%, rgba(0,0,70,1) 94%); height: auto;" 
+>
+    <div class="row">
+      
+        <h2 style="color: white; margin-top: 30px; float: right;"><b>Simplifique a auditoria de alterações e configurações</b> </h2>
+     
+
+      <div class="container" >
+        <br>
+        <br>
+        {% include site/audit_changes/video.html %}
+        
+        </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<div class="container"  >
+  <h2 style="color: #707070; text-align: center;" >Deseja saber mais sobre os registros do seu
+  </br> ambiente? </h2>
+  <div class="image-block text-lightblue flex-column text-center"  >
+    <a href="#" class="btn btn-rms my-5" id="next_feature" >
+      <img src="/assets/img/rms/inventory.png" alt="" >
+      Identifique as alterações de Hardware e Software 
+    </a>
+   
+  </div>
+</div>
+
+<style>
+ 
+  @media only screen and (max-width: 1500px) {
+    #trial_obs{
+      display: none;
+    }
+    #trial_obs p{
+      display: none;
+    } 
+    #next_feature{
+      width: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 1499px) {
+  
+    #showOnlyMobile{
+ display: none;
+
+}
+#colapse{
+  display: none;
+
+}
+#formHidden{
+       display:none
+    }
+    #next_feature_b{
+      width: 240px;
+      display: none;
+    }
+ 
+  
+ /*Content Animation*/
+ @keyframes fadeInScale {
+   0% {
+     transform: scale(0.9);
+     opacity: 0;
+   }
+   
+   100% {
+     transform: scale(1);
+     opacity: 1;
+   }
+ }
+}
+ 
+
+</style>
+      

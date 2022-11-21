@@ -1,0 +1,141 @@
+---
+layout: default
+title: NERC
+---
+
+<div class="container-fluid content-nerc">
+  <h1 class="text-center text-white">NERC</h1>
+</div>
+<div class="container text-center text-gray py-5">
+  <h1 class="text-center mb-5">
+    Descubra quais requisitos específicos do NERC você pode atender com a AIQON.
+  </h1>
+  <p>
+    A North American Electric Reliability Corporation (NERC) é uma autoridade
+    reguladora transnacional que garante a confiabilidade do sistema de energia
+    elétrica em massa na América do Norte, desenvolvendo e aplicando os padrões
+    de conformidade de confiabilidade NERC para o planejamento e operação do
+    sistema elétrico em massa e minimizando o risco de perturbações do sistema.
+    Os padrões NERC, que são projetados para garantir a segurança da
+    infraestrutura de TI que suporta o sistema elétrico em massa da América do
+    Norte, são chamados de padrões NERC Critical Infrastructure Protection
+    (CIP).
+  </p>
+  <p>
+    Para atender aos padrões regulatórios NERC CIP, as organizações que
+    trabalham no setor de energia e serviços públicos precisam aplicar controles
+    de segurança, incluindo controles físicos e de segurança cibernética, para
+    proteger seus ativos e dados cibernéticos essenciais. Alguns dos requisitos
+    abrangem a criação de políticas e o treinamento de funcionários, que
+    geralmente estão fora do escopo do software de gerenciamento de
+    conformidade. Portanto, ao avaliar as ferramentas de conformidade NERC CIP,
+    baseie sua decisão no estado de seu ambiente de TI e nas prioridades de
+    segurança cibernética. O software de conformidade NERC CIP da AIQON oferece
+    suporte aos seguintes controles de segurança cibernética:
+  </p>
+</div>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 content-border">
+      <ul>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">CIP-004-6 </b>
+            - Segurança cibernética - Pessoal e treinamento:
+          </p>
+          <ul>
+            <li>R3 (3,1; 3,2), R4 (4,3; 4,4), R5 (5,1 - 5,5)</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">CIP-007-6 </b>
+            - Segurança cibernética - Gerenciamento de segurança de sistemas:
+          </p>
+          <ul>
+            <li>R4 (4,1-4,4), R5 (5,1; 5,4-5,7)</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">CIP-008-5 </b>
+            - Segurança cibernética - Relatório de incidentes e planejamento de
+            resposta:
+          </p>
+          <ul>
+            <li>R2 (2,2; 2,3)</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">CIP-010-2</b>
+            - Segurança cibernética - Gerenciamento de mudanças na configuração
+            e avaliações de vulnerabilidade:
+          </p>
+          <ul>
+            <li>R1 (1,1; 1,2), R2 (2,1)</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <p>
+            <b class="text-compliance">CIP-011-2</b>
+            - Segurança cibernética - Proteção de informações:
+          </p>
+          <ul>
+            <li>R1 (1,1; 1,2)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md text-center">
+      <img
+        src="/assets/img/compliance/nerc.svg"
+        class="img-fluid img-sox mb-5 mt-5"
+        alt=""
+      />
+      <p class="compliance-desc">
+        <b>Saiba mais</b> sobre como a AIQON pode ajudá-lo a cumprir os
+        requisitos da <b>NERC.</b>
+      </p>
+      <p>
+        {% include site/modal_form_compliance.html title="NERC" id="nerc_form "%}
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .content-nerc {
+    padding: 25vh 0 10vh 0;
+    height: 50vh;
+    background: url("/assets/img/compliance/nerc_back.png") center no-repeat;
+    background-size: cover;
+  }
+  .img-sox {
+    max-width: 300px;
+  }
+  .compliance-desc {
+    padding: 0 10vh 0 10vh;
+    justify-self: center;
+  }
+  .content-border {
+    border-right: 2px solid rgba(128, 128, 128, 0.295);
+    padding-right: 5vw;
+  }
+  .content-border ul li {
+    list-style: none;
+    color: gray;
+  }
+  .list-content {
+    margin: 4vh 0 4vh 0;
+  }
+  .text-compliance {
+    color: #006fc1;
+  }
+  @media screen and (max-width: 764px) {
+    .content-border {
+      border-right: none;
+      border-bottom: 2px solid rgba(128, 128, 128, 0.295);
+    }
+  }
+</style>

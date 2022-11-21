@@ -1,0 +1,253 @@
+---
+layout: card
+title: Cartão
+---
+
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    //Maruf al Bashir Reza
+    $(window).on('load', function () { // makes sure the whole site is loaded 
+        $('#status').fadeOut(); // will first fade out the loading animation 
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+        $('body').delay(350).css({ 'overflow': 'visible' });
+    })
+  </script>
+
+<div class="container content-card">
+  <div class="row curve-background" style="--r1: 130%; --r2: 71.5%">
+    <div class="col-md-8 justify-content-center text-center">
+      <img src="/assets/img/common/favicon.png" alt="" class="icon-aiqon" />
+    </div>
+  </div>
+  <div class="row profile-img justify-content-center text-center">
+    <div class="col-md-8">
+      <img
+        src="/assets/img/card-2/card-profile-2.png"
+        class="img-profile mb-3"
+        alt=""
+      />
+    </div>
+    <div class="col-md-8">
+      <h2 class="text-white name-txt"><b>Thiago N Felippe</b></h2>
+      <p class="text-white">CEO AIQON IT</p>
+    </div>
+  </div>
+  <div
+    class="row justify-content-center text-center mt-4"
+    style="flex-wrap: nowrap"
+  >
+    <div class="col-md-1 custom-btn btn-13">
+      WhatsApp
+      <img src="/assets/img/card-3/whatsapp.svg" class="icon-social" alt="" />
+    </div>
+    <div class="col-md-1 custom-btn btn-13">
+      E-mail
+      <img src="/assets/img/card-3/email.svg" class="icon-social" alt="" />
+    </div>
+  </div>
+  <div class="row justify-content-center text-center" style="flex-wrap: nowrap">
+    <div class="col-md-2 custom-btn btn-13 btn-square">
+      <img
+        class="icon-social-contact"
+        src="/assets/img/card-3/website.svg"
+        alt=""
+      />
+    </div>
+    <div class="col-md-2 custom-btn btn-13 btn-square">
+      <img
+        class="icon-social-contact"
+        src="/assets/img/card-3/linkedin.svg"
+        alt=""
+      />
+    </div>
+    <div class="col-md-2 custom-btn btn-13 btn-square">
+      <img
+        class="icon-social-contact"
+        src="/assets/img/card-3/instagram.svg"
+        alt=""
+      />
+    </div>
+    <div class="col-md-2 custom-btn btn-13 btn-square">
+      <img
+        class="icon-social-contact"
+        src="/assets/img/card-3/youtube.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4 mb-5" style="background-color: teal;">
+    <p class="text-center text-white">
+      Copyright © 2022 AIQON IT <br />
+      Todos os direitos reservados
+    </p>
+  </div>
+</div>
+
+<style>
+    body{
+
+        background-color: teal;
+    }
+  .content-card {
+    background-color: teal;
+    height: 100vh;
+  }
+  .icon-aiqon {
+    width: 160px;
+    margin-top: 5vh;
+  }
+  .content-card {
+  }
+  .curve-background {
+    height: 60vh;
+    background: url("/assets/img/card-3/bg-blur.png") center/cover;
+    -webkit-mask: radial-gradient(
+          var(--r1, 100%) var(--r2, 50%) at top,
+          white 79.5%,
+          transparent 80%
+        )
+        top left,
+      radial-gradient(
+          var(--r1, 100%) var(--r2, 50%) at bottom,
+          transparent 79.5%,
+          white 80%
+        )
+        top center,
+      radial-gradient(
+          var(--r1, 100%) var(--r2, 50%) at top,
+          white 79.5%,
+          transparent 80%
+        )
+        top right;
+    mask: radial-gradient(
+          var(--r1, 100%) var(--r2, 50%) at top,
+          white 79.5%,
+          transparent 80%
+        )
+        top left,
+      radial-gradient(
+          var(--r1, 100%) var(--r2, 50%) at bottom,
+          transparent 79.5%,
+          white 80%
+        )
+        top center,
+      radial-gradient(
+          var(--r1, 100%) var(--r2, 50%) at top,
+          white 79.5%,
+          transparent 80%
+        )
+        top right;
+    /* adjust the 150% to control the covered area, the bigger the value the bigger the area will be*/
+    -webkit-mask-size: 33.4% 150%;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 33.4% 150%;
+    mask-repeat: no-repeat;
+  }
+  .profile-img {
+    background-color: teal;
+  }
+  .img-profile {
+    max-width: 200px;
+    margin-top: -30vh;
+  }
+  .name-txt {
+  }
+  .profile-img {
+  }
+  .contact-content {
+    width: 100px;
+    background-color: rgb(27, 158, 158);
+    border-radius: 50px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+  }
+
+  /* button */
+
+  .btn-13 {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    border-radius: 50px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    padding-top: 0.9vh;
+  }
+  .btn-13:after {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+      7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .btn-13:hover {
+    color: #fff;
+  }
+  .btn-13:hover:after {
+    top: 0;
+    height: 100%;
+  }
+  .btn-13:active {
+    top: 2px;
+  }
+  .btn-square {
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    padding-top: 7px;
+  }
+  .icon-social {
+    max-width: 20px;
+    margin-left: 5px;
+  }
+  .icon-social-contact {
+    max-width: 20px;
+  }
+  /* loading pré loading */
+
+    /* Preloader */
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        /* change if the mask should be a color other than white */
+        z-index: 99;
+        /* makes sure it stays on top */
+    }
+
+    #status {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        /* centers the loading animation horizontally on the screen */
+        top: 50%;
+        /* centers the loading animation vertically on the screen */
+        background-image: url('/assets/img/cartao/icons/preloader.gif');
+        /* path to your loading animation */
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: -100px 0 0 -100px;
+        background-size: contain;
+        /* is width and height divided by two */
+    }
+</style>

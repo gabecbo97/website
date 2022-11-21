@@ -1,0 +1,170 @@
+<style>.comparison-container {
+  background-color: #25c0dc;
+}
+  .comparison-table {
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .comparison-table th {
+    padding: 20px 10px;
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+  }
+  .comparison-table th.cms {
+    border-bottom: 10px solid #fff;
+    background-color: transparent;
+  }
+  .comparison-table th.css {
+    border-bottom: 10px solid #0ccea1;
+    background-color: transparent;
+  }
+  .comparison-table td:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.267);
+  }
+  .comparison-table td {
+    padding: 20px 15px;
+    width: 50%;
+    font-weight: 500 !important;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+  .comparison-table .table_large_cell {
+    text-align: center;
+    /*background-color: #fff;*/
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  tr.no-bg {
+    background-color: transparent !important;
+  }
+  td.border-none {
+    border: none !important;
+  }
+  @media (max-width: 800px) {
+    .comparison-container {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      margin-right: 0 !important;
+      padding-right: 0 !important;
+
+    }
+    .comparison-container h5 {
+      font-size: 1.1em;
+      text-align: justify;
+    }
+    .comparison-container .row, .comparison-container .col {
+      margin-right: 0 !important;
+      padding-right: 0 !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+    }
+    .comparison-table th {
+      font-size: 1.2em;
+    }
+    .comparison-table td {
+      font-size: 0.9em;
+    }
+    .table_large_cell {
+      font-size: 1em;
+    }
+  }
+</style>
+<!-- <div class="container-fluid comparison-container"> -->
+  <div class="row mx-auto">
+    <div class="col d-flex justify-content-center align-items-center pt-5">
+      <button
+        class="btn btn-lg btn-aiq px-5"
+        onclick="toggleCollapse()"
+        style="min-width: 200px;"
+      >
+        Veja o comparativo
+      </button>
+    </div>
+  </div>
+  <div class="row mx-auto -contracted-section -fully-contracted mt-5">
+    <div class="col d-flex justify-content-center align-items-center-pt-5">
+      <table class="comparison-table  mb-5">
+        <thead>
+          <tr class="no-bg">
+            <th class="cms">Cloud Management Suite</th>
+            <th class="css">Cyber Security Suite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              ✔ Descoberta de dispositivos
+            </td>
+            <td rowspan="2" class="table_large_cell">
+              Tudo que o Cloud Management Suite inclui, mais:
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ✔ Inventário de Hardware e Software
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ✔ Atualização de SO e terceiros
+            </td>
+            <td>
+              ✔ Gestão de TI em tempo real
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ✔ Windows, Mac & Linux
+            </td>
+            <td>
+              ✔ Mapas de localização dos dispositivos
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ✔ Controle por voz & AI
+            </td>
+            <td>
+              ✔ Linha do tempo dos dispositivos
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ✔ Log de Auditoria
+            </td>
+            <td>
+              ✔ Mapas de localização & de rede
+            </td>
+          </tr>
+          <tr>
+            <td>
+              ✔ Relatórios de Atualização
+            </td>
+            <td>
+              ✔ Descoberta de dispositivos de IoT
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="border-none p-5 text-center">
+              <h5>
+                As versões <span class="text-bold">plus</span> do Cloud
+                Management Suite e do Cyber Security Suite são para você que
+                quer ter o auxílio de um
+                <span class="text-bold">profissional especialista</span>, para
+                aproveitar o máximo que as soluções podem oferecer ao
+                <span class="text-bold">seu</span>
+                ambiente.
+              </h5>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<!-- </div> -->

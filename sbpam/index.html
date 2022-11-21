@@ -1,0 +1,516 @@
+---
+layout: default
+title: Gerenciamento de acesso privilegiado
+---
+
+<div
+  class="container-fluid"
+  style="
+    background: linear-gradient(
+      153deg,
+      rgba(15, 12, 41, 1) 19%,
+     
+      #0a208f 65%
+    );
+    height: 500px;
+    padding-top: 14vh;
+    color: white;
+  "
+>
+  <canvas class="background"></canvas>
+  <br />
+  <br />
+  <div class="row">
+    <div
+      class="
+        col
+        -solution-hero
+        d-flex
+        flex-column
+        justify-content-center
+        align-items-center
+        text-center
+      "
+    >
+     
+      <h1 id="solucao" style="font-size: 40px">
+        <b>Gerenciamento de acesso privilegiado</b>
+      </h1>
+      <br />
+      <p id="text-secudary" style="font-size: 20px; max-width: 800px">
+        Contas administrativas utilizadas poucas vezes representa um alto risco, elimine a necessidade 
+    dessas contas criando contas temporárias sobre demanda e removendo-as ao finalizar a tarefa em questão.
+      </p>
+
+      <br />
+
+      <p>
+        {% include site/modal_form.html title="Netwrix SBPAM"
+        id="sbpam_form "%}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container text-center mt-5 mb-3" style="padding-top: 120px;">
+  <h5>SEGURO</h5>
+  <h2>Minimize o risco de segurança relacionado ao acesso privilegiado</h2>
+  <p>
+    Espantosos 74% das violações de dados começam com abuso de credencial
+    privilegiado. Como as contas privilegiadas são tão poderosas, um único uso
+    indevido ou comprometimento pode levar a uma violação de dados ou
+    dispendiosa interrupção dos negócios. Mesmo se você mantiver credenciais
+    privilegiadas em um cofre, as contas ainda existem e podem ser comprometidas
+    por invasores. Como você sabe que atividades privilegiadas não estão
+    colocando sua organização em risco? A Netwrix pode ajudá-lo a reduzir o
+    risco inerente a contas privilegiadas.
+  </p>
+</div>
+{% include site/sbpam/tab_left.html %}
+<div class="container content-slide">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+    data-interval="false"
+  >
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/left_1.webp"
+          alt="First slide"
+        />
+        <div class="carousel-caption">
+          <h5>Elimine todos os privilégios permanentes</h5>
+          <p>
+            Reduza os riscos de segurança de acesso privilegiado removendo
+            contas privilegiadas permanentes. Em vez disso, crie contas sob
+            demanda que tenham acesso apenas o suficiente para a tarefa em
+            questão e sejam excluídas automaticamente depois disso. Como
+            alternativa, eleve as permissões de acesso do usuário para uma conta
+            existente apenas o suficiente para executar uma tarefa necessária e
+            revogue os direitos adicionais automaticamente quando a sessão
+            terminar.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/left_2.webp"
+          alt="Second slide"
+        />
+        <div class="carousel-caption">
+          <h5>Recupere o controle sobre contas privilegiadas</h5>
+          <p>
+            Saiba exatamente quem tem acesso a sistemas críticos, rastreie a
+            associação no poderoso grupo de administradores de domínio no Active
+            Directory, obtenha uma lista de contas de serviço e muito mais, para
+            que você possa reduzir o acesso elevado ao mínimo absoluto e manter
+            um estado de acesso de privilégio mínimo para manter riscos de
+            segurança de identidade baixos.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/left_3.webp"
+          alt="Third slide"
+        />
+        <div class="carousel-caption">
+          <h5>Aumente a responsabilidade do administrador</h5>
+          <p>
+            Reduza os riscos de segurança, como o risco de dados confidenciais
+            serem expostos porque um usuário com privilégios modificou
+            indevidamente as configurações do sistema, seja de forma
+            mal-intencionada ou por engano. Veja exatamente qual atividade
+            privilegiada está acontecendo em seus sistemas com monitoramento de
+            sessão ao vivo ou retrospectivo.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/left_4.webp"
+          alt="Four slide"
+        />
+        <div class="carousel-caption">
+          <h5>Minimize sua superfície de ataque com limpeza automática</h5>
+          <p>
+            Reduza o risco de passar o hash, Golden Ticket e ataques
+            relacionados com a eliminação automática de tíquetes Kerberos após
+            cada sessão privilegiada. Evite o acesso remoto privilegiado não
+            autorizado, desativando automaticamente o RDP no servidor após a
+            conclusão de uma tarefa administrativa.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/left_5.webp"
+          alt="Five slide"
+        />
+        <div class="carousel-caption">
+          <h5>Proteja suas contas de serviço</h5>
+          <p>
+            Como o serviço e as contas internas estão sempre ativas e têm acesso
+            à infraestrutura e aplicativos críticos, eles são um alvo atraente
+            para invasores. Proteja essas contas alternando suas senhas em um
+            único lugar; receba um alerta se o processo for interrompido para
+            que você possa pausar o processo e reverter quaisquer alterações
+            indesejadas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon danger" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container text-center mt-5 mb-4" style="padding-top: 120px;">
+  <h5>PERMITIR</h5>
+  <h2>Melhore o desempenho e a segurança da equipe</h2>
+  <p>
+    Melhorar a segurança do acesso privilegiado geralmente está associado a um
+    esforço extra. A Netwrix pode ajudá-lo a aumentar a segurança - ao mesmo
+    tempo em que melhora a produtividade de TI e o tempo de atividade do
+    serviço.
+  </p>
+</div>
+{% include site/sbpam/tab_right.html %}
+<div class="container content-slide">
+  <div
+    id="carouselExampleIndicators-right"
+    class="carousel slide"
+    data-ride="carousel"
+    data-interval="false"
+  >
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators-right"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators-right" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators-right" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators-right" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators-right" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/right_1.webp"
+          alt="First slide"
+        />
+        <div class="carousel-caption">
+          <h5>Economize tempo no gerenciamento de privilégios</h5>
+          <p>
+            Recupere todo o tempo que você gasta atualmente pulando de um
+            sistema para outro para garantir que não haja privilégios
+            desnecessários e que as credenciais privilegiadas sejam atualizadas,
+            graças ao gerenciamento centralizado de contas privilegiadas.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/right_2.webp"
+          alt="Second slide"
+        />
+        <div class="carousel-caption">
+          <h5>
+            Minimize as interrupções do serviço durante a rotação de senhas
+          </h5>
+          <p>
+            Embora uma falha de rede ou algum outro problema possa interromper o
+            processo de rotação de senhas para contas de serviço, você não
+            precisa se preocupar com a possibilidade de os serviços empresariais
+            críticos pararem de funcionar e o custo da interrupção dos negócios
+            crescerem como uma bola de neve enquanto você investiga e corrige o
+            problema - você pode pausar e reverter as alterações antes mesmo que
+            seus usuários percebam um problema.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/right_3.webp"
+          alt="Third slide"
+        />
+        <div class="carousel-caption">
+          <h5>Simplifique o processo de aprovação para acesso privilegiado</h5>
+          <p>
+            Em vez de os usuários bombardearem você com solicitações de acesso
+            que você pode ignorar ou esquecer, implemente um processo em camadas
+            para envio e aprovação ou negação de solicitações que garanta que
+            apenas o pessoal de confiança obtenha acesso seguro a recursos
+            críticos e nenhuma elevação de privilégio não autorizada ocorra.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/right_4.webp"
+          alt="Four slide"
+        />
+        <div class="carousel-caption">
+          <h5>Reduza a sobrecarga de adoção</h5>
+          <p>
+            Capacite sua equipe a continuar trabalhando da maneira como está
+            acostumada, mas com mais segurança, permitindo que iniciem sessões
+            privilegiadas diretamente de sua ferramenta de escolha, como o
+            Remote Desktop Connection Manager. Se você usa a solução de
+            gerenciamento de senha Microsoft LAPS para gerenciar contas de
+            administrador locais, não precisa abandonar o processo que criou -
+            simplesmente torne-o mais seguro integrando-o com a solução Netwrix
+            PAM.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/right_5.webp"
+          alt="Five slide"
+        />
+        <div class="carousel-caption">
+          <h5>Traga seu próprio cofre</h5>
+          <p>
+            Reduza o risco de as credenciais privilegiadas serem comprometidas
+            ou mal utilizadas enquanto ainda usa as ferramentas que você já
+            possui, integrando o software de gerenciamento de acesso
+            privilegiado Netwrix com seu cofre de senha atual. Alternativamente,
+            você pode usar nosso cofre ou ficar completamente sem cofre - a
+            escolha é sua.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleIndicators-right"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleIndicators-right"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container text-center mt-5 mb-4" style="padding-top: 120px;">
+  <h5>CUMPRIR</h5>
+  <h2>Passe nas auditorias de conformidade com menos esforço</h2>
+  <p>
+    Muitos regulamentos de conformidade exigem controle de acesso privilegiado
+    estrito e é um foco frequente para auditores. Mas é difícil acertar,
+    especialmente devido à crescente complexidade dos ambientes de TI. A
+    plataforma Netwrix pode ajudá-lo a evitar descobertas de auditoria e
+    fornecer provas sólidas de que atividades privilegiadas em sua organização
+    não estão criando ameaças de segurança cibernética.
+  </p>
+</div>
+
+{% include site/sbpam/tab_left_2.html %}
+<div class="container content-slide">
+  <div
+    id="carouselExampleIndicators-left_2"
+    class="carousel slide"
+    data-ride="carousel"
+    data-interval="false"
+  >
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators-left_2"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li
+        data-target="#carouselExampleIndicators-left_2"
+        data-slide-to="1"
+      ></li>
+      <li
+        data-target="#carouselExampleIndicators-left_2"
+        data-slide-to="2"
+      ></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/txt_left_2_1.webp"
+          alt="First slide"
+        />
+        <div class="carousel-caption">
+          <h5>Torne as auditorias de conformidade um acéfalo</h5>
+          <p>
+            Evite descobertas de auditoria, certificando-se de saber sobre todas
+            as contas de administrador, serviço e outras contas privilegiadas em
+            seu ecossistema de TI a qualquer momento, e que você removeu todas
+            as identidades com privilégios desnecessários e protegeu com
+            segurança aquelas que precisam existir.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/txt_left_2_2.webp"
+          alt="Second slide"
+        />
+        <div class="carousel-caption">
+          <h5>Responda às perguntas dos auditores com menos esforço</h5>
+          <p>
+            Esteja preparado para perguntas complicadas de auditores com uma
+            trilha de auditoria fácil de puxar da atividade de todos os usuários
+            privilegiados, desde a solicitação inicial de acesso privilegiado e
+            quem o aprovou, por meio de todas as ações realizadas, incluindo
+            alterações em arquivos ou grupos locais, até exclusão da conta
+            posteriormente.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="/assets/img/sbpam/slides/txt_left_2_3.webp"
+          alt="Third slide"
+        />
+        <div class="carousel-caption">
+          <h5>Apoie as investigações com gravação de vídeo</h5>
+          <p>
+            Tenha à mão provas confiáveis ​​em caso de investigação com a
+            capacidade de gravar e reproduzir sessões privilegiadas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleIndicators-left_2"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleIndicators-left_2"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+{% include site/download-row.html docs='
+<div class="col">
+  <div class="downloadblock">
+    <img src="/docs/thumbs/boas_praticas_sbpam.png" />
+    <p>Melhores Práticas de Gerenciamento de Acesso Privilegiado</p>
+    <a
+      href="https://lps.aiqon.com.br/pam-melhores-praticas"
+      target="_blank"
+      class="btn btn-small btn-lightblue"
+    >
+      Baixar PDF
+    </a>
+    <!-- <button onclick="downloadRequest(2)" class="btn btn-small btn-lightblue">
+      Baixar PDF
+    </button> -->
+  </div>
+</div>
+'%}
+
+<div class="container py-5">
+  <h2 style="color: #707070; text-align: center;" >Deseja saber mais sobre seu
+  </br> ambiente? </h2>
+  <div class="image-block text-lightblue flex-column text-center"  >
+    <a href="/remediation" class="btn btn-rms my-5" id="next_feature" >
+      <img src="/assets/img/rms/inventory.png" alt="" >
+      Domestique seus dados não estruturados com a análise de arquivos
+    </a>
+   
+  </div>
+</div>
+<style>
+  .content-slide {
+    padding: 0 10vw 0 10vw;
+  }
+  .carousel-caption {
+    position: unset;
+    color: gray;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  
+
+  @media only screen and (min-width: 1499px) {
+    .content-slide {
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+   
+    #next_feature{
+      width: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 1499px) {
+    #next_feature_b{
+      width: 240px;
+      display: none;
+    }
+}
+</style>

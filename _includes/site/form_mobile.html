@@ -1,0 +1,52 @@
+<button class="action" data-toggle="collapse" data-target="#demo">Teste grátis</button>
+
+<div id="demo" class="collapse">
+
+{% include site/form2.html %}
+</div>
+
+<style>
+    .action{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: background 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    padding: 0.5rem 1rem;
+    font-size: 1.2em;
+    
+    
+    }
+    .action:hover {
+      color: #203b66;
+      background: white;
+    }
+    @media only screen and (max-width: 900px) {
+  
+  .action {
+     font-size: 15px;
+     padding: 10px 10px;
+   }
+   #demo{
+    font-size: 15px;
+     padding: 10px 10px;
+    
+   }
+ }
+ 
+ /*Content Animation*/
+ @keyframes fadeInScale {
+   0% {
+       transform: scale(0.9);
+       opacity: 0;
+   }
+   
+   100% {
+       transform: scale(1);
+       opacity: 1;
+   }
+ }
+
+    
+  
+
+</style>

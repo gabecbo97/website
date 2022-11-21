@@ -1,0 +1,31 @@
+{
+  "name": "aiqon",
+  "version": "1.0.0",
+  "description": "AIQON website rework using Jekyll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrosqueiroz/aiqon-new.git"
+  },
+  "author": "Pedro Queiroz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedrosqueiroz/aiqon-new/issues"
+  },
+  "homepage": "https://github.com/pedrosqueiroz/aiqon-new#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.15.0"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^5.3.0",
+    "@sendgrid/mail": "^7.6.2",
+    "express": "^4.17.1",
+    "mdbootstrap": "^4.19.1",
+    "particlesjs": "^2.2.3"
+  }
+}

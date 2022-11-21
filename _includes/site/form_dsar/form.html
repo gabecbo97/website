@@ -1,0 +1,326 @@
+<div class="container-fluid content-page">
+  <form
+    id="dsar_form"
+    name="Requisição de acesso a Dados - Dsar"
+    action="https://hook.integromat.com/ps5yb69fmf74bsy57ufj4hfxypt9kcma"
+    method="POST"
+  >
+    <div class="container content-form">
+      <h1 class="text-gray text-center">Portal do Titular de Dados</h1>
+      <br />
+      <h5 class="text-gray text-center mb-5">
+        Exerça os seus direitos com relação a LGPD através do formulário abaixo.
+      </h5>
+      <div class="row">
+        <div class="col-md-6 radio-ident mb-5">
+          <h5 class="text-gray">Eu sou:</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="identificacao"
+              id="identificacao1"
+              value="cliente"
+              checked
+            />
+            <label class="form-check-label" for="identificacao1">
+              Cliente
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="identificacao"
+              id="identificacao2"
+              value="colaborador"
+            />
+            <label class="form-check-label" for="identificacao2">
+              Colaborador
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="identificacao"
+              id="identificacao3"
+              value="Destinatário de Marketing"
+            />
+            <label class="form-check-label" for="identificacao3">
+              Destinatário de marketing
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="identificacao"
+              id="identificacao4"
+              value=" Candidato a vaga de emprego"
+            />
+            <label class="form-check-label" for="identificacao4">
+              Candidato a vaga de emprego
+            </label>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <h5 class="text-gray">Solicitação:</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="solicitacao"
+              id="solicitacao5"
+              value="Pedido de informações"
+              checked
+            />
+            <label class="form-check-label" for="solicitacao5">
+              Pedido de informações
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="solicitacao"
+              id="solicitacao6"
+              value="Exclusão de dados"
+            />
+            <label class="form-check-label" for="solicitacao6">
+              Exclusão de dados
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="solicitacao"
+              id="solicitacao7"
+              value="Atualização de dados"
+            />
+            <label class="form-check-label" for="solicitacao7">
+              Atualização de dados
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="solicitacao"
+              id="solicitacao8"
+              value="Cancelar inscrição de marketing"
+            />
+            <label class="form-check-label" for="solicitacao8">
+              Cancelar inscrição de marketing
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <input
+            type="text"
+            name="nome"
+            class="form-control mb-5"
+            placeholder="Nome"
+            required
+          />
+          <input
+            name="e-mail"
+            type="text"
+            class="form-control mb-5"
+            placeholder="E-mail"
+            pattern="^\w*(\.\w*)?@\w*\.[a-z]+(\.[a-z]+)?$"
+            required
+          />
+
+          <input
+            type="text"
+            class="form-control"
+            name="cpf"
+            id="cpf"
+            placeholder="CPF"
+            onblur="return verificarCPF(this.value)"
+            required
+          />
+          <small class="form-text text-muted">Somente números</small>
+        </div>
+        <div class="col-md">
+          <input
+            name="sobrenome"
+            type="text"
+            class="form-control mb-5"
+            placeholder="Sobrenome"
+            required
+          />
+          <input
+            type="text"
+            name="telefone"
+            id="telefone"
+            class="form-control mb-5"
+            placeholder="Telefone (00) 0000-0000"
+            minlength="10"
+            size="20"
+            maxlength="14"
+            onkeypress="mascara(this)"
+          />
+          <input
+            type="text"
+            name="celular"
+            id="celular"
+            class="form-control mb-5"
+            placeholder="Celular (00) 0 0000-0000"
+            minlength="11"
+            size="20"
+            maxlength="15"
+            onkeypress="mascaramobile(this)"
+            required
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div
+          class="g-recaptcha"
+          data-sitekey="6Lct0kUaAAAAANFHCq47y0rKA8hM92tBM4Hgt21g"
+        ></div>
+      </div>
+      <div class="row justify-content-center">
+        <button type="submit" class="btn btn-form-dsar">
+          Enviar Solicitação
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<style>
+  label {
+    color: gray;
+  }
+  .content-form {
+    background-color: white;
+    padding: 70px 50px 70px 50px;
+    border-radius: 2mm;
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.19);
+  }
+
+  .radio-ident {
+  }
+  .form-control {
+    height: 5vh;
+    border-radius: 5mm;
+  }
+  .btn-form-dsar {
+    border: 1px solid teal;
+    color: teal;
+    margin-top: 5vh;
+  }
+  .btn-form-dsar:hover {
+    background-color: white;
+    color: teal;
+  }
+</style>
+
+<script>
+  $("#dsar_form").submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+      url: "https://hook.integromat.com/ps5yb69fmf74bsy57ufj4hfxypt9kcma",
+      type: "post",
+      data: $("#dsar_form").serialize(),
+      success: function () {
+        window.location = "/titular-de-dados/obrigado";
+      },
+    });
+  });
+</script>
+<script>
+  function redireciona() {
+    location.href = "/";
+  }
+</script>
+
+<script>
+  function mascaraCpf(cpf) {
+    if (cpf.value.length == 3) cpf.value = cpf.value + ".";
+
+    if (cpf.value.length == 7) cpf.value = cpf.value + ".";
+    if (cpf.value.length == 11) cpf.value = cpf.value + "-";
+  }
+
+  function mascara(telefone) {
+    if (telefone.value.length == 0) telefone.value = "(" + telefone.value;
+    if (telefone.value.length == 3) telefone.value = telefone.value + ") ";
+
+    if (telefone.value.length == 9) telefone.value = telefone.value + "-";
+  }
+  function mascaramobile(celular) {
+    if (celular.value.length == 0) celular.value = "(" + celular.value;
+    if (celular.value.length == 3) celular.value = celular.value + ") ";
+
+    if (celular.value.length == 10) celular.value = celular.value + "-";
+  }
+</script>
+
+<script>
+  window.onload = function () {
+    var recaptcha =
+      document.forms["Requisição de acesso a Dados - Dsar"][
+        "g-recaptcha-response"
+      ];
+    recaptcha.required = true;
+    recaptcha.oninvalid = function (e) {
+      // fazer algo, no caso to dando um alert
+      alert("Por favor complete o reCaptcha");
+    };
+  };
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script>
+  // validador CPF
+  function verificarCPF(c) {
+    var i;
+    s = c;
+    var c = s.substr(0, 9);
+    var dv = s.substr(9, 2);
+    var d1 = 0;
+    var v = false;
+
+    for (i = 0; i < 9; i++) {
+      d1 += c.charAt(i) * (10 - i);
+    }
+    if (d1 == 0) {
+      alert("CPF Inválido");
+      v = true;
+      return false;
+    }
+    d1 = 11 - (d1 % 11);
+    if (d1 > 9) d1 = 0;
+    if (dv.charAt(0) != d1) {
+      alert("CPF Inválido");
+      v = true;
+      return false;
+    }
+
+    d1 *= 2;
+    for (i = 0; i < 9; i++) {
+      d1 += c.charAt(i) * (11 - i);
+    }
+    d1 = 11 - (d1 % 11);
+    if (d1 > 9) d1 = 0;
+    if (dv.charAt(1) != d1) {
+      alert("CPF Inválido");
+      v = true;
+      return false;
+    }
+    if (!v) {
+      return true;
+    }
+  }
+
+  //
+</script>

@@ -1,0 +1,594 @@
+---
+layout: podcast
+title: AIQON Podcast
+---
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .navbar {
+    background-color: #101010;
+
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    min-height: 10vh;
+
+
+  }
+
+  .text-podcast {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+
+  }
+
+  .navbar-brand {
+    color: gray;
+    text-transform: uppercase;
+  }
+
+  .nav-item {
+    margin: 10px 15px 10px 15px;
+  }
+
+  .icon_podcast {
+    max-width: 40px;
+    margin-left: 30vw;
+  }
+
+  .home {
+    height: 100vh;
+    background-image: url("/assets/img/podcast/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .slogan {
+    padding-top: 40vh;
+    padding-left: 50vw;
+    font-size: 85px;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .podcast_title {
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #fff;
+    font-weight: bolder;
+
+  }
+
+  .plataform-icon {
+    border-radius: 100%;
+  }
+
+  .img-icons-p {
+    max-width: 50px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06a8ff;
+    border-right: 5px solid #06a8ff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+
+  .arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+
+  .arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
+
+  .card {
+    font-size: 0.9em;
+
+    color: white;
+    min-height: 550px;
+
+  }
+
+  .card-img-top {
+    max-width: 300px;
+  }
+
+  .card_title {
+    color: #06a8ff;
+  }
+
+  .card-text {
+    max-width: 400px;
+
+
+  }
+
+  .btn {
+    margin: 5px;
+    background-color: #101010;
+
+  }
+
+  .btn-icon {
+    max-width: 25px;
+    margin-right: 5px;
+  }
+
+  .navbar-toggler {
+    background-color: gray;
+  }
+
+  @media only screen and (max-width: 990px) {
+    .text-podcast {
+      display: none;
+    }
+
+    .slogan {
+      font-size: 40px;
+      padding-left: 10px;
+    }
+
+    .icon_podcast {
+      max-width: 40px;
+      margin-left: 0;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    .text-podcast {
+      display: none;
+    }
+
+    .slogan {
+      font-size: 30px;
+      padding-left: 10px;
+    }
+
+    .icon_podcast {
+      max-width: 40px;
+      margin-left: 0;
+    }
+
+
+    .nav-link {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: gray;
+      text-transform: uppercase;
+    }
+
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+
+    /* Inside the Media Query. */
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+</style>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", mobileMenu);
+
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  }
+</script>
+
+<nav class="navbar navbar-light navbar-expand-lg">
+  <a class="navbar-brand" href="/podcast/">
+    <h1 class="text-podcast">AIQON PODCAST</h1>
+  </a>
+  <img src="/assets/img/podcast/podcast_icon.png" class="icon_podcast" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#eps">Episódios</a>
+      <a class="nav-item nav-link" href="/">A AIQON</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid home mb-5">
+  <h1 class="slogan">A CIBERSEGURANÇA DESMISTIFICADA</h1>
+  <div class="row justify-content-center mb-5" style="padding-top: 30vh">
+    <div class="col-2 text-center plataform-icon">
+      <img src="/assets/img/podcast/icons/spotify.webp" alt="" class="img-icons-p" />
+    </div>
+    <div class="col-2 text-center plataform-icon">
+      <img src="/assets/img/podcast/icons/deezer-logo.webp" alt="" class="img-icons-p" />
+    </div>
+    <div class="col-2 text-center plataform-icon">
+      <img src="/assets/img/podcast/icons/google_white.webp" alt="" class="img-icons-p" />
+    </div>
+    <div class="col-2 text-center plataform-icon">
+      <img src="/assets/img/podcast/icons/amazon_white.webp" alt="" class="img-icons-p" />
+    </div>
+  </div>
+</div>
+<div class="arrow">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+<div class="container-fluid" id="eps">
+  <h2 class="text-center py-5">EPISÓDIOS</h2>
+  <div class="row flex-direction">
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep10.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">10 - RANSOMWARE: PREVENÇÃO x DETECÇÃO com Eduardo Hadermeck</h5>
+
+          <a href="https://open.spotify.com/episode/2KXtcgSmmQfV9EAmxSeOLW?si=5c48b4365d384551" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/QLSKfzreU1ZYCdjE6" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com.br/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/ff22498b-6cb5-48d3-a977-5a93817bdb8c/aiqon-podcast-10---ransomware-preven%C3%A7%C3%A3o-x-detec%C3%A7%C3%A3o-com-eduardo-hadermeck"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjItMDQtMjctQUlRT05fUE9EQ0FTVF9DT01fTUlORVJWQS5tcDM?sa=X&ved=0CAIQx8UHahgKEwjg66qY_rn3AhUAAAAAHQAAAAAQ0AE"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep9.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">09 - Como Evitar Falhas de Segurança no Cloud</h5>
+
+          <a href="https://open.spotify.com/episode/3pfrHhhHsDqlCHVr4tu1ak?si=775060c90c874742" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/Xjhm6kri8L4bVJGU9" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/ce8a84aa-2683-4fe5-a505-952003a09650/aiqon-podcast-09---como-evitar-falhas-de-seguran%C3%A7a-no-cloud"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjItMDMtMDktRVAwOV9SRVYyLm1wMw?sa=X&ved=0CAUQkfYCahcKEwjI6bah4-H2AhUAAAAAHQAAAAAQTw"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep08.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">08 - Você foi hackeado e agora?<br> [Pedro Queiroz - Mercado Livre]</h5>
+
+          <a href="https://open.spotify.com/episode/4WKl0kJiRiRuwnOvdjdWaJ?si=a6bb1b5af3534f43" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/pozL958vJs11kB1r8" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com.br/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/2836a97e-c662-40ab-81c9-d6728a9562e2/aiqon-podcast-08---voc%C3%AA-foi-hackeado-e-agora-pedro-queiroz"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMTEtMTgtQUlRT05fUE9EQ0FTVF9FUDA4Lm1wMw?sa=X&ved=0CAUQkfYCahcKEwi4vPT_mrb0AhUAAAAAHQAAAAAQCg"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep7.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">07 - A.I Será melhor que os humanos no hacking?</h5>
+
+          <a href="https://open.spotify.com/episode/5B9WzArpx62dSQSUa1gAdR?si=61612b82a0f64632" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/L2JHRbWrRbKjiRs77" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com.br/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/7fe30f8a-ae19-4ce4-9921-b2cfb5cc0f93/aiqon-podcast-07---a-i-ser%C3%A1-melhor-que-os-humanos-no-hacking"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMDktMTYtQUlRT05fUE9EQ0FTVF9FUF8wNl9URUNOT0xPR0lBX05BX0hVTUFOSURBREUubXAz"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep6.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">06 - A Tecnologia está acabando com a humanidade?</h5>
+
+          <a href="https://open.spotify.com/episode/4vpdoWxoQwyuTgY8R3uxaH?si=5eef76a32e8a4a45" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/L2JHRbWrRbKjiRs77" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com.br/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/f9cae03e-14c5-4200-809f-2f93ab6e648d/aiqon-podcast-06---a-tecnologia-est%C3%A1-acabando-com-a-humanidade"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMDktMTYtQUlRT05fUE9EQ0FTVF9FUF8wNl9URUNOT0xPR0lBX05BX0hVTUFOSURBREUubXAz"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep5.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">05 - EXTRA: Protegendo o E-commerce <br> [DOV ZELLERKRAUT]</h5>
+
+          <a href="https://open.spotify.com/episode/4lg3xXpVOXXKQR4GxD48Qo?si=5259b575dfae4780" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/LQGduKYZdWfvt8BP8" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/5c45df6d-e98d-400f-85d1-b1d66d5bc300/AIQON-PODCAST05--EXTRA-PROTEGENDO-O-ECOMMERCE-DOV-ZELLERKRAUT"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMDgtMTYtUE9EQ0FTVF9FUF9FWFRSQS5tcDM?sa=X&ved=0CAQQz4EHahcKEwjwv57uzL3yAhUAAAAAHQAAAAAQRw"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep4.webp" alt="Card image cap" />
+        <div class="card-body text-center">
+          <h5 class="card_title">
+            04 - Por que os ataques de Phishing são <br>tão fáceis, bem-sucedidos e
+            lucrativos?
+          </h5>
+
+          <a href="https://open.spotify.com/episode/3jbLiqtAcqor8xvJSbwGU0?si=a7e1efd7a7334355" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/wQhRUw2Q4e9sMcar9" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/03f5da98-6bc0-4f18-9a60-2fb1f3a3c381/AIQON-PODCAST04--POR-QUE-OS-ATAQUES-DE-PHISHING-SO-TO-FCEIS-BEMSUCEDIDOS-E-LUCRATIVOS"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMDgtMDItUE9EQ0FTVF9FUF8wNS5tcDM?sa=X&ved=0CA0QkfYCahcKEwjozK3VxpryAhUAAAAAHQAAAAAQAQ"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep3.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">03 - Revolução dos IoT</h5>
+
+          <a href="https://open.spotify.com/episode/4uqhp6hoRAgWSBj03bdhYT?si=5fd87c2578904ba6" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/xSTTkmKWBxVt79p16" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/bcc7ed6d-e153-409a-a9c4-4e68a099c2fe/AIQON-PODCAST03--REVOLUO-DOS-IOT"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMDctMDgtcG9kY2FzdElvdC5tcDM?sa=X&ved=0CA0QkfYCahcKEwjozK3VxpryAhUAAAAAHQAAAAAQAQ"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep2.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">
+            02 - Ciber Ataques será a nova<br>Guerra Mundial ?
+          </h5>
+
+          <a href="https://open.spotify.com/episode/05CExxRZyWo9LdiOzmTSLq?si=59fc412c652e4caf" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/1eMV2RnjPvp3QB387" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/70e47307-e899-489d-9728-228e36e8cfde/AIQON-PODCAST02--CIBER-ATAQUES-SER-A-NOVA-GUERRA-MUNDIAL-"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMDYtMTYtTk9WQV9HVUVSUkFfTVVORElBTC5tcDM?sa=X&ved=0CA0QkfYCahcKEwjozK3VxpryAhUAAAAAHQAAAAAQAQ"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="
+          card
+          text-center
+          align-items-center
+          d-flex
+          justify-content-center
+        ">
+        <img class="card-img-top" src="/assets/img/podcast/tumb_ep/ep1.webp" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card_title">01 - Os desafios do trabalho Home Office</h5>
+
+          <a href="https://open.spotify.com/episode/5B9xVmJUWGGeHi9LikASAm?si=9d2deba2db754ca1" target="_blank"
+            class="btn btn-primary"><img src="/assets/img/podcast/icons/spotify.webp" class="btn-icon" alt="" />
+            Spotify</a>
+          <a href="https://deezer.page.link/LQGduKYZdWfvt8BP8" target="_blank" class="btn btn-primary"><img
+              src="/assets/img/podcast/icons/deezer-logo.webp" class="btn-icon" alt="" />
+            Deezer</a>
+          <br />
+          <a href="https://music.amazon.com/podcasts/9a11ed86-2652-4f19-a6bd-56dc6f63ad20/episodes/05110721-ff8b-4392-bcfc-e3793dcf796f/AIQON-PODCAST01--OS-DESAFIOS-DO-TRABALHO-HOME-OFFICE"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/amazon_white.webp"
+              class="btn-icon" alt="" />
+            Amazon Music</a>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0L2V4dGVybmFsLnBocD9uYW1lPVJTUw/episode/aHR0cHM6Ly9wb2RjYXN0LmFpcW9uLmNvbS5ici9wb2RjYXN0Lz9uYW1lPTIwMjEtMDYtMTYtQUlRT05fQ0FTVF9FUF8wMV9bT0ZJQ0lBTF9zbWFsbF0ubXAz?sa=X&ved=0CA0QkfYCahcKEwjozK3VxpryAhUAAAAAHQAAAAAQAQ"
+            target="_blank" class="btn btn-primary"><img src="/assets/img/podcast/icons/google_white.webp"
+              class="btn-icon" alt="" />
+            Google Podcast</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+

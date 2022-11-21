@@ -1,0 +1,316 @@
+<style>
+  .form-control {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ced4da;
+  }
+  .form-control:focus {
+    background-color: unset;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    color: white;
+  }
+  .-trial-container {
+    padding: 10 !important;
+    background: transparent;
+  }
+  .-trial-container h1 {
+    color: teal;
+    font-weight: 300;
+    text-align: center;
+  }
+  .-trial-container h4 {
+    color: black;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .-trial-form {
+    padding: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .-trial-form input {
+    margin: 5px;
+  }
+  .-trial-form input::placeholder {
+    color: black;
+    opacity: 0.7;
+  }
+  .-trial-form input[type="number"]::-webkit-inner-spin-button,
+  .-trial-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  #formSuccessMessage {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+  }
+  .cargo_select {
+    margin-left: 5px;
+  }
+  .form-check-label {
+    color: gray;
+  }
+  .form-check-input {
+    padding-left: 1vh;
+  }
+  .form-privacy {
+    color: rgba(128, 128, 128, 0.678);
+  }
+  .parceria-text{
+    margin-left: 5px;
+  }
+  @media (max-width: 768px) {
+    .-trial-container h4 {
+      font-size: 1em;
+    }
+    .-trial-container .form-control {
+      font-size: 0.9em;
+    }
+  }
+</style>
+<div class="container -partner-card">
+  <div class="container-fluid p-0 m-0 -trial-container" id="trial-container">
+    <div class="row">
+      <div
+        class="col d-flex flex-column justify-content-center align-items-center pt-5 mt-5"
+      >
+        <h1 class="text-center text-bolder">{{ include.title }}</h1>
+        <br />
+        <h4>
+          Entre em contato com a nossa equipe comercial para maiores informações
+          sobre parcerias
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="col d-flex flex-column justify-content-center align-items-center"
+      >
+        <form class="-trial-form pb-5" id="{{ include.id }}">
+          <div class="form-row">
+            <div class="col">
+              <input
+                style="color: black"
+                aria-label="Primeiro nome."
+                class="form-control"
+                type="text"
+                name="firstname"
+                id="name"
+                placeholder="Nome"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite seu nome.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+            <div class="col">
+              <input
+                style="color: black"
+                aria-label="Sobrenome"
+                class="form-control"
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Sobrenome"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite seu sobrenome.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input
+                style="color: black"
+                aria-label="E-mail profissional."
+                class="form-control"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="E-mail profissional"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+            <div class="col">
+              <select
+                id="Cargo"
+                class="form-control cargo_select"
+                style="color: rgba(0, 0, 0, 0.61)"
+              >
+                <option disabled selected>Cargo</option>
+                <option value="Analista">Analista</option>
+                <option value="Auditor">Auditor</option>
+                <option value="Advogado">Advogado</option>
+                <option value="CEO">CEO</option>
+                <option value="Coordenador">Coordenador</option>
+                <option value="DBA">DBA</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Supervisor">Supervisor</option>
+                <option value="Técnico">Técnico</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <select
+                id="Departamento"
+                class="form-control cargo_select"
+                style="color: rgba(0, 0, 0, 0.61)"
+              >
+                <option disabled selected>Departamento</option>
+                <option value="Administrativo/Financeiro">
+                  Administrativo/Financeiro
+                </option>
+                <option value="Auditoria/Compliance">
+                  Auditoria/Compliance
+                </option>
+                <option value="Jurídico">Jurídico</option>
+                <option value="Logística/Compras">Logística/Compras</option>
+                <option value="Pesquisa e Desenvolvimento">
+                  Pesquisa e Desenvolvimento
+                </option>
+                <option value="Projetos">Projetos</option>
+                <option value="Segurança da Informação">
+                  Segurança da Informação
+                </option>
+                <option value="TI e Infraestruturao">
+                  TI e Infraestrutura
+                </option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input
+                style="color: black"
+                aria-label="Número de telefone."
+                class="form-control"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Telefone"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite seu telefone.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+            <div class="col">
+              <input
+                style="color: black"
+                aria-label="Ramal."
+                class="form-control"
+                type="number"
+                name="branch"
+                id="branch"
+                placeholder="Ramal"
+                maxlength="5"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <textarea
+                name="message"
+                id="message"
+                class="form-control parceria-text"
+                cols="30"
+                maxlength="500"
+                rows="5"
+                placeholder="Por que você gostaria de ser um parceiro da AIQON? *"
+                required
+                oninvalid="this.setCustomValidity(' Por favor, nos diga por que você gostaria de ser um parceiro.')"
+                oninput="setCustomValidity('')"
+                style="color: black"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-row py-3 justify-content-center">
+            <div class="form-check">
+              <input
+                name="check_box"
+                class="form-check-input"
+                type="checkbox"
+                value="Eu concordo em receber comunicações"
+                id="Concorda receber comunicacoes"
+                
+              />
+              <label class="form-check-label" for="Concorda receber comunicacoes">
+                <b style="color: white">____</b>Concordo em receber comunicações
+              </label>
+            </div>
+          </div>
+          <div class="form-row py-1 justify-content-center">
+            <p class="form-privacy">
+              Ao informar meus dados, eu concordo com a  <a href="/politica/">Política de Privacidade</a> 
+            </p>
+          </div>
+          <div class="form-row">
+            <div
+              class="col d-flex justify-content-center align-items-center py-3"
+            >
+              <input
+                aria-label="Enviar solicitação."
+                type="submit"
+                value="Enviar solicitação"
+                class="btn btn-parcerias"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../assets/js/dist/jquery.min.js"></script>
+<script src="../../assets/js/formMask.js"></script>
+<script src="/assets/js/phoneMask.js"></script>
+<script>
+  const form = document.getElementById("trialForm");
+  const url = "https://us-central1-aiqondb.cloudfunctions.net/api/trial";
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("Enviando formulário...");
+
+    const formData = new FormData(this);
+    const origin = window.location.pathname;
+    const trialRequestJson = {};
+
+    for (const pair of formData) {
+      trialRequestJson[pair[0]] = pair[1];
+    }
+    trialRequestJson["origin"] = origin;
+    fetch(url, {
+      method: "post",
+      body: JSON.stringify(trialRequestJson),
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "same-origin",
+    })
+      .then(formSuccess())
+      .catch(function (err) {
+        console.log("Ocorreu um erro: ", err);
+      });
+  });
+
+  // function formSuccess() {
+
+  // form.innerHTML = `<p id='formSuccessMessage'>
+  //     Mensagem enviada! <br> Entraremos em contato em breve.
+  //   </p>`
+  // window.location.href = "/obrigado"
+  //}
+</script>

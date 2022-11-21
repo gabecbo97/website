@@ -1,0 +1,16 @@
+{% include site/header.html %} 
+{% include site/navbar_20/navbar.html %}
+{{ content }}
+<style>
+  .container-fluid.-modulos {
+    background: #f9f9f9 !important;
+  }
+</style>
+<script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
+<script>
+  var chat = new ZenviaChat("8397a49fc8bc95d33d651cee04efa344")
+    .embedded("button")
+    .build();
+</script>
+{% include site/netwrix/modules.html %} {% include site/trial.html  title="Solicite uma demonstração" %} {% include
+site/footer.html %}

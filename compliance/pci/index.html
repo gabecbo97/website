@@ -1,0 +1,149 @@
+---
+layout: default
+title: PCI
+---
+
+<div class="container-fluid content-pci">
+  <h1 class="text-center text-white">PCI</h1>
+</div>
+<div class="container text-center text-gray py-5">
+  <h1 class="text-center mb-5">
+    Descubra quais requisitos específicos do PCI DSS você pode atender com a
+    AIQON.
+  </h1>
+  <p>
+    O padrão de segurança PCI DSS foi projetado para proteger os dados do
+    titular do cartão, exigindo que as organizações tenham uma combinação
+    adequada de políticas, procedimentos, medidas técnicas, esforços
+    administrativos e segurança física. As soluções da AIQON ajudam você a
+    atingir e manter a conformidade com os requisitos do PCI DSS, oferecendo
+    visibilidade em toda a empresa em seus aplicativos, sistemas locais e
+    baseados em nuvem, bem como uma visão profunda de seus dados confidenciais.
+    Além de ajudá-lo a estabelecer os controles de segurança necessários para
+    proteger os dados do titular do cartão, este software de conformidade PCI
+    DSS permite que você forneça evidências de que esses controles de segurança
+    estão alinhados com os seguintes requisitos:
+  </p>
+</div>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 content-border">
+      <ul>
+        <li class="list-content">
+          <b class="text-compliance">Requisito 3:</b> proteger os dados
+          armazenados do titular do cartão
+          <ul>
+            <br />
+            <li>3,1; 3,2; 3,3</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Requisito 5</b> proteger todos os sistemas
+          contra malware e atualizar regularmente o software ou programas
+          antivírus
+          <ul>
+            <br />
+            <li>5,1</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Requisito 6:</b> desenvolver e manter
+          sistemas e aplicativos seguros
+          <ul>
+            <br />
+            <li>6.3.1; 6.4.2</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Requisito 7: </b> restringir o acesso aos
+          dados do titular do cartão por necessidade de saber
+          <ul>
+            <br />
+            <li>7,1; 7.1.2; 7,2; 7.2.2</li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Requisito 8:</b> Identificar e autenticar o
+          acesso aos componentes do sistema
+          <ul>
+            <br />
+            <li>
+              8.1.1; 8.1.2; 8.1.3; 8.1.4; 8.1.6; 8.2.2; 8.2.3; 8.2.4; 8.2.5;
+              8.2.6; 8,5
+            </li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Requisito 10:</b> rastrear e monitorar
+          todos os acessos aos recursos de rede e dados do titular do cartão
+          <ul>
+            <br />
+            <li>
+              10,1; 10.2.1; 10.2.2; 10.2.4; 10.2.5; 10,3; 10,5; 10.6.1; 10.6.2;
+              10,7; 10,8
+            </li>
+          </ul>
+        </li>
+        <li class="list-content">
+          <b class="text-compliance">Requisito 11:</b> testar sistemas e
+          processos de segurança regularmente
+          <ul>
+            <br />
+            <li>11,5</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md text-center">
+      <img
+        src="/assets/img/compliance/pci_dss.svg"
+        class="img-fluid img-hippa mb-5 mt-5"
+        alt=""
+      />
+      <p class="compliance-desc">
+        <b>Saiba mais</b> sobre como a AIQON pode ajudá-lo a cumprir os
+        requisitos da <b>PCI.</b>
+      </p>
+      <p>
+        {% include site/modal_form_compliance.html title="PCI DDS" id="pci_form
+        "%}
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .content-pci {
+    padding: 25vh 0 10vh 0;
+    height: 50vh;
+    background: url("/assets/img/compliance/pci.png") center no-repeat;
+    background-size: cover;
+  }
+  .img-hippa {
+    max-width: 300px;
+  }
+  .compliance-desc {
+    padding: 0 10vh 0 10vh;
+    justify-self: center;
+  }
+  .content-border {
+    border-right: 2px solid rgba(128, 128, 128, 0.295);
+    padding-right: 5vw;
+  }
+  .content-border ul li {
+    list-style: none;
+    color: gray;
+  }
+  .list-content {
+    margin: 4vh 0 4vh 0;
+  }
+  .text-compliance {
+    color: #006fc1;
+  }
+  @media screen and (max-width: 764px) {
+    .content-border {
+      border-right: none;
+      border-bottom: 2px solid rgba(128, 128, 128, 0.295);
+    }
+  }
+</style>

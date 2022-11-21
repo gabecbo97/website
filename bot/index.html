@@ -1,0 +1,248 @@
+---
+layout: default
+title: Gerenciamento de BOT
+---
+
+<div class="container-fluid"  style="background:linear-gradient(
+  143deg,
+  rgba(0, 180, 219, 1) 1%,
+  rgba(0, 0, 0, 1) 100%
+);height: 500px; padding-top: 14vh; color: white;">
+<canvas class="background"></canvas>
+  <br />
+  <br />
+  <div class="row">
+    <div
+      class="col -solution-hero d-flex flex-column justify-content-center align-items-center text-center"
+    >
+      <h1>Bot Management</h1>
+      <br />
+      <p>
+        {% include site/modal_form.html title="Bot Management" id="bot_form "%}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="banner mx-auto text-center">
+        <h3></h3>
+        <p class="text-secondary">
+          Mantém seus aplicativos da web ativos e totalmente responsivos aos
+          usuários
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid content">
+  <h2 class="text-center text-body mb-5">
+    Exclua robôs hostis de suas APIs e aplicativos da Web
+  </h2>
+
+  <div class="row">
+    <div class="col-lg">
+      <h5 class="body-title">
+        Mitigação de bot completa em sua plataforma de segurança web de forma
+        abrangente. O tráfego hostil é bloqueado na nuvem, antes de atingir a
+        rede protegida. A latência de processamento é mínima: ~ 0,5 ms.
+        Aplicativos da Web e servidores de API recebem apenas solicitações
+        legítimas. Permanecem seguros, responsivos e com bom desempenho.
+      </h5>
+    </div>
+    <div class="col-lg">
+      <img src="/assets/img/bot/machine.svg" alt="" class="img-fluid" />
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <h2 class="text-center">Multidetecção de bot</h2>
+  <br />
+  <p class="text-center">
+    O tráfego de entrada da web está sujeito a uma série de desafios cada vez
+    mais rigorosos. A falha de qualquer desafio resulta em que o solicitante
+    seja imediatamente bloqueado de acesso à rede.
+  </p>
+  <img src="/assets/img/bot/process.svg" alt="" class="img-fluid mb-5" />
+  <a href="#trial" class="btn btn-bot text-center">Teste agora</a>
+</div>
+<div class="container-fluid text-center content">
+  <h2 class="text-body" style="font-size: 35px; margin-top: 100px">
+    Como Funciona ?
+  </h2>
+  <br />
+  <h3>Etapa 1</h3>
+  <div class="row">
+    <div class="col-lg">
+      <h4 class="text-body">Criação de perfil de ACLs</h4>
+      <p>
+        Os recursos de ACL mais precisos da indústria. As solicitações podem ser
+        filtradas com base em geolocalização, uso de rede (VPN, proxy, TOR,
+        plataforma de nuvem, etc.) e muito mais. Fora da caixa, isso detecta
+        75-80% do tráfego de bot. (A taxa aumenta ainda mais quando é feita a
+        personalização para o aplicativo web ou API que está protegendo.) A ACL
+        elimina a maior parte do tráfego de bots com carga de trabalho de
+        processamento mínima, antes que a inspeção profunda do pacote comece.
+      </p>
+    </div>
+    <div class="col-lg">
+      <h4 class="text-body">Criação de perfil de ambientes de navegador</h4>
+      <p>
+        As solicitações HTTP de entrada devem passar por uma pilha completa de
+        inspeções e desafios para serem validadas. Em seguida, os headless
+        browser são detectados. Nisso, vamos além de técnicas legadas, como
+        validação de agente ou injeção de javascript. A plataforma sujeita o
+        solicitante a uma bateria de desafios avançados, permitindo a detecção
+        nos ambientes sem periféricos mais sofisticados.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center content">
+  <div class="row">
+    <div class="col-lg">
+      <h3 class="text-body">Etapa 2: Filtragem primária</h3>
+      <p>
+        A filtragem do tráfego primário começa com a lista negra, limitação de
+        taxa e detecção de assinatura. (Esses métodos tradicionais não podem
+        detectar os bots mais recentes, mas eliminam outra parcela de bots mais
+        antigos com carga de trabalho mínima.) A plataforma então continua com
+        testes mais rigorosos. A integridade dos dados é garantida pela inspeção
+        da Camada 7, incluindo payloads JSON. Também é incluido um modelo de
+        segurança positivo completo que ingere esquemas da web e API para
+        aplicação. Uma API completa fornece controle programático, permitindo
+        adições ou revisões rápidas de esquema em ambientes DevOps e DevSecOps.
+      </p>
+    </div>
+    <div class="col-lg">
+      <img src="/assets/img/bot/code.svg" alt="" class="img-fluid" />
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center content">
+  <div class="row">
+    <div class="col-lg">
+      <h3>Etapa 3: Filtragem Dinâmica</h3>
+      <p>
+        Bloqueio de solicitadores que exibem padrões de uso anômalos ao longo do
+        tempo, monitorando o consumo de recursos em termos de quantidade, ritmo,
+        tipos e métodos, etc. A maioria das plataformas rastreia solicitações
+        apenas por endereço IP. Nós identificamos atacantes usando vários
+        identificadores: IP, cabeçalhos, cookies, até mesmo argumentos de corpo
+        POST. Assim, podemos detectar e bloquear abusos, mesmo quando um ataque
+        é executado simultaneamente em vários endereços. Os recursos do conjunto
+        de regras da plataforma fornecem filtragem poderosa, flexível e
+        granular. Exemplos: Limitação de taxa dinâmica. (Exemplo: chamadas muito
+        frequentes para um URL de login.) Rastreamento de anomalias de rede.
+        (Exemplo: consumo excessivo de dados por solicitação em um tempo
+        especificado.) Detecção de anomalia da camada 7. (Exemplo: número de
+        solicitações por tipo MIME por minuto.)
+      </p>
+    </div>
+    <div class="col-lg">
+      <img src="/assets/img/bot/filter.svg" alt="" class="img-fluid" />
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center content">
+  <div class="row">
+    <div class="col-lg">
+      <h3 style="margin-top: 10vh">
+        Etapa 4: Análise Biométrica do Comportamento
+      </h3>
+      <p>
+        Para cada aplicativo protegido, construímos um perfil comportamental
+        sofisticado e abrangente de usuários legítimos. Nossa solução aprende e
+        entende como usuários legítimos interagem com cada aplicativo: suas
+        estatísticas de dispositivo e navegador, as análises e métricas típicas
+        de cada sessão, os eventos de interface (cliques do mouse, toques na
+        tela, zooms, rolagens, etc.) que geralmente geram e muito mais. Por
+        definição, todo usuário hostil (seja bot ou humano) deve, em algum
+        ponto, se desviar do comportamento legítimo do usuário. Assim que isso
+        acontece, detectamos e bloqueamos seu acesso à rede.
+      </p>
+    </div>
+    <div class="col-lg">
+      <img src="/assets/img/bot/behavior.svg" alt="" class="img-fluid" />
+    </div>
+  </div>
+  <i id="trial"></i>
+</div>
+<div
+  class="container-fluid -footer"
+  style="background-color: transparent; border: none"
+>
+  <div class="row mx-auto py-5 -about" style="height: auto">
+    <div class="col-md">
+      <br />
+      <p class="text-center" style="color: gray; margin-top: 100px">
+        Tenha o controle
+      </p>
+      <h3 class="text-center" style="color: gray">
+        Experimente agora! <br />
+        Sem contrato. Sem obrigação.<br />Implante diretamente do AWS, GCP ou
+        Azure.
+      </h3>
+      <br />
+    </div>
+    <div class="col-md d-flex" style="justify-content: flex-end">
+      {% include site/form2.html title="Bot Management" id="bot_form" %}
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background-color: #f6f6f6; padding: 0">
+  <h2 class="text-center text-teal text-bolder py-2" style="color: gray">
+    <br />
+    Você tambem pode precisar:
+  </h2>
+  <div class="image-block text-lightblue flex-column text-center">
+    <a href="/ddos" class="btn btn-rms my-5" style="max-width: 300px">
+      <img src="/assets/img/rms/inventory.png" alt="" />
+      <p style="color: gray">
+        Proteção contra DDoS Mantenha suas aplicações web totalmente responsivos
+        aos usuários
+      </p>
+    </a>
+  </div>
+</div>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #f1f5f8;
+  }
+  .content {
+    width: 80%;
+    margin-bottom: 150px;
+  }
+  .text-body {
+    margin-top: 5vh;
+  }
+
+  .body-title {
+    margin-top: 16vh;
+  }
+  .btn-bot {
+    border: 1px solid teal;
+    border-radius: 4mm;
+    color: teal;
+    font-size: 20px;
+    background-color: white;
+    width: 300px;
+  }
+  .btn-bot:hover {
+    background-color: teal;
+    color: white;
+    border: 3px solid white;
+  }
+
+  @media (max-width: 1499px) {
+    .body-title {
+      margin-top: 0;
+    }
+  }
+</style>

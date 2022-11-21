@@ -1,0 +1,414 @@
+---
+layout: default
+title: Netwrix Auditor
+---
+
+<script>
+  function toggleCollapse() {
+    let collapsedElement = document.querySelector(".-contracted-section");
+    if (!collapsedElement.classList.contains("-expanded")) {
+      collapsedElement.classList.add("-expanded");
+    } else {
+      collapsedElement.classList.remove("-expanded");
+    }
+  }
+</script>
+
+<div
+  class="container-fluid"
+  style="
+    background: linear-gradient(to right, #99072c, #3a6186);
+    height: 700px;
+    padding-top: 18vh;
+    color: white;
+  "
+>
+  <canvas class="background"></canvas>
+  <div class="row">
+    <div
+      class="col -solution-hero d-flex flex-column justify-content-center align-items-center text-center text-white"
+    >
+      <img
+        src="/assets/img/netwrix/netwrix.webp"
+        alt="logo_netwrix_auditor"
+        style="max-width: 180px"
+      />
+      <h1 class="">Netwrix Auditor</h1>
+      <p>
+        Controle de alterações, configurações e acessos em ambientes falhas de
+        segurança, anomalias e padroões de ameaças
+      </p>
+      <a
+        href="https://lps.aiqon.com.br/netwrix-trial"
+        class="btn btn-trial my-4"
+        >Inicie um teste</a
+      >
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="banner mx-auto text-center">
+        <h3>Análise de Comportamento de Usuário e Mitigação de Risco</h3>
+        <p class="text-secondary">
+          O Netwrix Auditor torna possivel o controle sobre alterações,
+          configurações e acessos em ambientes de TI híbridos.
+        </p>
+        <p class="text-secondary">
+          A plataforma providencia dados de inteligência para identificar falhas
+          na segurança, detectar anomalias de comportamento dos usuários e
+          investigar padrões de ameaças internas.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div
+      class="col-xl-8 col-sm-12 customers d-flex align-items-center justify-content-around mx-auto py-5"
+    >
+      <img class="img-fluid" src="/assets/img/customers/tegra.webp" />
+      <img class="img-fluid" src="/assets/img/customers/pacifico.webp" />
+      <img class="img-fluid" src="/assets/img/customers/mutant.webp" />
+      <img class="img-fluid" src="/assets/img/customers/mpt.webp" />
+    </div>
+  </div>
+</div>
+<div class="container-fluid -features">
+  <div class="row">
+    <div class="col col-xl-4 col-sm-12 mx-auto py-3">
+      <div class="image-block">
+        <img src="/assets/img/common/auditing.svg" />
+        <p>
+          Passe auditorias de compliance internas e externas com ferramentas e
+          relatórios intuitivos e personalizáveis de acordo com as necessidades
+          do seu ambiente.
+        </p>
+      </div>
+      <div class="image-block">
+        <img src="/assets/img/common/safety.svg" />
+        <p>
+          Facilmente identifique falhas de segurança avaliando usuários que
+          representam maior risco para o ambiente.
+        </p>
+      </div>
+      <div class="image-block">
+        <img src="/assets/img/common/productivity.svg" />
+        <p>
+          Aumente a produtividade da sua TI aplicando inteligência pronta para
+          ser utilizada, mantendo seus sistemas prontos e reduzindo o tempo de
+          mão de obra dedicada para segurança e manutenção.
+        </p>
+      </div>
+    </div>
+    <div
+      class="col col-xl-8 col-sm-12 d-flex justify-content-center align-items-center flex-column py-3 xs-hide"
+    >
+      <!-- <img src="/assets/img/netwrix/netwrix-auditor-screen.png" class="screenshot img-fluid">
+            <p class="font-small font-weight-light text-secondary font-italic">Interface inicial do Netwrix Auditor</p> -->
+      <div class="embed-container" onclick="startVideo()">
+        <h2>Veja como é o funcionamento do Netwrix Auditor</h2>
+      </div>
+      {% include site/js/videomask.html %}
+    </div>
+  </div>
+</div>
+<div class="container-fluid -solution-highlight -contracted-section">
+  <div class="row mx-auto">
+    <div class="col-12 d-flex justify-content-center">
+      <button
+        class="btn btn-lightblue btn-toggle btn-lg"
+        onclick="toggleCollapse()"
+      >
+        Veja o que você pode fazer
+      </button>
+    </div>
+  </div>
+  <div class="row mx-auto">
+    <div class="col-xl-6 col-sm-12 col-xs-12 mx-auto py-5">
+      <h1 class="text-highlight -netwrix mb-3">Visão completa</h1>
+      <img
+        src="/assets/img/netwrix/enterprise-overview.webp"
+        class="screenshot img-fluid"
+      />
+      <p class="font-small font-weight-light text-secondary font-italic">
+        Enterprise Overview - Análise geral dos ambientes.
+      </p>
+    </div>
+    <div
+      class="col-xl-6 col-sm-12 col-xs-12 mx-auto py-5 d-flex align-items-center"
+    >
+      <p class="text-large">
+        <span class="text-highlight -netwrix text-bolder"
+          >Enterprise Overview</span
+        >
+        - tenha uma visualização geral do estado dos seus ambientes, saiba quais
+        são os servidores com maior atividade, usuários que mais fizeram
+        alterações, os dias de maior atividade e muito mais!
+      </p>
+    </div>
+  </div>
+  <div class="row flex-row-reverse mx-auto">
+    <div class="col-xl-6 col-sm-12 col-xs-12 mx-auto py-5">
+      <h1 class="text-highlight -netwrix mb-3">Compliance simplificado</h1>
+      <img
+        src="/assets/img/netwrix/reports-screen.webp"
+        class="screenshot img-fluid"
+      />
+      <p class="font-small font-weight-light text-secondary font-italic">
+        Centenas de relatórios predefinidos - e você ainda pode criar seus
+        próprios relatórios personalizados.
+      </p>
+    </div>
+    <div
+      class="col-xl-6 col-sm-12 col-xs-12 mx-auto py-5 d-flex align-items-center"
+    >
+      <p class="text-large">
+        <span class="text-highlight -netwrix text-bolder">Relatórios</span> -
+        oferece todos os relatórios predefinidos segmentados de acordo com os
+        mais diversos padrões de compliance - incluindo a
+        <span class="text-bolder">LGPD</span> - além de guias para auxiliá-lo em
+        auditorias e relatórios internos.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid -solution-highlight -ddc">
+  <div class="row mx-auto">
+    <div class="col">
+      <h1 class="text-highlight -ddc">Netwrix: Classificação de Dados</h1>
+      <h4 class="text-lightblue font-weight-light">
+        Identifique, analise e
+        <span class="font-weight-normal">classifique</span> a informação contida
+        em seus file shares.
+      </h4>
+    </div>
+  </div>
+  <div class="row mx-auto">
+    <div class="col d-flex justify-content-around py-5">
+      <div class="image-block text-lightblue flex-column text-center">
+        <img src="/assets/img/netwrix/ddc.webp" />
+        <h5>Descoberta e Classificação</h5>
+        <p class="xs-hide">
+          A ferramenta analisa os arquivos armazenados buscando por
+          <span class="font-weight-normal">padrões</span> de informação.
+        </p>
+      </div>
+      <div class="image-block text-lightblue flex-column text-center">
+        <img src="/assets/img/netwrix/analise.webp" />
+        <h5>Análise de Dados</h5>
+        <p class="xs-hide">
+          O NDC vai identificar padrões dentro dos arquivos, como
+          <span class="font-weight-normal">números de CPF</span>, cartões de
+          crédito e outros dados sensíveis.
+        </p>
+      </div>
+      <div class="image-block text-lightblue flex-column text-center">
+        <img src="/assets/img/netwrix/data.webp" />
+        <h5>Categorização por Compliance</h5>
+        <p class="xs-hide">
+          Os arquivos analisados que exibirem dados sigiliosos serão
+          <span class="font-weight-normal">categorizados</span> de acordo com os
+          protocolos de
+          <span class="font-weight-normal">compliance</span> aplicáveis.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="image-block text-lightblue flex-column text-center">
+    <a href="/ndc" class="btn btn-trial my-4">Saiba mais !</a>
+  </div>
+</div>
+{% include site/netwrix/modules.html %}
+<div
+  class="container-fluid pb-5 py-5 text-white"
+  style="
+    background: linear-gradient(
+      180deg,
+      rgba(1, 25, 85, 1) 24%,
+      rgba(3, 58, 172, 1) 85%
+    );
+  "
+>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md">
+        <img src="/assets/img/netwrix/gartner_logo.webp" class="mb-5" alt="" />
+        <h2>
+          Classificação geral mais alta entre os 3 produtos mais avaliados no
+          mercado.
+        </h2>
+      </div>
+    </div>
+    <div
+      class="row text-center mt-5 text-white"
+      style="justify-content: center"
+    >
+      <div class="col-md-3" style="padding-top: 20px">
+        <h4>Classificação Geral</h4>
+        <h2>
+          4.5 <span class="fa fa-star checked fafull"></span>
+          <span class="fa fa-star checked fafull"></span>
+          <span class="fa fa-star checked fafull"></span>
+          <span class="fa fa-star-half"></span>
+          <span class="fa fa-star"></span>
+        </h2>
+        <br />
+        <a
+          class="btn btn-danger mb-5"
+          href="https://www.gartner.com/reviews/market/file-analysis-software/vendor/netwrix"
+          >Review Completo</a
+        >
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col">
+            <h6>Avaliação & Contratação</h6>
+            <h3>
+              4.5 <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star-half"></span>
+              <span class="fa fa-star faempty"></span>
+            </h3>
+            <br />
+          </div>
+          <div class="col">
+            <h6>Integrações/API & Implantação</h6>
+            <h3>
+              4.5 <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star-half"></span>
+              <span class="fa fa-star faempty"></span>
+            </h3>
+            <br />
+          </div>
+          <div class="w-100"></div>
+          <div class="col mt-5">
+            <h6>Serviços & Suporte</h6>
+            <h3>
+              4.4 <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star-half"></span>
+              <span class="fa fa-star faempty"></span>
+            </h3>
+            <br />
+          </div>
+          <div class="col mt-5">
+            <h6>Capacidade de Software</h6>
+            <h3>
+              4.6 <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star checked fafull"></span>
+              <span class="fa fa-star-half"></span>
+              <span class="fa fa-star faempty"></span>
+            </h3>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include site/download-row.html docs='
+<div class="col">
+  <div class="downloadblock">
+    <img src="/docs/thumbs/lgpd_netwrix.webp" />
+    <p>LGPD com o Netwrix</p>
+    <a
+      href="https://lps.aiqon.com.br/ebook_lgpd_auditoria_e_identificacao_de_dados_aiqon"
+      target="_blank"
+      class="btn btn-small btn-lightblue"
+    >
+      Baixar PDF
+    </a>
+    <!-- <button onclick="downloadRequest(2)" class="btn btn-small btn-lightblue">
+      Baixar PDF
+    </button> -->
+  </div>
+</div>
+<div class="col">
+  <div class="downloadblock">
+    <img src="/docs/thumbs/netwrix_knowdata.webp" />
+    <p>Netwrix Auditor: Conheça seus dados</p>
+    <a
+      href="http://lps.aiqon.com.br/b852e6e73f0ffb9ba43b"
+      target="_blank"
+      class="btn btn-small btn-lightblue"
+    >
+      Baixar PDF
+    </a>
+    <!-- <button onclick="downloadRequest(3)" class="btn btn-small btn-lightblue">
+      Baixar PDF
+    </button> -->
+  </div>
+</div>
+<div class="col">
+  <div class="downloadblock">
+    <img src="/docs/thumbs/netwrix_datashet.webp" />
+    <p>Netwrix Auditor: Conheça a plataforma</p>
+    <a
+      href="http://lps.aiqon.com.br/ea45f3610d4c1ca233ae"
+      target="_blank"
+      class="btn btn-small btn-lightblue"
+    >
+      Baixar PDF
+    </a>
+    <!-- <button onclick="downloadRequest(4)" class="btn btn-small btn-lightblue">
+      Baixar PDF
+    </button> -->
+  </div>
+</div>
+<div class="col">
+  <div class="downloadblock">
+    <img src="/docs/thumbs/Melhores_praticas_nuvem_netwrix.webp" />
+    <p>Melhores Práticas de Segurança em Nuvem</p>
+    <a
+      href="https://lps.aiqon.com.br/netwrix-melhores-praticas-seguranca-em-nuvem"
+      target="_blank"
+      class="btn btn-small btn-lightblue"
+    >
+      Baixar PDF
+    </a>
+    <!-- <button onclick="downloadRequest(4)" class="btn btn-small btn-lightblue">
+      Baixar PDF
+    </button> -->
+  </div>
+</div>
+'%} {% include site/modal.html documenttitle="Baixe agora!" %} {% include
+site/netwrix/cases.html %} {% include site/trial.html title="Solicite uma
+demonstração" id="netwrix_form" %}
+
+<style>
+  .img-fluidd {
+    max-width: 200px;
+
+    margin-bottom: 15px;
+  }
+
+  .img-award {
+    max-width: 100px;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .fa-star-half {
+    color: orange;
+  }
+
+  .fafull {
+    max-width: 28px;
+    margin: 0;
+  }
+
+  .faempty {
+    margin-left: -30px;
+  }
+</style>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .tablink {
+        place-items: end center;
+        background-color: rgb(255, 255, 255);
+        color: rgb(167, 166, 166);
+        border-color: rgb(194, 193, 193);
+        border-bottom: transparent;
+        border-top-left-radius: 2mm;
+        border-top-right-radius: 2mm;
+        outline: none;
+        cursor: pointer;
+        padding: 16px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        width: auto;
+        height: 1mm;
+        margin-bottom: 1mm;
+        line-height: 1mm;
+        margin-left: 320px;
+      }
+      .tablink:hover {
+        background-color: white;
+      }
+      .tablink:focus {
+        color: aliceblue;
+      }
+
+      .tabcontent {
+        color: rgb(36, 36, 36);
+        display: none;
+        padding: 20px 50px;
+        height: auto;
+        border-radius: 2mm;
+        border-bottom: gray;
+        box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.521);
+        margin-top: -1mm;
+        font-weight: normal;
+        font-size: 17px;
+      }
+      #two {
+        margin-left: 1px;
+      }
+      #tree {
+        margin-left: 1px;
+      }
+      #four {
+        margin-left: 1px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .tablink {
+          font-size: 15px;
+          padding: 10px 10px;
+          display: none;
+        }
+
+        #hidden {
+          display: none;
+        }
+      }
+
+      /*Content Animation*/
+      @keyframes fadeInScale {
+        0% {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      #visibilidade {
+        background-image: linear-gradient(#0f89a2, rgba(255, 255, 255, 0.027));
+      }
+
+      #alerta {
+        background-image: linear-gradient(#0f89a2, rgba(255, 255, 255, 0.411));
+      }
+
+      #relatorio {
+        background-image: linear-gradient(#0f89a2, rgba(255, 255, 255, 0.411));
+      }
+
+      #acao {
+        background-image: linear-gradient(#0f89a2, rgba(255, 255, 255, 0.411));
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="tablink"
+      onclick="openPage('visibilidade', this, '#0F89A2')"
+      id="defaultOpen"
+    >
+      Visibilidade
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('alerta', this, '#0F89A2')"
+      id="two"
+    >
+      Alertas
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('relatorio', this, '#0F89A2')"
+      id="tree"
+    >
+      Relatórios
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('acao', this, '#0F89A2')"
+      id="four"
+    >
+      Ação
+    </button>
+
+    <div id="hidden">
+      <div class="tabcontent" id="visibilidade">
+        <div class="container">
+          <div class="row py-5">
+            <div
+              class="col-md-6 col-sm-12 p-10 d-flex align-items-left justify-content-left flex-column"
+            >
+              <h1 style="width: 100%"><b>Visibilidade</b></h1>
+              <br />
+              <p>
+                Tenha uma visão consolidada de usuários, dados e aplicativos na
+                nuvem pela primeira vez: quem está usando aplicativos SaaS? Eles
+                deveriam ter acesso? Eles estão fazendo a coisa certa? Você pode
+                monitorar continuamente o que os usuários e as contas de serviço
+                estão fazendo e ser alertado sobre ameaças.
+              </p>
+
+              <ul>
+                <li>Inventário de acesso e privilégios para cada serviço</li>
+                <li>Atividade privilegiada do usuário</li>
+                <li>Monitoramento de atividade em aplicativos SaaS</li>
+                <li>
+                  Modelo de dados normalizado disponível para download via API
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-12 p-3">
+              <img
+                src="/assets/img/obsidian/visibillity.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="alerta" class="tabcontent">
+        <div class="container">
+          <div class="row py-5">
+            <div
+              class="col-md-6 col-sm-12 p-10 d-flex align-items-center justify-content-center flex-column"
+            >
+              <h1 style="width: 100%; font-size: 44px"><b>Alertas</b></h1>
+              <br />
+              <p>
+                Receba alertas sobre violações, comportamentos de risco e
+                violações de políticas com base em gatilhos baseados em regras e
+                aprendizado de máquina. Descubra indicadores de persistência de
+                SaaS, abuso de token OAuth e outras ameaças. Priorize e atue nos
+                alertas na plataforma Obsidian ou aproveite a integração com as
+                soluções de gerenciamento de serviços e SOAR para padronizar os
+                fluxos de trabalho.
+              </p>
+
+              <ul>
+                <li>
+                  Regras internas para alertar sobre comportamentos de risco,
+                  violações de políticas e atividades anômalas
+                </li>
+                <li>
+                  Modelos de aprendizado de máquina que sinalizam comportamentos
+                  inesperados ou outlier
+                </li>
+                <li>
+                  Alertas priorizados para reduzir a fadiga de alerta para
+                  equipes de segurança sobrecarregadas
+                </li>
+                <li>Integrações com SOAR e gerenciamento de serviços</li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-12 p-3">
+              <img
+                src="/assets/img/obsidian/alert.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="relatorio" class="tabcontent">
+        <div class="container">
+          <div class="row py-5">
+            <div
+              class="col-md-6 col-sm-12 p-10 d-flex align-items-center justify-content-center flex-column"
+            >
+              <h1 style="width: 100%; font-size: 44px"><b>Relatórios</b></h1>
+              <br />
+              <p>
+                Obtenha relatórios regulares com informações exclusivas sobre o
+                uso de aplicativos, ameaças emergentes e comportamento de risco,
+                adaptados às diferentes funções da organização. Reunir
+                evidências para apoiar os esforços de resposta a incidentes e
+                provar a aplicação de políticas de acesso do usuário, como SoD
+                (separação de tarefas) para conformidade e governança.
+              </p>
+
+              <ul>
+                <li>
+                  Relatórios e painéis adaptados às necessidades de diferentes
+                  funções na organização
+                </li>
+                <li>Capacidade de exportar dados em vários formatos</li>
+              </ul>
+              <br />
+            </div>
+            <div class="col-md-6 col-sm-12 p-3">
+              <img
+                src="/assets/img/obsidian/report.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="acao" class="tabcontent">
+        <div class="container">
+          <div class="row py-5">
+            <div
+              class="col-md-6 col-sm-12 p-10 d-flex align-items-center justify-content-center flex-column"
+            >
+              <h1 style="width: 100%; font-size: 44px"><b>Ação</b></h1>
+              <br />
+              <p>
+                Investigue possíveis violações e ameaças internas de forma
+                rápida e eficiente com uma visualização em painel único da
+                atividade do usuário e da conta. Rastreie o movimento lateral de
+                indivíduos rastreando o compartilhamento de contas ou o upload
+                de arquivos e o histórico de acesso. Interrompa a exfiltração de
+                dados e use incorretamente a conta com a correção automática
+                incorporada à plataforma.
+              </p>
+
+              <ul>
+                <li>
+                  Fluxo de tempo de atividade consolidado com contexto rico para
+                  investigar violações e ameaças
+                </li>
+                <li>Ações recomendadas para orientar respostas e melhorias</li>
+              </ul>
+              <br />
+            </div>
+            <div class="col-md-6 col-sm-12 p-3">
+              <img
+                src="/assets/img/obsidian/action.webp"
+                style="max-width: 100%"
+                class="mx-auto my-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <script>
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

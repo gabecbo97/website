@@ -1,0 +1,172 @@
+---
+layout: default
+title: Lei Geral de Proteção de dados - LGPD
+---
+
+<head>
+  <meta
+    name="description"
+    content="Nosso sistema está pronto para proteger informações corporativas da sua empresa dentro de todos os requisitos da Lei Geral de Proteção de Dados."
+  />
+</head>
+<div
+  class="container-fluid"
+  style="
+    background: linear-gradient(
+      121deg,
+      rgba(28, 181, 224, 0.9192051820728291) 4%,
+      rgba(0, 0, 70, 0.9472163865546218) 41%
+    );
+    height: 500px;
+    padding-top: 18vh;
+    color: white;
+  "
+>
+  <canvas class="background"></canvas>
+  <br />
+  <br />
+  <div class="row">
+    <div
+      class="col -solution-hero d-flex flex-column justify-content-center align-items-center text-center"
+    >
+      <!--<img src="/assets/img/obsidian/logo.png" />-->
+      <h1 id="solucao" style="font-size: 40px">
+        Lei Geral de Proteção de dados - LGPD <br />
+        Serviço e consultoria
+      </h1>
+      <p
+        id="text_secudary"
+        class="text-white"
+        style="font-size: 25px; margin-left: 1px"
+      >
+        Inteligência Jurídica, Processos e Metodologia em uma única solução
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: -120px; padding: 0">
+  <div class="row mb-5">
+    <div class="row mw-1200 mx-auto d-flex justify-content-center pt-5">
+      <div class="image-block-rms flex-column text-center">
+        <img src="/assets/img/lgpd/juridico.png" alt="lgpd" />
+        <h5></h5>
+        <p><b>Jurídico</b></p>
+        <br />
+      </div>
+
+      <div class="image-block-rms flex-column text-center">
+        <img src="/assets/img/lgpd/process.png" alt="lgpd" />
+        <h5></h5>
+        <p>
+          <b>Processos</b>
+        </p>
+        <br />
+      </div>
+      <div class="image-block-rms flex-column text-center">
+        <img src="/assets/img/lgpd/tech.png" alt="lgpd" />
+        <h5></h5>
+        <p>
+          <b>Técnico</b>
+        </p>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include site/lgpd/modules.html %} {% include site/lgpd/menu.html %}
+
+<div class="container" style="height: 700px">
+  <div class="row py-5">
+    <div
+      class="col-lg-6 col-sm-12 p-2 d-flex align-items-center justify-content-center flex-column"
+    >
+      <h2 style="width: 100%; text-align: center; color: gray">
+        Governe e gerencie sua adequação à Lei Geral de Proteção de Dados com
+        metodologia Ágil !
+      </h2>
+      <br />
+      <p style="color: gray; text-align: center">
+        Através da nossa metodologia de implantação você adequa a sua empresa em
+        um tempo recorde.
+      </p>
+      <br />
+      <br />
+      <h2 style="width: 100%; text-align: center; color: gray">
+        Plataforma líder de mercado
+      </h2>
+      <br />
+      <p style="color: gray; text-align: center">
+        Modelo SAAS, ou seja, não demanda investimentos adicionais de infra.
+        Modelos jurídicos e processo de adequação desenvolvido pelos maiores e
+        melhores escritórios de advocacia do país em Direito Digital.
+      </p>
+    </div>
+
+    <div class="col-lg-6 col-md-12 p-3 text-center">
+      <img
+        src="/assets/img/lgpd/ciclolgpd.webp"
+        style="max-width: 90%"
+        class="mx-auto my-auto"
+        alt="Ciclo Lei Geral de Proteção de Dados"
+      />
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <a href="/compliance/lgpd/" target="_blank" class="btn btn-how">Entenda a regulamentação</a>
+  </div>
+</div>
+
+{% include site/lgpd/accordion.html %}
+
+
+{% include site/lgpd/trial.html title="Solicite uma demonstração" id="form_lgpd"
+%}
+<style>
+  .btn-how {
+    border: 1px solid teal;
+    color: teal;
+  }
+
+  .btn-how:hover {
+    background-color: teal;
+    color: white;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    #trial_obs {
+      display: none;
+    }
+    #trial_obs p {
+      display: none;
+    }
+    #next_feature {
+      width: 240px;
+    }
+  }
+
+  @media only screen and (min-width: 1028px) {
+    #showOnlyMobile {
+      display: none;
+    }
+    #colapse {
+      display: none;
+    }
+    #formHidden {
+      display: none;
+    }
+
+    /*Content Animation*/
+    @keyframes fadeInScale {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+</style>

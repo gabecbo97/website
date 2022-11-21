@@ -1,0 +1,165 @@
+<nav class="navbar fixed-top navbar-light" id="mobile-menu">
+  <a href="/" class="navbar-brand">
+    <img src="/assets/img/common/aiqon.svg" alt="Logotipo AIQON." />
+  </a>
+  <div class="navbar-nav ml-auto">
+    
+    <div class="dropdown">
+      <a
+        class="nav-item nav-link"
+        style="cursor: default;"
+        id="dropdownSolucoes"
+      >
+        Soluções
+      </a>
+      <div class="dropdown-menu">
+        <a
+          class="dropdown-item nav-item nav-link"
+          role="listitem"
+          href="/netwrix"
+        >
+          <img src="c" />
+          Netwrix Auditor</a
+        >
+        <a
+          class="dropdown-item nav-item nav-link"
+          role="listitem"
+          href="/syxsense"
+        >
+          <img src="/assets/img/syxsense/syxsense.png" />
+          Syxsense</a
+        >
+        <a
+        class="dropdown-item nav-item nav-link"
+        role="listitem"
+        href="/ndc"
+      >
+        <img src="/assets/img/ndc/NDC_logo.svg" />
+        Netwrix Data Classification</a
+      >
+     <a
+        class="dropdown-item nav-item nav-link"
+        role="listitem"
+        href="/obsidian"
+      >
+        <img src="/assets/img/obsidian/obsidian_logo.png" />
+        Obsidian Security <span style="background-color: teal;" class="badge badge-secondary">Novo</span></a>
+
+        <a
+        class="dropdown-item nav-item nav-link"
+        role="listitem"
+        href="/reblaze"
+      >
+        <img src="/assets/img/reblaze/icon_reblaze.png" />
+        Reblaze <span style="background-color: teal; margin-left: 5px; " class="badge badge-secondary">Novo</span></a>
+        
+        <a class="dropdown-item nav-item nav-link" role="listitem" href="/vpm">
+          <img src="/assets/img/vpm/vpm.webp" />
+          Verismic Power Manager</a
+        >
+        <!--<a
+          class="dropdown-item nav-item nav-link"
+          role="listitem"
+          href="/netaphor/"
+        >
+          <img src="/assets/img/netaphor/netaphor.png" />
+          Netaphor</a
+        >--> 
+        <a
+          class="dropdown-item nav-item nav-link"
+          role="listitem"
+          href="/lgpd/"
+        >
+          <img src="/assets/img/lgpd/lgpd_ico.png" />
+          LGPD <span style="background-color: teal; margin-left: 5px; " class="badge badge-secondary">Novo</span></a
+        >
+      </div>
+      <hr />
+    </div>
+    <div class="dropdown">
+     <a href="/servicos" class="nav-item nav-link" id="dropdownParcerias">
+        Serviços
+      </a> 
+     <div class="dropdown-menu">
+       <div class="container" style="width: 500px;">
+         <div class="col-4">
+          <a class="dropdown-item nav-item nav-link" href="/servicos">
+            Distribuição de Software</a>
+          <a class="dropdown-item nav-item nav-link" href="/servicos#updating">
+            Atualização de Software</a>
+            <a class="dropdown-item nav-item nav-link" href="/servicos">
+              Distribuição de Software</a>
+            <a class="dropdown-item nav-item nav-link" href="/servicos#updating">
+              Atualização de Software</a>
+         </div>
+       </div>
+       
+      </div> 
+      <hr />
+    </div>
+    <a href="/servicos" class="nav-item nav-link">
+      Serviços
+    </a>
+    <a href="/parcerias" class="nav-item nav-link">Parcerias</a>
+    <a href="/blog" class="nav-item nav-link">Blog</a>
+    <a href="/ajuda" class="nav-item nav-link">Ajuda</a>
+  </div>
+</nav>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 336.75 302.44"
+  class="svg-color menu-toggler"
+  onclick="toggleMenu()"
+>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Capa_1" data-name="Capa 1">
+      <rect width="336.75" height="69.38" class="svg-color" rx="2.81" />
+      <rect
+        width="336.75"
+        height="69.38"
+        y="116.53"
+        class="svg-color"
+        rx="2.81"
+      />
+      <rect
+        width="336.75"
+        height="69.38"
+        y="233.06"
+        class="svg-color"
+        rx="2.81"
+      />
+    </g>
+  </g>
+</svg>
+<div class="mobile-menu-mask" onclick="toggleMenu()"></div>
+<script>
+  function toggleMenu() {
+    let menu = document.querySelector("#mobile-menu")
+    let mask = document.querySelector(".mobile-menu-mask")
+    let body = document.body
+
+    if (!body.classList.contains("overflow-hidden")) {
+      body.classList.add("overflow-hidden")
+    } else {
+      body.classList.remove("overflow-hidden")
+    }
+
+    if (!mask.classList.contains("showMask")) {
+      mask.classList.add("showMask")
+    } else {
+      mask.classList.remove("showMask")
+    }
+
+    if (!menu.classList.contains("uncollapsed")) {
+      menu.classList.add("d-flex")
+      setTimeout(function() {
+        menu.classList.add("uncollapsed")
+      }, 300)
+    } else {
+      setTimeout(function() {
+        menu.classList.remove("d-flex")
+      }, 300)
+      menu.classList.remove("uncollapsed")
+    }
+  }
+</script>

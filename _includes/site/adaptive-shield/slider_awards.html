@@ -1,0 +1,101 @@
+<div class="container py-5">
+  <h4 class="text-center text-gray py-5">
+    Reconhecimento Internacional
+  </h4>
+</div>
+<div class="container slider-content">
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide">
+        <img src="/assets/img/adaptiveshield/awards/AWARDS 1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="/assets/img/adaptiveshield/awards/AWARDS 2.png" alt="" />
+      </div>
+      <div class="slide">
+        <img
+          src="/assets/img/adaptiveshield/awards/big-Winner's Badge.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="/assets/img/adaptiveshield/awards/gartner_cool_vendor_2022.svg"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img src="/assets/img/adaptiveshield/awards/csa.png" alt="" style="max-width: 200px ;" />
+        
+      </div>
+      <div class="slide">
+        <img src="/assets/img/adaptiveshield/awards/gdpr.svg" alt="" style="max-width:200px;" />
+      </div>
+      <div class="slide">
+        <img
+          src="/assets/img/adaptiveshield/awards/AWARDS 1.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="/assets/img/adaptiveshield/awards/gartner_cool_vendor_2022.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .slider-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 940px;
+  }
+  .slider::before,
+  .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(150px * 14);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
+  .slider .slide img {
+    height: 100px;
+  }
+</style>

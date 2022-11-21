@@ -1,0 +1,220 @@
+---
+layout: default
+title: Inventário de Hardware e Software
+---
+
+<div class="container-fluid" 
+style="
+  background:linear-gradient(
+      150deg,
+      rgba(242, 113, 33, 1) 4%,
+      rgba(233, 64, 87, 1) 8%,
+      rgba(147, 38, 130, 1) 61%
+    );
+    height: 500px; padding-top: 14vh; color: white;">
+<canvas class="background"></canvas>
+    <br>
+    <br>
+  <div class="row">
+    <div
+      class="col -solution-hero d-flex flex-column justify-content-center align-items-center text-center"
+    >
+      
+      <h1>Inventário de Hardware e Software</h1>
+      <p>
+        Acesso em tempo real ao inventário incluindo 
+        histórico do seu ambiente
+      </p>
+      <br>
+      <p> {% include site/modal_form.html  title="Inventário de Hardware e Software" id="inventario_form "%}</p>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row mb-5"  >
+      <div class="row mw-1200 mx-auto d-flex justify-content-center pt-5">
+        <div class="image-block-rms flex-column text-center">
+          <img src="/assets/img/inventory/detection.webp" />
+          <h5></h5>
+          <p><b>Detecção </b>
+          </p>
+          <p style="width: 220px;">Descubra todos os sistemas 
+            na sua rede. Veja quais 
+            dispositivos estão na sua 
+            rede a qualquer hora</p>
+        </div>
+        <div class="image-block-rms flex-column text-center">
+          <img src="/assets/img/inventory/history.webp" />
+          <h5></h5>
+          <p>
+            <b>Histórico</b>
+          </p>
+          <p style="width: 220px;" >Visão do que foi 
+            alterado no computador 
+            entre hardware e software</p>
+        </div>
+        <div class="image-block-rms flex-column text-center">
+          <img  src="/assets/img/inventory/Report.webp"/>
+          <h5></h5>
+          <p>
+            <b>Relatórios</b>
+          </p>
+          <p style="width: 220px;">Relatórios de completos 
+            sobre o seu ambiente</p>
+        </div>
+      </div>
+        </div>
+  </div>
+  <br>
+  <br>
+</div>
+
+    <div class="container-fluid" style="background: linear-gradient(153deg, rgba(242,113,33,1) 4%, rgba(233,64,87,1) 8%, rgba(147,38,130,1) 61%, rgba(255,255,255,1) 62%);"> 
+      <div class="container" style="color: white; text-align: center;">
+        <div class="row py-5">
+            
+            
+              
+          <div
+            class="col-md-6 col-sm-12 p-2 d-flex align-items-end justify-content-center flex-column"
+          >
+            <h1 style="width: 100%; font-size: 25px;"><b>Todos os dispositivos 
+              sob controle</b></h1>
+            <p>
+              Nós podemos descobrir os desktops e notebooks 
+              na sua rede utilizando uma coleta de inventario 
+              compreensiva. Veja todos os dispositivos na sua 
+              rede a qualquer hora. Mesmo que você tenha uma 
+              rede ao redor do globo ou simplesmente muitas 
+              estações para gerenciar, nós oferecemos uma 
+              visão completa do seu ambiente de TI
+            </p>
+            <br>
+           
+          </div>
+          <div class="col-md-6 col-sm-12 p-3">
+            <img
+              src="/assets/img/inventory/all_devices.webp"
+              style="max-width: 100%;"
+              class="mx-auto my-auto"
+            />
+          </div>
+          
+        </div>
+        <div class="row py-5 row-reverse">
+          <div class="col-md-6 col-sm-12 p-3">
+            <img
+              src="/assets/img/inventory/modifications.webp"
+              style="max-width: 100%;"
+              class="mx-auto my-auto"
+            />
+          </div>
+          <div
+            class="col-md-6 col-sm-12 p-2 d-flex align-items-center justify-content-center flex-column"
+          >
+            <h1 style="width: 100%; font-size: 25px;"><b>Veja todas as alterações</b></h1>
+            <p>
+              A maioria das ferramentas de inventário mostram apenas 
+              as alterações mais recentes do inventário, diminuindo 
+              sua eficiência pela metade. Nós mantemos os inventários 
+              passados para que você possa compará-los em dois diferentes 
+              pontos do tempo.
+            </p>
+          </div>
+          
+        </div>
+        <div class="row py-5">
+            
+            
+              
+          <div
+            class="col-md-6 col-sm-12 p-2 d-flex align-items-center justify-content-center flex-column"
+          >
+            <h1 style="width: 100%; font-size: 25px;"><b>Relatórios</b></h1>
+            <p>
+              Informações completas do seu ambiente, 
+              softwares instalados, computadores que 
+              não possuem determinado software instalado,
+               espaço em disco etc.
+            </p>
+            <br>
+           
+          </div>
+          <div class="col-md-6 col-sm-12 p-3">
+            <img
+              src="/assets/img/inventory/software_reports.webp"
+              style="max-width: 100%;"
+              class="mx-auto my-auto"
+            />
+          </div>
+          
+        </div>
+        <div class="row py-5 row-reverse">
+          <div class="col-md-6 col-sm-12 p-3">
+            <img
+              src="/assets/img/inventory/notebook_user.webp"
+              style="max-width: 100%;"
+              class="mx-auto my-auto"
+            />
+          </div>
+          <div
+            class="col-md-6 col-sm-12 p-2 d-flex align-items-center justify-content-center flex-column"
+          style="text-align: left;" >
+          <h1 style="width: 100%; color: gray;">Faça o teste gratuito</h1>
+          <h4 style="width: 100%; color: gray;">Tenha duas semanas para ficar a frente do Obsidian no seu ambiente.</h4>
+           <br>
+          <button id="bt"type="button" class="btn btn-inventory" data-toggle="modal" data-target="#ExemploModalCentralizado">
+            Teste grátis
+          </button>
+           
+            
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#f6f6f6 ;padding: 0;">
+      <h1 class="text-center text-teal text-bolder py-2" style="color: gray;">
+        <br>
+        Deseja saber mais sobre como aprimorar a </br>gestão do seu ambiente?
+    </h1>
+      <div class="image-block text-lightblue flex-column text-center"  >
+        <a href="#" class="btn btn-rms my-5" id="next_feature_b">
+          <img src="/assets/img/rms/inventory.png" alt="">
+          <p style="color: gray;">Instalação de pacotes em massa a partir da nuvem</p>
+          
+        </a>
+     
+      </div>
+    </div>
+   
+    <style>
+        @media only screen and (min-width: 500px) {
+  
+  #showOnlyMobile{
+display: none;
+
+}
+        }
+        @media only screen and (max-width: 768px) {
+    #trial_obs{
+      display: none;
+    }
+    #next_feature_b{
+      width: 240px;
+    }
+    #bt{
+      margin-right: auto;
+    }
+  }
+    </style>
+
+
+
+
+
+

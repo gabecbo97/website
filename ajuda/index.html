@@ -1,0 +1,362 @@
+---
+layout: default
+title: Suporte & Ajuda
+---
+
+<style>
+  .help-form-sent {
+    padding: 20px;
+    text-align: center;
+    color: rgb(21, 116, 21);
+    background-color: rgba(84, 173, 84, 0.171);
+    border: 1px solid rgb(63, 121, 63);
+    border-radius: 3px;
+    margin: 10px 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: none;
+  }
+
+  .icon-image-30 {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .link-block {
+    transition: 300ms;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #dfdbdb;
+    margin: 10px 0;
+  }
+  .link-block h5,
+  .link-block h3 {
+    line-height: 1;
+    margin-bottom: -4px;
+  }
+  .link-block:hover {
+    background-color: #32c0d327;
+    border-color: #0dadc2;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+  .cargo_select {
+    margin-top: 8px;
+  }
+  .departamento_select{
+    margin-bottom: 3px;
+  }
+  .form-check-label {
+    color: gray;
+  }
+  
+  .form-privacy {
+    color: rgba(128, 128, 128, 0.678);
+  }
+  @media (max-width: 768px) {
+    .-ajuda-row h3 {
+      font-size: 1.4em;
+      display: flex;
+    }
+  }
+</style>
+<div class="container-fluid -ajuda">
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <img
+        src="/assets/img/common/directions.svg"
+        style="max-width: 400px;"
+        alt="Central de ajuda."
+      />
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col">
+      <h1 class="text-center text-white">
+        Central de Ajuda
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row -ajuda-row">
+    <div class="col">
+      <a href="/recursos/" target="_blank"
+        ><div class="link-block my-3">
+          <h3 class="text-teal py-3">
+            <img
+              src="/assets/img/common/zendesk.svg"
+              class="icon-image-30"
+              alt="Zendesk."
+            />Visite a nossa Base de Conhecimento
+          </h3>
+        </div></a
+      >
+      <p class="py-2">
+        Você vai encontrar diversos artigos para te ajudar a utilizar as
+        soluções. <br />
+        Se preferir, pode nos contactar diretamente:
+      </p>
+
+      <a href="mailto:aiqon.com.br"
+        ><div class="link-block">
+          <h5 class="py-3 text-teal text-bolder">
+            <img
+              src="/assets/img/common/email.svg"
+              class="icon-image-30"
+              alt="E-mail."
+            />suporte@aiqon.com.br
+          </h5>
+        </div></a
+      >
+      <a class="py-2 " href="https://wa.me/551123062990" target="_blank"
+        ><div class="link-block">
+          <h5 class="py-3 text-teal text-bolder">
+            <img
+              src="/assets/img/common/whatsapp.svg"
+              class="icon-image-30"
+              alt="Telefone ou WhatsApp."
+            />+55 11 2306-2990
+          </h5>
+        </div></a
+      >
+
+      <p class="pt-2">De segunda à sexta-feira, das 09h às 17h30</p>
+
+      <hr />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-teal py-3">
+        Fale conosco
+      </h3>
+      <div class="help-form-sent text-center">
+        <p>Obrigado por entrar em contato!</p>
+        <p>Vamos responder assim que possível.</p>
+      </div>
+      <div class="ajuda-content">
+        <form id="contactForm">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    data-aid="nameField"
+                    name="firstName"
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Nome *"
+                    required
+                    oninvalid="this.setCustomValidity('Por favor, digite seu nome.')"
+                    oninput="setCustomValidity('')"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    data-aid="nameField"
+                    name="lastName"
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Sobrenome *"
+                    required
+                    oninvalid="this.setCustomValidity('Por favor, digite seu sobrenome.')"
+                    oninput="setCustomValidity('')"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    data-aid="company"
+                    name="company"
+                    type="text"
+                    class="form-control"
+                    id="company"
+                    placeholder="Empresa *"
+                    required
+                    oninvalid="this.setCustomValidity('Por favor, digite a empresa onde você trabalha.')"
+                    oninput="setCustomValidity('')"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <select
+                id="Cargo"
+                class="form-control cargo_select"
+                style="color: rgba(0, 0, 0, 0.61)"
+              >
+                <option disabled selected>Cargo</option>
+                <option value="Analista">Analista</option>
+                <option value="Auditor">Auditor</option>
+                <option value="Advogado">Advogado</option>
+                <option value="CEO">CEO</option>
+                <option value="Coordenador">Coordenador</option>
+                <option value="DBA">DBA</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Supervisor">Supervisor</option>
+                <option value="Técnico">Técnico</option>
+                <option value="Outro">Outro</option>
+              </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <select
+                  id="Departamento"
+                  class="form-control departamento_select"
+                  style="color: rgba(0, 0, 0, 0.61)"
+                >
+                  <option disabled selected>Departamento</option>
+                  <option value="Administrativo/Financeiro">Administrativo/Financeiro</option>
+                  <option value="Auditoria/Compliance">Auditoria/Compliance</option>
+                  <option value="Jurídico">Jurídico</option>
+                  <option value="Logística/Compras">Logística/Compras</option>
+                  <option value="Pesquisa e Desenvolvimento">Pesquisa e Desenvolvimento</option>
+                  <option value="Projetos">Projetos</option>
+                  <option value="Segurança da Informação">Segurança da Informação</option>
+                  <option value="TI e Infraestruturao">TI e Infraestrutura</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">           
+                 <div class="input-group">
+                    <input
+                      data-aid="emailField"
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="E-mail profissional *"
+                      required
+                      oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+                      oninput="setCustomValidity('')"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group">
+                    <input
+                      data-aid="phoneField"
+                      name="phone"
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Telefone *"
+                      required
+                      oninvalid="this.setCustomValidity('Por favor, digite seu telefone.')"
+                      oninput="setCustomValidity('')"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <div class="form-group">
+                  <textarea
+                    type="text"
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    id="message"
+                    placeholder="Como podemos ajudá-lo?"
+                    required
+                    oninvalid="this.setCustomValidity('Por favor, digite sua mensagem.')"
+                    oninput="setCustomValidity('')"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-row py-3 justify-content-center">
+              <div class="form-check">
+                <input
+                  name="check_box"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Eu concordo em receber comunicações"
+                  id="Concorda receber comunicacoes"
+                  
+                />
+                <label class="form-check-label" for="Concorda receber comunicacoes">
+                  Concordo em receber comunicações
+                </label>
+              </div>
+            </div>
+            <div class="form-row py-1 justify-content-center">
+              <p class="form-privacy">
+                Ao informar meus dados, eu concordo com a  <a href="/politica/">Política de Privacidade</a> 
+              </p>
+            </div>
+            <div class="form-row">
+              <div class="col d-flex justify-content-center align-items-center">
+               <div class="form-group">
+                <button type="submit" class="btn btn-aiq btn-lg btn-long">Enviar</button>
+               </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </form>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/assets/js/dist/jquery.min.js"></script>
+<script src="/assets/js/formMask.js"></script>
+<script src="/assets/js/phoneMask.js"></script>
+<script>
+  const form = document.getElementById("contactForm");
+  const url = "https://us-central1-aiqondb.cloudfunctions.net/api/helpRequest";
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    console.log("Enviando formulário...");
+
+    const formData = new FormData(this);
+    const origin = window.location.pathname;
+    const helpRequestJson = {};
+
+    for (const pair of formData) {
+      helpRequestJson[pair[0]] = pair[1];
+    }
+    helpRequestJson["origin"] = origin;
+    fetch(url, {
+      method: "post",
+      body: JSON.stringify(helpRequestJson),
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      credentials: "same-origin"
+    })
+      .then(formSuccess())
+      .catch(function(err) {
+        console.log("Ocorreu um erro: ", err);
+      });
+  });
+
+  function formSuccess() {
+    // const formSent = document.querySelector(".help-form-sent");
+    // const formFields = document.querySelectorAll("input, textarea");
+    // for (field of formFields) {
+    //   field.value = "";
+    // }
+    // formSent.classList.add("d-block");
+    window.location.href = "/obrigado"
+  }
+</script>

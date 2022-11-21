@@ -1,0 +1,37 @@
+<style>
+    .embed-container {
+        background-color: #f3f3f3;
+        background-image: url('../../assets/img/netwrix/nw_pattern.svg'), url('../../assets/img/common/play.svg');
+        background-size: 110%, 10%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        transition: background-color 300ms;
+    }
+    .embed-container:hover {
+        background-color: #c2e8ff59;
+        cursor: pointer;
+    }.embed-container h2 {
+        color: #3797dc;
+        text-align: center;
+        display: flex;
+        margin: auto 0;
+        width: 70%;
+        margin: auto;
+        margin-top: 40%;
+    }
+    </style>
+    <script>
+      let vid = `<iframe
+                    src="https://www.youtube.com/watch?v=2YB4Ky4izUE"
+                    frameborder="0"
+                    allowfullscreen
+                    allow="autoplay"
+                    >
+                  </iframe>`;
+      const container = document.querySelector(".embed-container");
+      function startVideo() {
+        container.innerHTML = vid;
+      }
+    </script>
+    

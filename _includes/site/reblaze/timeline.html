@@ -1,0 +1,221 @@
+<div class="container" style="margin-left: 10px;">
+<div class="timeline" >
+  <ul style="padding: 0;">
+    <li>
+      <div class="date">
+        <h4 style="font-size:20px">Tráfego de entrada da Web</h4>
+      </div>
+      <div class="point"></div>
+      <div class="date">
+        <h4><img
+          style="max-width:100px; margin-top: 25px; ;"
+          src="/assets/img/reblaze/trafic.png"
+          alt="Tráfego de entrada da Web"
+        /> </h4>
+      </div>
+    </li>
+    
+    <li>
+      <div class="content" >
+        <h3 style="background-color: #2D2A7F;">Cloud CDN</h3>
+        <p>acelera a entrega de 
+          conteúdo e a 
+          capacidade de 
+          resposta do site</p>
+      </div>
+      <div class="point"></div>
+      <div class="date">
+        <h4 style="margin-right: 20px;"><img
+          style="max-width:100px;"
+          src="/assets/img/reblaze/cloud.png"
+          alt="Cloud CDN"
+        /></h4>
+      </div>
+    </li>
+    <li>
+      <div class="content">
+        <h3 style="background-color: #3C44A4;">Divisão
+          de carga em nuvem</h3>
+        <p>Distribui auto-</br>maticamente 
+          cargas de trabalho 
+          entre recursos</p>
+      </div>
+      <div class="point"></div>
+      <div class="date">
+        <h4 style="margin-right: 20px;"><img
+          style="max-width:100px;"
+          src="/assets/img/reblaze/cloudCharge.png"
+          alt="Balanceamento de carga em nuvem"
+        /></h4>
+      </div>
+    </li>
+    <li>
+      <div class="content">
+        <h3 style="background-color: #4C5DC8 ;">Reblaze Proxy</h3>
+        <p>Bloqueia o tráfego hostil, 
+          com recursos 
+          redimensiona-</br>dos conforme 
+          necessário</p>
+      </div>
+      <div class="point"></div>
+      <div class="date">
+        <h4 style="margin-right: 20px;"><img
+        style="max-width:100px;"
+        src="/assets/img/reblaze/reblaze_proxy.png"
+        alt="Reblaze Proxy"/></h4>
+      </div>
+    </li>
+    <li>
+      <div class="date">
+        <h4 style="font-size:20px">Sua plataforma da Web</h4>
+      </div>
+      <div class="point"></div>
+      <div class="date">
+        <h4><img
+          style="max-width:100px;"
+          src="/assets/img/reblaze/web_plataform.png"
+          alt="Sua plataforma da Web"/></h4>
+      </div>
+    </li>
+   
+  </ul>
+</div>
+</div>
+<style>
+  
+  .timeline {
+    position: relative;
+    
+    width: 100%;
+    
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #333333 solid;
+    position: relative;
+    left: 1px;
+}
+
+.timeline ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    background-color: transparent;
+    width: 100px;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.timeline ul li .content h3 {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: auto;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content p {
+    padding: 20px 20px;
+    background-color: #e1d9ec;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: left;
+    
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 44%;
+    background-color: #333333;
+}
+@media (max-width: 800px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+        
+    }
+
+    html, body {
+        font-size: auto;
+    }
+
+}
+
+@media (max-width: 650px) {
+    html, body {
+        font-size: auto;
+    }
+    
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html, body {
+        font-size: auto;
+    }
+
+    p {
+        padding: 10px !important;
+    }
+}
+</style>

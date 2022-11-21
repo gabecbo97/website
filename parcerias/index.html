@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<style>
+  .-partner-banner {
+    height: 50vh;
+    background-image: linear-gradient(to right, #20bcd1, #0a8b9c);
+    padding: 0 !important;
+  }
+  .-partner-card {
+    margin-top: -30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(50, 50, 50, 0.2);
+    margin-bottom: 36px;
+  }
+  .partner-form {
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .partner-form input,
+  .partner-form textarea {
+    margin: 5px;
+  }
+  #formSuccessMessage {
+    color: #0094a9;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+  }
+  @media (max-width: 768px) {
+    .-partner-card {
+      border-radius: 0 !important;
+    }
+  }
+</style>
+<div class="container-fluid -partner-banner">
+  <canvas class="background"></canvas>
+  <div class="row py-5">
+    <div class="col d-flex align-items-center justify-content-center py-4">
+      <img
+        src="/assets/img/common/partnership.svg"
+        class="mx-auto img-fluid"
+        style="max-width:250px;margin:60px 0;"
+        alt="Parcerias."
+      />
+    </div>
+  </div>
+</div>
+{% include site/parceria.html title="Seja um parceiro!" id="parceiro_form" %}

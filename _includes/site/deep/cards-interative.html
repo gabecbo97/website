@@ -1,0 +1,319 @@
+<div class="container-fluid">
+  <ul id="cards">
+    <li class="card" id="card_1">
+      <div class="card__content">
+        <div>
+          <h2 class="title-vertical-card">Abrace a Prevenção</h2>
+          <p>
+            Pare malware e outras ameaças – incluindo desconhecidas e de dia
+            zero – antes de serem executadas. Em 20ms, o Deep Instinct impede
+            que ameaças maliciosas entrem em seu ambiente. O que os outros
+            prometem, nós entregamos
+          </p>
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=Z4Jk-xhqqKw&t"
+              class="btn btn--accent" target="_blank"
+              >Assista o Video</a
+            >
+          </p>
+        </div>
+        <figure>
+          <img
+            class="img-stack-deep"
+            src="/assets/img/deep-22/slides/slide-1.png"
+            alt="Image description"
+          />
+        </figure>
+      </div>
+    </li>
+    <li class="card" id="card_2">
+      <div class="card__content">
+        <div>
+          <h2 class="title-vertical-card">Engenharia Exclusiva</h2>
+          <p>
+            Nossa estrutura de aprendizado profundo desenvolvida especificamente
+            para evitar ameaças com mais rapidez e precisão do que qualquer
+            outra ferramenta de segurança cibernética do mundo.
+          </p>
+          <p>
+            <a href="https://youtu.be/LDPbV2HMab4" class="btn btn--accent" target="_blank"
+              >Assista o Video</a
+            >
+          </p>
+        </div>
+        <figure>
+          <img
+            class="img-stack-deep"
+            src="/assets/img/deep-22/slides/slide-4.webp"
+            alt="Image description"
+          />
+        </figure>
+      </div>
+    </li>
+    <li class="card" id="card_3">
+      <div class="card__content">
+        <div>
+          <h2 class="title-vertical-card">Mais Precisão</h2>
+          <p>
+            Combinamos a maior taxa de detecção do setor (99%+) com o menor
+            número de falsos positivos (0,1%), otimizando as equipes de SOC e
+            oferecendo a tranquilidade de saber que as ameaças são sempre
+            evitadas.
+          </p>
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=QjTpxpgvPMI"
+              class="btn btn--accent" target="_blank"
+              >Assista o Video</a
+            >
+          </p>
+        </div>
+        <figure>
+          <img
+            class="img-stack-deep"
+            src="/assets/img/deep-22/slides/slide-3.webp"
+            alt="Image description"
+          />
+        </figure>
+      </div>
+    </li>
+    <li class="card" id="card_4">
+      <div class="card__content">
+        <div>
+          <h2 class="title-vertical-card">O mais rápido é o melhor</h2>
+          <p>
+            A verdadeira prevenção – e proteção – é uma corrida contra o tempo.
+            Detectamos e prevenimos ameaças antes que elas sejam executadas, 750
+            vezes mais rápido do que o ransomware mais rápido conhecido é capaz
+            de criptografar.
+          </p>
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=P62gjgTJZ3U"
+              class="btn btn--accent" target="_blank"
+              >Assista o Video</a
+            >
+          </p>
+        </div>
+        <figure>
+          <img
+            class="img-stack-deep"
+            src="/assets/img/deep-22/slides/slide-2.png"
+            alt="Image description"
+          />
+        </figure>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<style>
+  :root {
+    --card-height: 40vw;
+    --card-margin: 4vw;
+    --card-top-offset: 1em;
+    --numcards: 4;
+    --outline-width: 0px;
+  }
+  s #cards {
+    padding-bottom: calc(
+      var(--numcards) * var(--card-top-offset)
+    ); /* Make place at bottom, as items will slide to that position*/
+    margin-bottom: var(
+      --card-margin
+    ); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+  }
+
+  #card_1 {
+    --index: 1;
+  }
+
+  #card_2 {
+    --index: 2;
+  }
+
+  #card_3 {
+    --index: 3;
+  }
+
+  #card_4 {
+    --index: 4;
+  }
+
+  .card {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--card-top-offset));
+  }
+  .title-vertical-card {
+    color: blue;
+  }
+  
+  .btn--accent{
+    background-color: blue;
+  }
+
+  @supports (animation-timeline: works) {
+    @scroll-timeline cards-element-scrolls-in-body {
+      source: selector(body);
+      scroll-offsets:
+			/* Start when the start edge touches the top of the scrollport */ selector(
+            #cards
+          )
+          start 1,
+        /* End when the start edge touches the start of the scrollport */
+          selector(#cards) start 0;
+      start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+      end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+      time-range: 4s;
+    }
+
+    .card {
+      --index0: calc(var(--index) - 1); /* 0-based index */
+      --reverse-index: calc(
+        var(--numcards) - var(--index0)
+      ); /* reverse index */
+      --reverse-index0: calc(
+        var(--reverse-index) - 1
+      ); /* 0-based reverse index */
+    }
+
+    .card__content {
+      transform-origin: 50% 0%;
+      will-change: transform;
+
+      --duration: calc(var(--reverse-index0) * 1s);
+      --delay: calc(var(--index0) * 1s);
+
+      animation: var(--duration) linear scale var(--delay) forwards;
+      animation-timeline: cards-element-scrolls-in-body;
+    }
+
+    @keyframes scale {
+      to {
+        transform: scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+      }
+    }
+  }
+
+  /** DEBUG **/
+
+  #debug {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+  }
+  #debug::after {
+    content: " Show Debug";
+    margin-left: 1.5em;
+    color: white;
+    white-space: nowrap;
+  }
+
+  #debug:checked ~ main {
+    --outline-width: 1px;
+  }
+
+  /** PAGE STYLING **/
+  #cards {
+    list-style: none;
+    outline: calc(var(--outline-width) * 10) solid blue;
+    margin-left: -1vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--numcards), var(--card-height));
+    gap: var(--card-margin);
+  }
+
+  .card {
+    outline: var(--outline-width) solid hotpink;
+  }
+
+  .card__content {
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    color: rgb(10, 5, 7);
+    border-radius: 1em;
+    overflow: hidden;
+    padding-top: 3vh;
+    display: grid;
+    grid-template-areas: "text img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    align-items: stretch;
+    outline: var(--outline-width) solid lime;
+  }
+
+  .card__content > div {
+    grid-area: text;
+    width: 80%;
+    place-self: center;
+    text-align: left;
+
+    display: grid;
+    gap: 1em;
+    place-items: start;
+  }
+
+  .card__content > figure {
+    grid-area: img;
+    overflow: hidden;
+  }
+
+  .card__content > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.42;
+  }
+
+  .btn {
+    color: rgb(255 255 255);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 0;
+  }
+
+  aside {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  aside p {
+    margin-bottom: 1em;
+  }
+  @media only screen and (max-width: 1024px) {
+    .card__content h2 {
+      font-size: 1.5em;
+    }
+    #cards {
+      display: inline-block;
+    }
+    #cards {
+      margin-left: -10vw !important;
+    }
+    .img-stack-deep {
+      max-width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,280 @@
+<script>
+  // Tabs
+  const tabBtns = document.querySelectorAll(".tabs__btn");
+  const tabPanes = document.getElementsByClassName("tabs__pane");
+
+  let fadeTime = 200;
+
+  function fadeOut(target) {
+    target.style.opacity = 1;
+    target.style.transition = `opacity ${fadeTime}ms`;
+    target.style.opacity = 0;
+    setTimeout(() => {
+      target.style.display = "none";
+    }, fadeTime);
+  }
+
+  function fadeIn(target) {
+    target.style.opacity = 0;
+    target.style.transition = `opacity ${fadeTime}ms`;
+    target.style.opacity = 1;
+    setTimeout(() => {
+      target.style.display = "block";
+    }, fadeTime);
+  }
+
+  function triggerTab(elt) {
+    elt.preventDefault();
+
+    tabBtns.forEach((btn) => {
+      btn.classList.remove("is-active");
+      btn.setAttribute("aria-selected", false);
+    });
+
+    [].forEach.call(tabPanes, (pane) => {
+      fadeOut(pane);
+    });
+
+    elt.target.classList.add("is-active");
+    elt.target.setAttribute("aria-selected", true);
+    let clickedTab = elt.target.dataset.tabTarget;
+    fadeIn(document.querySelector(`#${clickedTab}`));
+  }
+
+  tabBtns.forEach((tab) => {
+    tab.addEventListener("click", triggerTab);
+  });
+</script>
+
+<div class="wrapper mt-5">
+  <h1 class="text-center mb-5">Gerencie sua postura no SaaS</h1>
+  <div class="tabs">
+    <nav class="tabs__nav text-center" role="tablist">
+      <button
+        class="tabs__btn is-active"
+        data-tab-target="tab-1"
+        type="button"
+        role="tab"
+        aria-selected="true"
+      >
+        No aplicativo
+      </button>
+      <button
+        class="tabs__btn"
+        data-tab-target="tab-2"
+        type="button"
+        role="tab"
+        aria-selected="false"
+      >
+        No Domínio
+      </button>
+      <button
+        class="tabs__btn"
+        data-tab-target="tab-3"
+        type="button"
+        role="tab"
+        aria-selected="false"
+      >
+        No conformidade
+      </button>
+    </nav>
+    <div class="tabs__content">
+      <div class="tabs__pane is-visible" id="tab-1" role="tabpanel">
+        <div class="row">
+          <div class="col-md-7">
+            <img
+              src="/assets/img/sspm/tabs/tab-1.png"
+              class="img-tabs"
+              alt=""
+            />
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/assets/img/sspm/tabs/icon-tab-1.svg"
+              class="icon-tabs"
+              alt=""
+            />
+            <h3 class="title-tabs">Postura SaaS por aplicativo</h3>
+            <p class="txt-tabs">
+              O Adaptive Shield pode se integrar a mais de 50 aplicativos e
+              contextualizar todos os itens em risco para ajudar sua equipe de
+              segurança a priorizar os pontos fracos da configuração e aumentar
+              o tempo e a eficiência da correção.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__pane" id="tab-2" role="tabpanel">
+        <div class="row">
+          <div class="col-md-7">
+            <img
+              src="/assets/img/sspm/tabs/tab-2.png"
+              class="img-tabs"
+              alt=""
+            />
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/assets/img/sspm/tabs/icon-tab-2.svg"
+              class="icon-tabs"
+              alt=""
+            />
+            <h3 class="title-tabs">Postura SaaS por Domínio</h3>
+            <p class="txt-tabs">
+              Fatie e divida verificações de segurança por domínio, desde
+              controle de acesso, gerenciamento de senhas, MFA até DLP, proteção
+              contra malware, controle de privacidade, auditoria, segurança
+              móvel, proteção de endpoint, proteção contra phishing, resiliência
+              operacional, gerenciamento de chaves e muito mais.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__pane" id="tab-3" role="tabpanel">
+        <div class="row">
+          <div class="col-md-7">
+            <img
+              src="/assets/img/sspm/tabs/tab-3.png"
+              class="img-tabs"
+              alt=""
+            />
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/assets/img/sspm/tabs/icon-tab-3.svg"
+              class="icon-tabs"
+              alt=""
+            />
+            <h3 class="title-tabs">Postura SaaS por Conformidade</h3>
+            <p class="txt-tabs">
+              Compare suas verificações de segurança SaaS com os principais
+              padrões do setor, como NIST, SOC2, ISO, para garantir a
+              conformidade. Ou crie sua própria política de empresa
+              personalizada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wrapper {
+    width: 80vw;
+    margin-inline: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    all: unset;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000;
+    line-height: 1.2;
+  }
+  h1 strong {
+    display: block;
+    font-weight: 500;
+    color: #999;
+    font-size: 1rem;
+  }
+
+  .tabs {
+    border-radius: 0.25rem;
+  }
+  .tabs__nav {
+    justify-content: space-around;
+    margin-top: -15px;
+  }
+  .tabs__btn {
+    position: relative;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+  }
+  .tabs__btn:not(.is-active) {
+    opacity: 0.6;
+    border: none;
+    outline: none;
+  }
+  .tabs__btn:not(.is-active):hover {
+    opacity: 1;
+    border: none;
+    outline: none;
+  }
+  .tabs__btn.is-active {
+    color: var(--color-accent);
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: rgb(180, 32, 168);
+    -webkit-box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .tabs__btn.is-active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+  }
+  .tabs__btn:first-child.is-active {
+    border: none;
+    outline: none;
+  }
+  .tabs__pane {
+    z-index: 10000;
+    display: none;
+    padding: 2rem 1.25rem;
+    background-color: white;
+    -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .tabs__pane.is-visible {
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  p + p {
+    margin-top: 1rem;
+  }
+  .img-tabs {
+    max-width: 800px;
+  }
+  .icon-tabs {
+    max-width: 100px;
+  }
+  .title-tabs {
+    font-weight: bold;
+    padding-top: 5vh;
+  }
+  .txt-tabs {
+    font-weight: lighter;
+    color: gray;
+    font-size: 20px;
+  }
+  .tabs__btn{
+    font-weight: bold;
+  }
+ 
+
+                                          
+</style>

@@ -1,0 +1,695 @@
+.container-fluid.-solution {
+  
+  background-color: #cecece;
+  &.-ndc {
+    background: #3a6186;
+    background: url(/assets/img/netwrix/wireframe.svg),
+      -webkit-linear-gradient(to right, #99072c, #3a6186);
+    background: url(/assets/img/netwrix/wireframe.svg),
+      linear-gradient(to right, #260669, #260669);
+    background-size: 100%, cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+
+  &.-obsidian {
+    background: linear-gradient(to right, #0c173b, #5fb1f3);
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-governanca {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(48,43,99,1) 46%, rgba(15,12,41,1) 80%);
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-dlp{
+    background: linear-gradient(144deg, rgba(149,169,238,1) 11%, rgba(83,155,217,1) 51%, rgba(94,176,241,1) 90%);
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+
+  &.-risk {
+    background: linear-gradient(
+      140deg,
+      rgba(30, 60, 114, 1) 26%,
+      rgba(42, 82, 152, 1) 100%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  
+
+  &.-edr {
+    background: linear-gradient(
+      135deg,
+      rgba(102, 125, 182, 1) 37%,
+      rgba(68, 127, 188, 1) 48%,
+      rgba(102, 125, 182, 1) 58%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-power {
+    background: linear-gradient(90deg, rgba(53,150,101,1) 1%, rgba(19,141,131,1) 91%);
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-bot {
+    background: linear-gradient(
+      143deg,
+      rgba(0, 180, 219, 1) 1%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-classification {
+    background: linear-gradient(
+      252deg,
+      rgba(15, 12, 41, 1) 0%,
+      rgba(48, 43, 99, 1) 49%,
+      rgba(36, 36, 62, 1) 98%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-inventory {
+    background: linear-gradient(
+      150deg,
+      rgba(242, 113, 33, 1) 4%,
+      rgba(233, 64, 87, 1) 8%,
+      rgba(147, 38, 130, 1) 61%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-scan {
+    background: linear-gradient(
+      139deg,
+      rgba(0, 0, 70, 1) 0%,
+      rgba(28, 181, 224, 1) 89%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-rms {
+    background: linear-gradient(
+      90deg,
+      rgba(73, 160, 157, 0.9780287114845938) 5%,
+      rgba(95, 44, 130, 0.9416141456582633) 66%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-lgpd {
+    background: linear-gradient(
+      121deg,
+      rgba(28, 181, 224, 0.9192051820728291) 4%,
+      rgba(0, 0, 70, 0.9472163865546218) 41%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-optimization {
+    background: linear-gradient(
+      90deg,
+      rgba(156, 236, 251, 1) 5%,
+      rgba(101, 199, 247, 1) 43%,
+      rgba(0, 82, 212, 0.9248074229691877) 94%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-audit_changes {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 70, 1) 5%,
+      rgba(28, 181, 224, 1) 94%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-remediation {
+    background: linear-gradient(
+      153deg,
+      rgba(15, 12, 41, 1) 19%,
+      rgba(48, 43, 99, 1) 42%,
+      rgba(36, 36, 62, 1) 65%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-ameacas {
+    background: linear-gradient(
+      90deg,
+      rgba(43, 88, 118, 1) 0%,
+      rgba(78, 67, 118, 1) 84%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-dsar {
+    background: linear-gradient(
+      140deg,
+      rgba(35, 37, 38, 1) 25%,
+      rgba(72, 117, 162, 1) 100%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-waf {
+    background: linear-gradient(
+      140deg,
+      rgba(0, 180, 219, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-ddos {
+    background: linear-gradient(
+      160deg,
+      rgba(0, 0, 70, 1) 18%,
+      rgba(28, 181, 224, 1) 100%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-silverfort {
+    background: url("/assets/img/silverfort/plexus.mp4");
+
+    height: auto;
+  }
+  &.-recursos {
+    background: linear-gradient(
+      90deg,
+      rgba(50, 131, 148, 1) 0%,
+      rgba(80, 211, 191, 1) 91%,
+      rgba(120, 255, 214, 1) 100%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-reblaze {
+    background: linear-gradient(
+      180deg,
+      rgba(146, 141, 171, 1) 0%,
+      rgba(125, 121, 148, 1) 47%,
+      rgba(31, 28, 44, 1) 100%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-patch-manager {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 180, 219, 1) 25%,
+      rgba(0, 131, 176, 1) 66%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-deep {
+    background: black;
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+  &.-deploy-software {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 92, 151, 1) 0%,
+      rgba(54, 55, 149, 1) 64%
+    );
+    background-size: 100%, cover;
+    background-position: center;
+
+    height: auto;
+  }
+
+  &.-netwrix {
+    background: #3a6186;
+    background: url(/assets/img/netwrix/wireframe.svg),
+      -webkit-linear-gradient(to right, #99072c, #3a6186);
+    background: url(/assets/img/netwrix/wireframe.svg),
+      linear-gradient(to right, #99072c, #3a6186);
+    background-size: 100%, cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  &.-cms {
+    background-image: url(/assets/img/cms/cms-default-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+
+    img {
+      padding: 20px !important;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 4px 4px 15px #5783ec50;
+    }
+  }
+
+  &.-vpm {
+    background-image: linear-gradient(to right, #329564, #94c48e);
+  }
+  &.-scan-particle {
+    background-image: url("/assets/img/scan/particle.webp");
+  }
+
+  &.-netaphor {
+    background-image: linear-gradient(to top, #13899e, rgb(36, 167, 190));
+  }
+
+  .-solution-hero {
+    height: 65vh;
+
+    img {
+      width: 250px;
+
+      padding: 10px;
+      background-color: transparent;
+    }
+
+    h1,
+    p {
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+  .-solution-hero-scan {
+    height: auto;
+
+    img {
+      max-width: 800px;
+      max-height: 450px;
+      padding: 10px;
+    }
+
+    h1,
+    p {
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
+
+.solution-call {
+  img {
+    padding: 20px 0;
+    min-width: 320px !important;
+  }
+
+  h1 {
+    color: $color-vpm;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 20px;
+    max-width: 400px;
+    font-size: 1.15em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #656565;
+  }
+}
+
+.banner {
+  background-color: #fff;
+  padding: 1.3em 2em;
+  margin-top: -80px;
+  max-width: 1100px;
+  border-radius: 3px;
+  box-shadow: 0 20px 40px rgba(51, 51, 51, 0.15);
+
+  h3 {
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+.customers {
+  margin: 2em 0;
+
+  img {
+    max-width: 200px;
+    padding: 10px;
+    filter: grayscale(1) opacity(0.7);
+    transition: 0.6s ease-in-out;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.embed-container {
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 3px;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+  }
+}
+
+.container-fluid.-solution-highlight {
+  background-color: #fff;
+
+  > .row {
+    max-width: 1200px;
+
+    h1 {
+      width: 100%;
+    }
+  }
+}
+.container-fluid.-solution-highlight-obs {
+  background-color: #fff;
+
+  > .row {
+    max-width: 1200px;
+
+    h1 {
+      width: 100%;
+    }
+  }
+}
+
+.-contracted-section-syxsense {
+  background: rgb(88, 165, 219);
+  background: linear-gradient(0deg, rgba(195, 64, 75, 1)0%, rgba(128, 57, 120, 1) 0%, #f9f9f9 100%);
+  transition: all 0.7s ease-in-out;
+  max-height: 120px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+.-contracted-section {
+  background: rgb(88, 165, 219);
+  background: linear-gradient(0deg, #e1f2ff 0%, #e1f2ff 0%, #f9f9f9 100%);
+  transition: all 0.7s ease-in-out;
+  max-height: 120px;
+  padding: 40px 0;
+  overflow: hidden;
+
+  img,
+  h1 {
+    transition: all 0.5s ease-in-out;
+    filter: opacity(0.5);
+  }
+
+  &.-fully-contracted {
+    background: transparent !important;
+    max-height: 0px;
+  }
+}
+
+.-expanded {
+  background: linear-gradient(0deg, #e8f3fc 0%, #f9f9f9 100%);
+  max-height: 2000px !important;
+
+  img,
+  h1 {
+    filter: opacity(1);
+  }
+}
+.-contracted-section-obs {
+  background: transparent;
+  background: transparent;
+  transition: all 0.7s ease-in-out;
+  max-height: 120px;
+  padding: 40px 0;
+  overflow: hidden;
+
+  img,
+  h1 {
+    transition: all 0.5s ease-in-out;
+    filter: opacity(0.5);
+  }
+
+  &.-fully-contracted {
+    background: transparent !important;
+    max-height: 0px;
+  }
+}
+
+.-expanded {
+  background: linear-gradient(0deg, #e8f3fc 0%, #f9f9f9 100%);
+  max-height: 2000px !important;
+
+  img,
+  h1 {
+    filter: opacity(1);
+  }
+}
+
+.-solution-highlight.-ddc {
+  background: url("/assets/img/netwrix/ddc-waves.webp"),
+    linear-gradient(to right, #0a2239, #3a6186);
+  padding: 80px 0;
+  background-size: auto, cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.-solution-highlight.-obs {
+  padding: 80px 0;
+  background-size: auto, cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.-solution-highlight.-real-time {
+  margin: 0;
+  background: url("/assets/img/cms/realtime-bg.jpg");
+  padding: 40px 0;
+  background-size: cover;
+  background-position: left top;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+  h1 {
+    font-size: 2.5em !important;
+  }
+}
+
+.container-fluid.-features {
+  > .row {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-fluid.-features {
+    > .row > .col {
+      display: flex;
+    }
+  }
+
+  .container-fluid.-solution-highlight {
+    &.py-5,
+    .col.py-5 {
+      padding-top: 1em !important;
+      padding-bottom: 1em !important;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .-features {
+    .col {
+      display: flex;
+      flex-direction: column;
+      margin: 20px auto;
+    }
+
+    .col {
+      min-height: 190px;
+    }
+  }
+
+  .customers {
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .-features.-cms {
+    h3 {
+      font-size: 1.3em;
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+
+  .banner h3 {
+    font-size: 1.2em;
+  }
+
+  .banner p {
+    font-size: 0.85em;
+  }
+
+  .container-fluid.-solution {
+    .-solution-hero {
+      img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  }
+  .container-fluid.-solution .-obsidian {
+    .-solution-hero {
+      img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  }
+
+  .py-5 {
+    padding: 1em 15px !important;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .customers {
+    img {
+      max-width: 120px;
+      padding: 5px;
+    }
+  }
+
+  .-solution-highlight {
+    h1,
+    h4 {
+      text-align: center !important;
+    }
+
+    h4 {
+      font-size: 1.3em;
+    }
+  }
+
+  .container-fluid.-solution-highlight.-ddc {
+    background-position: top;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-12.col-lg-4.align-items-center {
+    flex-direction: column;
+
+    img {
+      max-width: 110px !important;
+    }
+  }
+
+  .solution-call {
+    h1,
+    p,
+    h3 {
+      text-align: justify;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    h1,
+    h3 {
+      padding-left: 25px;
+      margin: 15px auto;
+      max-width: 500px;
+    }
+
+    h3 {
+      font-size: 1.45em;
+    }
+
+    img {
+      min-width: 200px !important;
+      max-width: 250px;
+    }
+  }
+
+  .customers {
+    img {
+      max-width: 75px;
+    }
+  }
+}

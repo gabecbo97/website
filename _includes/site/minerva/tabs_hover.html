@@ -1,0 +1,241 @@
+<div class="container text-center">
+  <div class="row justify-content-around">
+    <div class="">
+      <button class="tablinks" onmouseover="openCity(event, 'London')">
+        <img
+          src="/assets/img/minerva/ransomware.webp"
+          class="icon_features_minerva"
+          alt=""
+        />
+        <br />
+        Proteção contra <br />
+        Ransomwares
+      </button>
+      <button class="tablinks" onmouseover="openCity(event, 'Coritiba')">
+        <img
+          src="/assets/img/minerva/work_home.webp"
+          class="icon_features_minerva"
+          alt=""
+        />
+        <br />
+        Proteção no <br />
+        Trabalho Remoto
+      </button>
+      <button class="tablinks" onmouseover="openCity(event, 'Bh')">
+        <img
+          src="/assets/img/minerva/system.webp"
+          class="icon_features_minerva"
+          alt=""
+        />
+        <br />
+        Resposta a Incidentes
+      </button>
+      <button class="tablinks" onmouseover="openCity(event, 'Paris')">
+        <img
+          src="/assets/img/minerva/defender.webp"
+          class="icon_features_minerva"
+          alt=""
+        />
+        <br />
+        Orquestração <br />
+        MS Defender
+      </button>
+      <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">
+        <img
+          src="/assets/img/minerva/mobile.webp"
+          class="icon_features_minerva"
+          alt=""
+        />
+        <br />
+        Proteção para VDI
+      </button>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md col_content">
+      <div id="London" class="tabcontent-active">
+        <img
+          src="/assets/img/minerva/icon_minerva.png"
+          class="icon_minerva"
+          alt=""
+        />
+        <h3 class="tab_title">Proteção contra Ransomwares</h3>
+        <p>
+          Os criminosos que desenvolvem malware destrutivo são especialistas em
+          evitar ferramentas de detecção e antivírus. A Minerva Anti-Evasion
+          Platform interrompe o malware evasivo antes que ele infecte o
+          endpoint.
+        </p>
+      </div>
+      <div id="Coritiba" class="tabcontent">
+        <img
+          src="/assets/img/minerva/icon_minerva.png"
+          class="icon_minerva"
+          alt=""
+        />
+        <h3 class="tab_title">Proteção no Trabalho Remoto</h3>
+        <p>
+          As empresas modernas dependem cada vez mais de uma força de trabalho
+          distribuída, com freelancers, contratados, funcionários de meio
+          período e outros usuários que se conectam remotamente por VPN. Em
+          muitos casos, esses indivíduos acessam recursos confidenciais de
+          sistemas cuja configuração de segurança a empresa não controla. Sejam
+          dispositivos de propriedade do usuário ou de uma organização externa.
+        </p>
+      </div>
+      <div id="Bh" class="tabcontent">
+        <img
+          src="/assets/img/minerva/icon_minerva.png"
+          class="icon_minerva"
+          alt=""
+        />
+        <h3 class="tab_title">Resposta a Incidentes</h3>
+        <p>
+          A Plataforma Anti-Evasão da Minerva interrompe automaticamente as
+          ameaças projetadas para evitar outros ferramentas de segurança, como
+          sandboxes de malware, bem como produtos antimalware tradicionais e de
+          “próxima geração”.
+        </p>
+      </div>
+      <div id="Paris" class="tabcontent">
+        <img
+          src="/assets/img/minerva/icon_minerva.png"
+          class="icon_minerva"
+          alt=""
+        />
+        <h3 class="tab_title">Orquestração MS Defender</h3>
+        <p>
+          A orquestração de antivírus do Minerva permite que os clientes usem o
+          Minerva Management Console para monitorar centralmente o software
+          antivírus básico de cada endpoint. Além disso, se o endpoint estiver
+          usando o Windows Defender Antivirus, o Minerva também poderá capturar
+          alertas de antivírus em tempo real.
+        </p>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <img
+          src="/assets/img/minerva/icon_minerva.png"
+          class="icon_minerva"
+          alt=""
+        />
+        <h3 class="tab_title">Proteção para VD</h3>
+        <p>
+          O Minerva for VDI é composto por um arsenal de módulos que se reforçam
+          e trabalham em conjunto para formar uma camada cibernética poderosa e
+          impermeável que protege completamente as empresas - mesmo contra
+          ameaças projetadas para evitar outras defesas.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  /* Style the tab */
+
+  /* Style the buttons that are used to open the tab content */
+  .tablinks {
+    background: none;
+    border: none;
+    padding: 15px;
+    color: #faa931;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .tab button {
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .tablinks:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent-active {
+    float: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 20vh;
+    background-color: #faa931;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5vh;
+    transition: box-shadow 0.9s ease-in-out;
+  }
+
+  .tabcontent {
+    float: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 20vh;
+    display: none;
+    background-color: #faa931;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5vh;
+    transition: box-shadow 0.9s ease-in-out;
+  }
+  .icon_minerva {
+    max-width: 500px;
+    transform: rotate(-23deg);
+    float: left;
+    z-index: 100;
+    margin-left: -3vw;
+    margin-top: -6vh;
+  }
+  .tab_title {
+    color: black;
+  }
+  .icon_features_minerva {
+    max-width: 90px;
+  }
+  @media screen and (max-width: 990px) {
+    .tabcontent {
+      height: 100%;
+    }
+    .tabcontent-active {
+      height: 100%;
+    }
+  }
+</style>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-active");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>

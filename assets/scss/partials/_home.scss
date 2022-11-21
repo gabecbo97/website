@@ -1,0 +1,179 @@
+body {
+  background-color: #f9f9f9;
+}
+.container-fluid {
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+}
+.-aiqon {
+  > .row > .col {
+    height: 110vh;
+    h1 {
+      font-size: 70px;
+      max-width: 900px;
+      margin-left: 300px;
+    }
+  }
+  background-image: url("/assets/img/common/aiqon-outline.svg"),
+    linear-gradient(230deg, #80d0c7 0%, #18879e 100%);
+  background-size: 45%, cover;
+  background-position: center left, bottom;
+  background-repeat: no-repeat;
+}
+.-slides {
+  z-index: 100;
+  background-color: $whitesmoke;
+  flex-direction: column;
+  div.row {
+    width: 100%;
+    div.col-lg-12 {
+      margin: 0 auto;
+    }
+  }
+  p {
+    max-width: 600px;
+    text-align: center;
+  }
+}
+#slide-solutions {
+  border-radius: 3px;
+  overflow: hidden;
+
+  img {
+    max-width: 170px;
+    &.py-2 {
+      max-width: 80px;
+      max-height: 80px;
+      margin: 10px;
+      filter: drop-shadow(2px 2px 0 rgba(80, 80, 80, 0.15));
+    }
+  }
+  .carousel-indicators li {
+    background-color: #0b7f90;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 10px 15px;
+  }
+  .carousel-indicators {
+    position: relative;
+    margin: 0;
+  }
+  h1 {
+    color: #097080;
+  }
+  h5 {
+    color: #097080;
+    text-align: center;
+  }
+}
+#logo_syxsense{
+  width: 250px;
+}
+
+@media (max-width: 1400px) {
+  .-slides {
+    .p-5 {
+      padding: 0 !important;
+    }
+    .row {
+      padding: 10px 0 !important;
+    }
+    .row .col-xl,
+    .row .col-xl-4 {
+      padding: 5px;
+    }
+  }
+  #slide-solutions {
+    p {
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .-aiqon {
+    > .row > .col {
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
+  }
+  #slide-solutions {
+    min-height: 70vh;
+  }
+  .-aiqon {
+    background-position: center, bottom;
+    background-size: 20%, cover;
+  }
+  .-slides {
+    .row .col-xl,
+    .row .col-xl-4 {
+      padding: 0;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .-slides {
+    #slide-solutions {
+      h1 {
+        font-size: 1.75em;
+      }
+      h5 {
+        font-size: 0.75em;
+      }
+      p {
+        font-size: 0.74em;
+      }
+      img.logo {
+        max-width: 120px;
+      }
+    }
+  }
+  .px-5 {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+  .px-3 {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .-aiqon {
+    > .row > .col {
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        max-width: 460px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  .-aiqon {
+    > .row > .col {
+      h1 {
+        font-size: 2.2em !important;
+        text-align: left;
+        font-size: 60px;
+        line-height: 1.5;
+        max-width: 237px;
+        height: 30%;
+        margin: 0 auto !important;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .-aiqon {
+    > .row > .col {
+      height: 90vh;
+    }
+  }
+}

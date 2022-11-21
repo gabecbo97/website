@@ -1,0 +1,198 @@
+<style> 
+
+    .container_feature {
+        position: relative;
+        color: gray;
+        font-size: 20px;
+        height: 650px;
+        
+   }
+    .grid {
+        list-style: none;
+        margin-left: -40px;
+   }
+    .gc {
+        box-sizing: border-box;
+        display: inline-block;
+        margin-right: -0.25em;
+        min-height: 1px;
+        padding-left: 40px;
+        vertical-align: top;
+   }
+    .gc--1-of-3 {
+        width: 33.33333%;
+   }
+    .gc--2-of-3 {
+        width: 66.66666%;
+   }
+    .naccs {
+        position: center;
+        width: 100%;
+        margin-left: 0;
+        
+   }
+    .naccs .menu div {
+        padding: 15px 20px 15px 40px;
+        margin-bottom: 10px;
+        color: #707070;
+        background: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: relative;
+        vertical-align: middle;
+        width: 600px;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        margin-left: -100px;
+        
+   }
+    .naccs .menu div:hover {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.459);
+      color: #303f9f ;
+   }
+    .naccs .menu div span.light {
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: 24px;
+        left: 15px;
+        background-color: #707070;
+        border-radius: 100%;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+    .naccs .menu div.active span.light {
+        background-color: #303f9f;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        top: 0;
+        border-radius: 0;
+   }
+    .naccs .menu div.active {
+        color: #303f9f;
+        padding: 15px 20px 15px 20px;
+   }
+    ul.nacc {
+        position: relative;
+        height: 0px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+    ul.nacc li {
+        opacity: 0;
+        transform: translateX(50px);
+        position: absolute;
+        list-style: none;
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 600px;
+        margin-left: 280px;
+        text-align: justify;
+   }
+    ul.nacc li.active {
+        transition-delay: 0.3s;
+        z-index: 2;
+        opacity: 1;
+        transform: translateX(0px);
+   }
+    ul.nacc li p {
+        margin: 0;
+        margin-right: 760px;
+        margin-left: -760px;
+        margin-top: -130px;
+   }
+   #content{
+       margin-right: 370px;
+       margin-left: -370px;
+   }
+   #text{
+       margin-left: 760px;
+       margin-right: -760px;
+       margin-top: -230px;
+   }
+   #imagem{
+    -webkit-box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 48px -19px rgba(0,0,0,0.75);
+   }
+   
+</style>
+  
+  <div class="container_feature">
+    <div class="naccs">
+     <div class="grid">
+      
+      <div class="gc gc--2-of-3">
+       <ul class="nacc" >
+        <li class="active" >
+            <div id="content">
+              <img id="imagem"
+                       src="/assets/img/rms/time2_1.webp"
+                       style="max-width: 100%;"
+                       class="mx-auto my-auto"
+                     />
+                     <br>
+                     <br>
+             <p id="text">Você precisa garantir que todos os registros 
+                sejam descartados corretamente no final de seu 
+                ciclo de vida. Caso contrário, você poderá ser 
+                responsabilizado por falhas de conformidade ou 
+                problemas legais e multas quando dados irrelevantes, 
+                como versões antigas de contratos, surgirem durante 
+                um processo de litígio. Ao atribuir códigos de retenção 
+                específicos a diferentes tipos de dados, elimine o 
+                trabalho árduo de rastrear a disposição dos documentos 
+                - mesmo que os registros estejam espalhados por toda a 
+                organização - e ajuda a garantir o descarte oportuno, 
+                para reduzir riscos legais e cumprir as regulamentações.</p>
+            </div>
+           </li>
+           <li>
+            <div id="content">
+                    <img id="imagem"
+                       src="/assets/img/rms/image1_3.webp"
+                       style="max-width: 100%;"
+                       class="mx-auto my-auto"
+                     />
+                     <br>
+                     <br>
+             <p id="text">Quando sua solução de gerenciamento de registros está 
+                cheia de dados irrelevantes ou carece de registros necessários, 
+                sua organização corre um risco maior de danos à reputação, 
+                penalidades financeiras e risco legal. Ao alimentar o software 
+                do sistema de gerenciamento de registros eletrônicos com as 
+                informações mais relevantes, você pode recuperar o controle, 
+                atender aos requisitos legais e regulatórios, manter a reputação 
+                da sua empresa em excelente forma e economizar tempo corrigindo 
+                registros incorretos.</p>
+            </div>
+           </li>
+       </ul>
+      </div>
+      <div class="gc gc--1-of-3">
+        <div class="menu">
+         <div class="active"><span class="light"></span><span>Os registros regulamentados são descartados de acordo com seus horários?</span></div>
+         <div><span class="light"></span><span>Seu software de gerenciamento de registros está colocando você em risco desnecessário?</span></div>
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+      <script>
+          $(document).on("click", ".naccs .menu div", function() {
+       var numberIndex = $(this).index();
+   
+       if (!$(this).is("active")) {
+           $(".naccs .menu div").removeClass("active");
+           $(".naccs ul li").removeClass("active");
+   
+           $(this).addClass("active");
+           $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+   
+           var listItemHeight = $(".naccs ul")
+               .find("li:eq(" + numberIndex + ")")
+               .innerHeight();
+           $(".naccs ul").height(listItemHeight + "px");
+       }
+   });
+      </script>

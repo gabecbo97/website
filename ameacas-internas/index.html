@@ -1,0 +1,193 @@
+---
+layout: default
+title: Ameaças Internas
+---
+
+<div class="container-fluid" style="background: linear-gradient(
+  90deg,
+  rgba(43, 88, 118, 1) 0%,
+  rgba(78, 67, 118, 1) 84%
+); height: 500px; padding-top: 14vh; color: white;">
+    <br>
+    <br>
+    <canvas class="background"></canvas>
+    <div class="row">
+      <div
+        class="col -solution-hero d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <!--<img src="/assets/img/obsidian/logo.png" />--> 
+        <h1 id="solucao" style="font-size: 40px; "> <b>Detecção de ameaças internas</b></h1>
+        <br>
+        
+        <br>
+        
+        <p>{% include site/modal_form.html  title="Ameaças Internas" id="ameaca_form "%}</p>
+      
+      </div>
+    </div>
+   </div>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="banner mx-auto text-center">
+        <h3></h3>
+        <p class="text-secondary">
+            Pessoas mal intencionadas podem 
+            prejudicar sistemas críticos, 
+            copiar e vender dados sensíveis 
+            de clientes e roubar segredos da 
+            corporação. Com uma solução de 
+            mitigação de risco você pode garantir 
+            que nenhum funcionário, parceiro ou 
+            contratante consiga se safar após 
+            causar danos a sua empresa. Usando 
+            a visibilidade completa oferecida 
+            pela nossa solução, você pode construir 
+            um programa de gerenciamento de ameaça interna 
+            que facilita a detecção, a investigação e a 
+            prevenção de atividade interna não autorizada
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="showOnlyMobile">
+
+  <div class="container">
+    <br>
+    <h1 class="text-center mb-3" style="color: #707070;"> <b>Simplifique a detecção de ameaças internas</b></h1>
+    <p style="  color: #707070; font-size: 20px; "class="text-center mb-5">
+        monitorando continuamente a atividade do usuário e se mantendo alerta a comportamentos suspeitos no seu ambiente
+    </p>
+  </div>
+  {% include site/ameacas/tab.html %}
+</div>
+
+<div class="container-fluid -features" 
+
+id="trial_obs" style="background: transparent;">
+<br>
+<br>
+<br>
+<div class="container" id="trial_obs">
+  <h1 class="text-center mb-3" style="color: #707070;"> <b>Simplifique a detecção de ameaças internas</b></h1>
+  <p style="  color: #707070; font-size: 20px; "class="text-center mb-5">
+      monitorando continuamente a atividade do usuário e se mantendo alerta a comportamentos suspeitos no seu ambiente
+  </p>
+  {% include site/ameacas/tabs.html %}
+</div>
+  </div>
+ 
+ <div class="container-fluid" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(46,87,118,0.25253851540616246) 84%);">
+<div class="container" >
+    <br>
+    <h1 class="text-center mb-3" style="color: #707070;"> <b>Investigue os incidentes de forma eficiente </b></h1>
+    <p style="  color: #707070; font-size: 20px; "class="text-center mb-5">
+        Com o monitoramento continuo de ameaça interna para que você responder melhor a cada ataque
+    </p>
+  </div>
+  <div class="container" id="trial_obs" >
+    
+    {% include site/ameacas/tabss.html %}
+    
+    </div>
+    {% include site/ameacas/tabV2.html %}
+
+    <div class="container" >
+      
+        <h1 class="text-center mb-3" style="color: #707070;"> <b>Facilite a prevenção de ameaça interna  </b></h1>
+        <p style="  color: #707070; font-size: 20px; "class="text-center mb-5">
+            Mitigando pro ativamente os riscos da segurança de dados e monitorando continuamente os direitos de acesso do usuário
+        </p>
+      </div>
+
+      <div class="container" id="trial_obs">
+        {% include site/ameacas/tabsV2.html %}
+      </div>
+      {% include site/ameacas/tabV3.html %}
+        
+        <br>
+      
+      <div class="container">
+        <br>
+        <h1 class="text-center mb-3" style="color: #707070;"> <b>Realize o monitoramento dos usuários privilegiados</b></h1>
+        <p style="  color: #707070; font-size: 20px; "class="text-center mb-5">
+            e fique de olho nos usuários com mais permissões no seu ambiente</p>
+      </div>
+        <div class="container" id="trial_obs">
+          {% include site/ameacas/tabssV2.html %}
+          
+          </div>
+          {% include site/ameacas/tabV4.html %}
+    
+        </div>
+  
+<br>
+<br>
+<br>
+</div> 
+<div class="container">
+  <h2 style="color: #707070; text-align: center;" >Deseja saber mais sobre os riscos do seu ambiente?</h2>
+  <div class="image-block text-lightblue flex-column text-center"  >
+    <a href="#" class="btn btn-rms my-5 text-center" id="next_feature" >
+      <img src="/assets/img/rms/inventory.png" alt="" />
+      Reduza as chances de ataques e cibernéticos
+    </a>
+   
+  </div>
+</div>
+
+<style>
+ 
+  @media only screen and (max-width: 1500px) {
+    #trial_obs{
+      display: none;
+    }
+    #trial_obs p{
+      display: none;
+    } 
+    #next_feature{
+      width: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 1499px) {
+  
+    #showOnlyMobile{
+ display: none;
+
+}
+#colapse{
+  display: none;
+
+}
+#formHidden{
+       display:none
+    }
+    #next_feature_b{
+      width: 240px;
+      display: none;
+    }
+ 
+  
+ /*Content Animation*/
+ @keyframes fadeInScale {
+   0% {
+     transform: scale(0.9);
+     opacity: 0;
+   }
+   
+   100% {
+     transform: scale(1);
+     opacity: 1;
+   }
+ }
+}
+ 
+
+</style>
+      

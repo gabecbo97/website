@@ -1,0 +1,232 @@
+<style>
+     
+    .form-control {
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+    }
+    .form-control:focus {
+      background-color: unset;
+      border: 1px solid #ced4da;
+      box-shadow: none;
+      color: white;
+    }
+    .-trial-container-obsidian {
+      
+      width: 450px;
+      padding: 70mm;
+      background-color: white;
+      border-radius: 1mm;
+      height: 300px;
+    }
+  
+    .-trial-container-obsidian h1,
+    .-trial-container-obsidian h4 {
+      color: gray;
+      font-weight: 80px;
+      text-align: center;
+    }
+  
+    .-trial-form-obsidian {
+      padding: 2px;
+      width: 80%;
+      max-width: 300px;
+      margin: 200 auto;
+    }
+  
+    .-trial-form-obsidian input {
+      margin: 5px;
+      text-decoration: gray;
+      
+    }
+    .-trial-form-obsidian input::placeholder {
+      color: gray;
+      opacity: 0.7;
+      font-size: 15px;
+
+    }
+    .-trial-form-obsidian input[type="number"]::-webkit-inner-spin-button,
+    .-trial-form-obsidian input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+     
+      
+    }
+    
+   
+    #formSuccessMessage {
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 2em;
+    }
+    @media (max-width: 768px) {
+      .-trial-container-obsidian {
+      
+      width: 400px;
+      padding: 70mm;
+      background-color: white;
+      border-radius: 1mm;
+      height: 700px;
+    }
+     
+      .-trial-container-obsidian h4 {
+        font-size: 1em;
+      }
+      .-trial-container-obsidian .form-control {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+  <div  class="container-fluid p-0 m-0 -trial-container-obsidian" id="-trial-container-obsidian">
+    
+     
+        <h1 class="text-center text-bolder" style="font-size: 30px;">
+          {{ include.title }} 
+        </h1>
+     
+    
+    <div class="row">
+      
+      <div class="col d-flex flex-column justify-content-center align-items-center">
+      <h2>Reblaze</h2>
+      <p style="color: black; text-align: center;">Duas semanas para você testar as funcionalidades do Reblaze no seu ambiente.</p>
+        <form class="-trial-form-obsidian pb-5" id= "{{ include.id }}" >
+          <div class="form-row">
+            <div class="col">
+              <input style="color: black;"
+                aria-label="Primeiro nome."
+                class="form-control"
+                type="text"
+                name="firstname"
+                id="name"
+                placeholder="Nome"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite seu nome.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+            <div class="col">
+              <input style="color: black;"
+                aria-label="Sobrenome"
+                class="form-control"
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Sobrenome"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite seu sobrenome.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input style="color: black;"
+                aria-label="E-mail profissional."
+                class="form-control"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="E-mail profissional"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input style="color: black;"
+                aria-label="Número de telefone."
+                class="form-control"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Telefone"
+                required
+                oninvalid="this.setCustomValidity('Por favor, digite seu telefone.')"
+                oninput="setCustomValidity('')"
+              />
+            </div>
+            <div class="col">
+              <input style="color: black;"
+                aria-label="Ramal."
+                class="form-control"
+                type="number"
+                name="branch"
+                id="branch"
+                placeholder="Ramal"
+                max-length="5"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div
+              class="col d-flex justify-content-center align-items-center py-3"
+            >
+              <input style="background-color: rgba(255, 0, 0, 0.767); border-radius: 1mm; "
+                type="submit"
+                value="Solicitar teste"
+                class="btn btn-obsidian"
+                onclick="formSuccess()"
+                
+                
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/js/dist/jquery.min.js"></script>
+  <script src="../../assets/js/formMask.js"></script>
+  <script src="/assets/js/phoneMask.js"></script>
+  <script>
+
+
+    const form = document.getElementById("trialForm")
+    const url = "https://us-central1-aiqondb.cloudfunctions.net/api/trial"
+  
+    form.addEventListener("submit", function(e) {
+      e.preventDefault()
+      console.log("Enviando formulário...")
+  
+      const formData = new FormData(this)
+      const origin = window.location.pathname
+      const trialRequestJson = {}
+  
+      for (const pair of formData) {
+        trialRequestJson[pair[0]] = pair[1]
+      }
+      trialRequestJson["origin"] = origin
+      fetch(url, {
+        method: "post",
+        body: JSON.stringify(trialRequestJson),
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "same-origin"
+      })
+        .then(formSuccess())
+        
+        .catch(function(err) {
+          console.log("Ocorreu um erro: ", err)
+        })
+    })
+  
+   /* function formSuccess() {
+       const form = document.querySelector(".-trial-container")
+      const formFields = document.querySelectorAll("input")
+       for (field of formFields) {
+        field.value = ""
+       }
+       form.innerHTML = `<p id='formSuccessMessage'>
+           Mensagem enviada! <br> Entraremos em contato em breve.
+         </p>`
+      window.location.href = "/obrigado"
+    }*/
+  </script>
+  
