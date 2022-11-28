@@ -152,6 +152,89 @@
           /></a>
         </li>
       </ul>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          href="navbarDropdownMenuLink"
+        >
+          Serviços
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="container content-tabs-products">
+            <div class="row">
+              <!--FIRST COLUMN-->
+              <div class="col-3">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a
+                    class="list-group-item list-group-item-action active"
+                    id="list-manage"
+                    data-toggle="list"
+                    href="#manage-list"
+                    role="tab"
+                    aria-controls="prince"
+                    >AIQON - Active Manage</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-secure"
+                    data-toggle="list"
+                    href="#secure-list"
+                    role="tab"
+                    aria-controls="prince"
+                    >AIQON - Active Secure</a
+                  >
+                </div>
+              </div>
+              <!--SECOND COLUMN-->
+              <div class="col-4">
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="manage-list"
+                    role="tabpanel"
+                    aria-labelledby="list-manage"
+                  >
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <p>
+                        Tornamos a aplicação de patches nos seus servidores e
+                        endpoints mais fácil. Nosso serviço de patch escaneia,
+                        detecta e aplica as atualizações Microsoft e
+                        terceiros(Adobe, Java, etc), em sistemas Windows, Linux
+                        e MacOS.
+                      </p>
+                      <a class="list-group-item list-group-item-action" href="/"
+                        >Saiba Mais!</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="secure-list"
+                    role="tabpanel"
+                    aria-labelledby="list-secure"
+                  >
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <p>
+                        O AIQON Active Secure mantém você seguro e protegido
+                        identificando vulnerabilidades e patches automaticamente
+                        em servidores e endpoints(locais ou remoto). Com suporte
+                        para sistemas Windows Linux e MacOS.
+                      </p>
+                      <a class="list-group-item list-group-item-action" href="/"
+                        >Saiba Mais!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
 
       <li class="nav-item dropdown">
         <a
@@ -162,7 +245,7 @@
           aria-expanded="false"
           href="navbarDropdownMenuLink"
         >
-          Destaques
+          Produtos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <div class="container content-tabs-products">
@@ -172,6 +255,15 @@
                 <div class="list-group" id="list-tab" role="tablist">
                   <a
                     class="list-group-item list-group-item-action active"
+                    id="list-new"
+                    data-toggle="list"
+                    href="#latest-list"
+                    role="tab"
+                    aria-controls="prince"
+                    >Destaques</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action"
                     id="list-tecnology"
                     data-toggle="list"
                     href="#tecnology-list"
@@ -204,6 +296,34 @@
                 <div class="tab-content" id="nav-tabContent">
                   <div
                     class="tab-pane fade show active"
+                    id="latest-list"
+                    role="tabpanel"
+                    aria-labelledby="list-latest"
+                  >
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <a
+                        class="list-group-item list-group-item-action"
+                        id="list-netwrix"
+                        data-toggle="list"
+                        href="#netwrix-solution"
+                        role="tab"
+                        aria-controls="ads"
+                        >Netwrix Corporation</a
+                      >
+                      <a
+                        class="list-group-item list-group-item-action"
+                        href="/syxsense/"
+                        >Syxsense</a
+                      >
+                      <a
+                        class="list-group-item list-group-item-action"
+                        href="/deep-instinct/"
+                        >Deep Instinct</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
                     id="tecnology-list"
                     role="tabpanel"
                     aria-labelledby="list-tecnology"
@@ -315,7 +435,7 @@
                         href="#legacy-solution"
                         role="tab"
                         aria-controls="messages"
-                        >Ambiantes Legados</a
+                        >Ambientes Legados</a
                       >
                       <a
                         class="list-group-item list-group-item-action"
@@ -355,21 +475,21 @@
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-solitude-list"
+                        id="list-hipaa"
                         data-toggle="list"
-                        href="#list-solitude"
+                        href="#compliance-hipaa"
                         role="tab"
                         aria-controls="messages"
                         >HIPPA</a
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-solitude-list"
+                        id="list-pci"
                         data-toggle="list"
-                        href="#list-solitude"
+                        href="#compliance-pci"
                         role="tab"
                         aria-controls="messages"
-                        >SOX</a
+                        >PCI</a
                       >
                     </div>
                   </div>
@@ -391,54 +511,54 @@
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-wild-list"
+                        id="list-identify"
                         data-toggle="list"
-                        href="#list-wild"
+                        href="#need-identify"
                         role="tab"
                         aria-controls="wild"
                         >Identidade</a
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-solitude-list"
+                        id="list-sec"
                         data-toggle="list"
-                        href="#list-solitude"
+                        href="#need-sec"
                         role="tab"
                         aria-controls="messages"
                         >SecOps</a
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-solitude-list"
+                        id="list-device"
                         data-toggle="list"
-                        href="#list-solitude"
+                        href="#need-device"
                         role="tab"
                         aria-controls="messages"
                         >Gerenciamento de Dispositivos</a
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-solitude-list"
+                        id="list-dev"
                         data-toggle="list"
-                        href="#list-solitude"
+                        href="#need-dev"
                         role="tab"
                         aria-controls="messages"
                         >DevOps</a
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-solitude-list"
+                        id="list-threats"
                         data-toggle="list"
-                        href="#list-solitude"
+                        href="#need-threats"
                         role="tab"
                         aria-controls="messages"
                         >Ameaças</a
                       >
                       <a
                         class="list-group-item list-group-item-action"
-                        id="list-solitude-list"
+                        id="list-risk"
                         data-toggle="list"
-                        href="#list-solitude"
+                        href="#need-risk"
                         role="tab"
                         aria-controls="messages"
                         >Riscos</a
@@ -450,6 +570,137 @@
               <!--THIRD COLUMN-->
               <div class="col-4">
                 <!--TECNOLOGY COLUMN-->
+                <div
+                  class="tab-pane fade active"
+                  id="netwrix-solution"
+                  role="tabpanel"
+                  aria-labelledby="list-netwrix"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/netwrix/"
+                      >Netwrix Auditor</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix Data Classification</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix SbPAM</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix Change Tracker</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix Password Policy Enforce</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix Password Secure</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix Password Reset</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix PolicyPak</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix StealthAUDIT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix StealthDEFEND</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix StealthINTERCEPT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix StealthRECOVER</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix Usercube</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-ad"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix GroupID</a
+                    >
+                  </div>
+                </div>
                 <div
                   class="tab-pane fade active"
                   id="ad-solution"
@@ -1031,27 +1282,27 @@
                   <div class="list-group" id="list-tab" role="tablist">
                     <a
                       class="list-group-item list-group-item-action"
-                      id="list-prince-list"
+                      id="list-sales"
                       data-toggle="list"
-                      href="#list-prince"
+                      href="#sales-force-solution"
                       role="tab"
                       aria-controls="prince"
                       >Salesforce</a
                     >
                     <a
                       class="list-group-item list-group-item-action"
-                      id="list-prince-list"
+                      id="git-list"
                       data-toggle="list"
-                      href="#list-prince"
+                      href="#list-git"
                       role="tab"
                       aria-controls="prince"
                       >Github</a
                     >
                     <a
                       class="list-group-item list-group-item-action"
-                      id="list-prince-list"
+                      id="crowdstrike-list"
                       data-toggle="list"
-                      href="#list-prince"
+                      href="#list-crowdstrike"
                       role="tab"
                       aria-controls="prince"
                       >Crowdstrike</a
@@ -1064,6 +1315,138 @@
                   id="compliance-gdpr"
                   role="tabpanel"
                   aria-labelledby="list-compliance"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/adaptiveshield/"
+                      >Adaptive Shield</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/comforte/"
+                      >Comforte</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/netwrix/"
+                      >Netwrix Auditor</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="#list-wild"
+                      >Netwrix Data Classification</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/stealthaudit/"
+                      >Netwrix StealthAUDIT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/virtru/"
+                      >Virtru</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="compliance-iso"
+                  role="tabpanel"
+                  aria-labelledby="list-iso"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/adaptiveshield/"
+                      >Adaptive Shield</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/comforte/"
+                      >Comforte</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/netwrix/"
+                      >Netwrix Auditor</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="#list-wild"
+                      >Netwrix Data Classification</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/stealthaudit/"
+                      >Netwrix StealthAUDIT</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="compliance-hipaa"
+                  role="tabpanel"
+                  aria-labelledby="list-compliance"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/netwrix/"
+                      >Netwrix Auditor</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="#list-wild"
+                      >Netwrix Data Classification</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/stealthaudit/"
+                      >Netwrix StealthAUDIT</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="compliance-pci"
+                  role="tabpanel"
+                  aria-labelledby="list-compliance"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/adaptiveshield/"
+                      >Adaptive Shield</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/comforte/"
+                      >Comforte</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/netwrix/"
+                      >Netwrix Auditor</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="#list-wild"
+                      >Netwrix Data Classification</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/stealthaudit/"
+                      >Netwrix StealthAUDIT</a
+                    >
+                  </div>
+                </div>
+                <!--NEEDS COLUMN-->
+                <div
+                  class="tab-pane fade"
+                  id="need-data"
+                  role="tabpanel"
+                  aria-labelledby="list-data"
                 >
                   <div class="list-group" id="list-tab" role="tablist">
                     <a
@@ -1091,15 +1474,33 @@
                       href="#list-solitude"
                       role="tab"
                       aria-controls="messages"
-                      >Syxsense</a
+                      >Netwrix StealthAUDIT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Comforte</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Virtru</a
                     >
                   </div>
                 </div>
                 <div
                   class="tab-pane fade"
-                  id="compliance-iso"
+                  id="need-identify"
                   role="tabpanel"
-                  aria-labelledby="list-iso"
+                  aria-labelledby="list-identify"
                 >
                   <div class="list-group" id="list-tab" role="tablist">
                     <a
@@ -1109,7 +1510,268 @@
                       href="#list-prince"
                       role="tab"
                       aria-controls="prince"
-                      >Netwrix Auditor-iso</a
+                      >Silverfort</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix SbPAM</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix PolicyPak</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix Password Reset</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="need-sec"
+                  role="tabpanel"
+                  aria-labelledby="list-sec"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Syxsense</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Reblaze</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix StealthINTERCEPT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Netwrix StealthDEFEND</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Minerva</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="need-device"
+                  role="tabpanel"
+                  aria-labelledby="list-device"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Syxsense</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Easy Inventory</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="need-dev"
+                  role="tabpanel"
+                  aria-labelledby="list-dev"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Syxsense</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Reblaze</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Obsidian</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix Auditor</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="need-threats"
+                  role="tabpanel"
+                  aria-labelledby="list-threats"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Netwrix Auditor</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Syxsense</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Minerva</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix StealthDEFEND</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix StealthINTERCEPT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Silverfort</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Reblaze</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix PolicyPak</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Obsidian</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="need-risk"
+                  role="tabpanel"
+                  aria-labelledby="list-risk"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Netwrix Auditor</a
                     >
                     <a
                       class="list-group-item list-group-item-action"
@@ -1122,31 +1784,12 @@
                     >
                     <a
                       class="list-group-item list-group-item-action"
-                      id="list-solitude-list"
+                      id="list-wild-list"
                       data-toggle="list"
-                      href="#list-solitude"
+                      href="#list-wild"
                       role="tab"
-                      aria-controls="messages"
+                      aria-controls="wild"
                       >Syxsense</a
-                    >
-                  </div>
-                </div>
-                <!--NEEDS COLUMN-->
-                <div
-                  class="tab-pane fade"
-                  id="need-data"
-                  role="tabpanel"
-                  aria-labelledby="list-data"
-                >
-                  <div class="list-group" id="list-tab" role="tablist">
-                    <a
-                      class="list-group-item list-group-item-action"
-                      id="list-prince-list"
-                      data-toggle="list"
-                      href="#list-prince"
-                      role="tab"
-                      aria-controls="prince"
-                      >Netwrix Auditor-DATA</a
                     >
                     <a
                       class="list-group-item list-group-item-action"
@@ -1155,7 +1798,61 @@
                       href="#list-wild"
                       role="tab"
                       aria-controls="wild"
-                      >Netwrix Data Classification</a
+                      >Obsidian</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix StealthAUDIT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Comforte</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="sales-force-solution"
+                  role="tabpanel"
+                  aria-labelledby="list-sales-force"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-sales"
+                      data-toggle="list"
+                      href="#other-solution"
+                      role="tab"
+                      aria-controls="prince"
+                      >< Voltar</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Netwrix Change Tracker-sales</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix StealthAUDIT</a
                     >
                     <a
                       class="list-group-item list-group-item-action"
@@ -1164,7 +1861,97 @@
                       href="#list-solitude"
                       role="tab"
                       aria-controls="messages"
-                      >Syxsense</a
+                      >Swimlane</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="list-git"
+                  role="tabpanel"
+                  aria-labelledby="list-git"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-sales"
+                      data-toggle="list"
+                      href="#other-solution"
+                      role="tab"
+                      aria-controls="prince"
+                      >< Voltar</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Netwrix Change Tracker</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix StealthAUDIT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Swimlane</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="list-crowdstrike"
+                  role="tabpanel"
+                  aria-labelledby="crowdstike-list"
+                >
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-sales"
+                      data-toggle="list"
+                      href="#other-solution"
+                      role="tab"
+                      aria-controls="prince"
+                      >< Voltar</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-prince-list"
+                      data-toggle="list"
+                      href="#list-prince"
+                      role="tab"
+                      aria-controls="prince"
+                      >Netwrix Change Tracker-sales</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-wild-list"
+                      data-toggle="list"
+                      href="#list-wild"
+                      role="tab"
+                      aria-controls="wild"
+                      >Netwrix StealthAUDIT</a
+                    >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      id="list-solitude-list"
+                      data-toggle="list"
+                      href="#list-solitude"
+                      role="tab"
+                      aria-controls="messages"
+                      >Swimlane</a
                     >
                   </div>
                 </div>
@@ -1182,99 +1969,101 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Segurança de TI
+          Soluções
           <span class="badge badge-primary">Novo</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="nav-link" href="/comforte"
-            >Criptografia de Dados
-            <span class="badge badge-primary">Novo</span></a
-          >
-          <a class="nav-link" href="/stealthdefend"
-            >Detecção e resposta a ameaças em <br />
-            tempo real</a
-          >
-          <a class="nav-link" href="/stealthdefend"
-            >SSPM - Segurança para o SaaS</a
-          >
-          <a class="nav-link" href="/stealthintercept"
-            >Prevenção de atividades
-            <span class="badge badge-primary">Novo</span></a
-          >
+          <div class="row">
+            <div class="col-md-4">
+              <h5>GERENCIAMENTO DE TI</h5>
+              <a class="nav-link" href="/comforte"
+                >Criptografia de Dados
+                <span class="badge badge-primary">Novo</span></a
+              >
+              <a class="nav-link" href="/stealthdefend"
+                >Detecção e resposta a ameaças em <br />
+                tempo real</a
+              >
+              <a class="nav-link" href="/stealthdefend"
+                >SSPM - Segurança para o SaaS</a
+              >
+              <a class="nav-link" href="/stealthintercept"
+                >Prevenção de atividades
+                <span class="badge badge-primary">Novo</span></a
+              >
 
-          <a class="nav-link" href="/criptografia-de-email"
-            >Criptografia de arquivos e e-mail
-            <span class="badge badge-primary">Novo</span></a
-          >
-          <a class="nav-link" href="/remediation"
-            >Remediação de dados
-            <span class="badge badge-success">LGPD</span></a
-          >
-          <a class="nav-link" href="/ameacas-internas">Ameaças internas </a>
-          <a class="nav-link" href="/dsar"
-            >Solicitações do titular do dado
-            <span class="badge badge-success">LGPD</span></a
-          >
-          <!--<a class="nav-link" href="/waf">Web Application Firewall - WAF </a>-->
-          <a class="nav-link" href="/edr">Alertas de Ameaças em Tempo Real</a>
-          <a class="nav-link" href="/protecao-saas"
-            >Proteção de aplicações SaaS</a
-          >
-          <!--<a class="nav-link" href="/ddos">Proteção de DDoS </a>-->
-          <!--<a class="nav-link" href="/bot">BOT Management</a>-->
-          <a class="nav-link" href="/governancia-de-dados"
-            >Governança de acesso a dados</a
-          >
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href=""
-          id="navbarDropdownMenuLink"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Gerenciamento de TI
-          <span class="badge badge-primary">Novo</span></a
-        >
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="nav-link" href="/auditoria-de-alteracoes"
-            >Auditoria de alterações
-            <span class="badge badge-success">LGPD</span></a
-          >
-          <a class="nav-link" href="/optimization">Otimização de storage</a>
-          <a class="nav-link" href="/patch-manager">Gerenciamento de patch</a>
-          <a class="nav-link" href="/stealthaudit/"
-            >Governança de dados
-            <span class="badge badge-primary">Novo</span></a
-          >
-          <a class="nav-link" href="/stealth-recover/"
-            >Restauração do AD <span class="badge badge-primary">Novo</span></a
-          >
-          <a class="nav-link" href="/sbpam/"
-            >Gerenciamento de acesso - PAM
-            <span class="badge badge-primary">Novo</span></a
-          >
-          <a class="nav-link" href="/cortex/"> Automação de TI inteligente</a>
-          <!--<a class="nav-link" href="#">Deploy de Software</a>-->
-          <a class="nav-link" href="/hardware-software"
-            >Inventário de HW - SW
-          </a>
-          <!-- <a class="nav-link" href="#">Acesso remoto</a>
-                          <a class="nav-link" href="#">Gerenciamento de eventos </a>-->
-          <a class="nav-link" href="/scan-de-vulnerabilidade"
-            >Scanner de vulnerabilidades</a
-          >
-          <a class="nav-link" href="/power-manager">PC Power Manager</a>
-          <a class="nav-link" href="/mitigacao-de-risco"
-            >Avaliação e Mitigação de Risco</a
-          >
-          <a class="nav-link" href="/distribuicao-de-software"
-            >Deploy de Software</a
-          >
-          <a class="nav-link" href="/rms">Gerenciamento de registros (RMS) </a>
+              <a class="nav-link" href="/criptografia-de-email"
+                >Criptografia de arquivos e e-mail
+                <span class="badge badge-primary">Novo</span></a
+              >
+              <a class="nav-link" href="/remediation"
+                >Remediação de dados
+                <span class="badge badge-success">LGPD</span></a
+              >
+              <a class="nav-link" href="/ameacas-internas">Ameaças internas </a>
+              <a class="nav-link" href="/dsar"
+                >Solicitações do titular do dado
+                <span class="badge badge-success">LGPD</span></a
+              >
+              <!--<a class="nav-link" href="/waf">Web Application Firewall - WAF </a>-->
+              <a class="nav-link" href="/edr"
+                >Alertas de Ameaças em Tempo Real</a
+              >
+              <a class="nav-link" href="/protecao-saas"
+                >Proteção de aplicações SaaS</a
+              >
+              <!--<a class="nav-link" href="/ddos">Proteção de DDoS </a>-->
+              <!--<a class="nav-link" href="/bot">BOT Management</a>-->
+              <a class="nav-link" href="/governancia-de-dados"
+                >Governança de acesso a dados</a
+              >
+            </div>
+            <div class="col-md-4">
+              <h5>SEGURANÇA DE TI</h5>
+              <a class="nav-link" href="/auditoria-de-alteracoes"
+                >Auditoria de alterações
+                <span class="badge badge-success">LGPD</span></a
+              >
+              <a class="nav-link" href="/optimization">Otimização de storage</a>
+              <a class="nav-link" href="/patch-manager"
+                >Gerenciamento de patch</a
+              >
+              <a class="nav-link" href="/stealthaudit/"
+                >Governança de dados
+                <span class="badge badge-primary">Novo</span></a
+              >
+              <a class="nav-link" href="/stealth-recover/"
+                >Restauração do AD
+                <span class="badge badge-primary">Novo</span></a
+              >
+              <a class="nav-link" href="/sbpam/"
+                >Gerenciamento de acesso - PAM
+                <span class="badge badge-primary">Novo</span></a
+              >
+              <a class="nav-link" href="/cortex/">
+                Automação de TI inteligente</a
+              >
+              <!--<a class="nav-link" href="#">Deploy de Software</a>-->
+              <a class="nav-link" href="/hardware-software"
+                >Inventário de HW - SW
+              </a>
+              <!-- <a class="nav-link" href="#">Acesso remoto</a>
+                            <a class="nav-link" href="#">Gerenciamento de eventos </a>-->
+              <a class="nav-link" href="/scan-de-vulnerabilidade"
+                >Scanner de vulnerabilidades</a
+              >
+              <a class="nav-link" href="/power-manager">PC Power Manager</a>
+              <a class="nav-link" href="/mitigacao-de-risco"
+                >Avaliação e Mitigação de Risco</a
+              >
+              <a class="nav-link" href="/distribuicao-de-software"
+                >Deploy de Software</a
+              >
+              <a class="nav-link" href="/rms"
+                >Gerenciamento de registros (RMS)
+              </a>
+            </div>
+          </div>
         </div>
       </li>
       <li class="nav-item active">
@@ -1336,7 +2125,7 @@
     color: teal;
   }
   .btn-demo:hover {
-    border: 1px solid teal;
+    border: 1px solid rgb(0, 128, 128);
     background-color: transparent;
     color: teal;
   }
@@ -1358,11 +2147,13 @@
   .dropdown .dropdown-menu {
     border-radius: 0;
     margin-top: -3px;
-    margin-left: -30vw;
+    margin-left: -25vw;
     padding: 10px;
     position: sticky;
-    width: 70vw;
+    min-width: 70vw;
+    max-height: 90vh;
   }
+
   .service-nav {
     background: linear-gradient(
       90deg,
@@ -1385,7 +2176,31 @@
   .tab-pane:not(.active) {
     display: none;
   }
-
+  .list-group-item.active {
+    background-color: teal;
+    border-radius: 0;
+  }
+  .list-group-item {
+    border: none;
+    border-radius: 0;
+  }
+  .list-group-item:hover {
+    background-color: rgba(0, 128, 128, 0.911);
+    color: white;
+    border-radius: 0;
+  }
+  .list-group-item::after {
+    content: "";
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1397521/arrowRight.svg#accent");
+    background-size: 14px;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   /* Medium devices (tablets, 768px and up) 
   The navbar toggle appears at this breakpoint */
   @media (max-width: 768px) {
