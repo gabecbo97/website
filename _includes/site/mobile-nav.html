@@ -54,17 +54,68 @@
   });
 </script>
 <div id="mobile-nav">
-  <div class="logo"></div>
-  <div class="menu-button"><span class="fa fa-reorder"></span></div>
+  <div class="logo">
+    <img
+      class="logo logo-aiq justify-content-start"
+      src="/assets/img/common/aiqon.svg"
+      alt="Logotipo AIQON."
+    />
+  </div>
+  <div class="menu-button">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="40"
+      height="40"
+      viewBox="0 0 172 172"
+      style="fill: #000000"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+        stroke="none"
+        stroke-width="1"
+        stroke-linecap="butt"
+        stroke-linejoin="miter"
+        stroke-miterlimit="10"
+        stroke-dasharray=""
+        stroke-dashoffset="0"
+        font-family="none"
+        font-weight="none"
+        font-size="none"
+        text-anchor="none"
+        style="mix-blend-mode: normal"
+      >
+        <path d="M0,172v-172h172v172z" fill="none"></path>
+        <g>
+          <path d="M5.375,78.475h161.25v15.05h-161.25z" fill="#ffffff"></path>
+          <path
+            d="M165.55,79.55v12.9h-159.1v-12.9h159.1M167.7,77.4h-163.4v17.2h163.4v-17.2z"
+            fill="#0094a9"
+          ></path>
+          <path d="M5.375,35.475h161.25v15.05h-161.25z" fill="#ffffff"></path>
+          <path
+            d="M165.55,36.55v12.9h-159.1v-12.9h159.1M167.7,34.4h-163.4v17.2h163.4v-17.2z"
+            fill="#0094a9"
+          ></path>
+          <g>
+            <path
+              d="M5.375,121.475h161.25v15.05h-161.25z"
+              fill="#ffffff"
+            ></path>
+            <path
+              d="M165.55,122.55v12.9h-159.1v-12.9h159.1M167.7,120.4h-163.4v17.2h163.4v-17.2z"
+              fill="#0094a9"
+            ></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
   <ul>
     <li>
-      <a href="/">
-        <img
-          class="logo logo-aiq justify-content-start"
-          id="logo_default"
-          src="/assets/img/common/aiqon.svg"
-          alt="Logotipo AIQON."
-      /></a>
+      <a href="/"> </a>
     </li>
     <li class="parent">
       <a href="#">Serviços</a>
@@ -397,7 +448,7 @@
         </li>
       </ul>
     </li>
-    <li class="parent">
+    <li class="parent mb-2">
       <a href="#">Soluções</a>
       <ul>
         <li class="parent">
@@ -453,11 +504,27 @@
       </ul>
     </li>
     <li><a href="/ajuda/">Contato</a></li>
-    <li>
-      <a target="_blank" href="https://aiqon.zendesk.com/hc/pt-br/requests/new"
-        >Suporte</a
-      >
-    </li>
+
+    <div class="row mobi-secondary justify-content-between text-center">
+      <div class="col">
+        <a class="secondary-social" href="https://aiqon.com.br/blog/">Blog</a>
+      </div>
+      <div class="col">
+        <a class="secondary-social" href="/recursos/">Recursos</a>
+      </div>
+      <div class="col">
+        <a class="secondary-social" href="/parcerias/">Seja um Parceiro</a>
+      </div>
+      <div class="col">
+        <a
+          class="secondary-social"
+          target="_blank"
+          href="https://aiqon.zendesk.com/hc/pt-br/requests/new"
+          >Suporte</a
+        >
+      </div>
+    </div>
+    
   </ul>
 </div>
 
@@ -467,17 +534,18 @@
   .logo {
     color: gray;
     font-size: 2.1rem;
-    padding: 0.65rem 1rem;
+    padding: 10px;
     position: absolute;
+    margin-left: -0.2vw !important;
   }
 
   .menu-button {
     color: gray;
     cursor: pointer;
     font-size: 2rem;
-    padding: 0.75rem 1.55rem;
+    padding: 5px;
     position: fixed;
-    right: 0;
+    right: 4%;
   }
 
   .open-menu {
@@ -512,19 +580,18 @@
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    height: 8vh;
+    z-index: 10000;
   }
 
   #mobile-nav ul {
     background-color: rgba(0, 0, 0, 0.1);
     display: none;
-    margin: 0 1rem;
     padding: 0;
     position: relative;
   }
-
   #mobile-nav ul:first-child {
-    background-color: transparent;
+    background-color: white;
   }
 
   #mobile-nav ul li {
@@ -538,7 +605,7 @@
     color: gray;
     display: inline-block;
     font-size: 1rem;
-    padding: 1rem 0;
+    padding: 1rem 0 3vh 5vw;
     text-decoration: none;
     width: 100%;
   }
@@ -550,6 +617,25 @@
   #mobile-nav ul ul li {
     border-top: none;
     padding-left: 1rem;
+  }
+  .mobi-secondary {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 164, 143, 1) 0%,
+      rgba(10, 87, 54, 1) 100%
+    );
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    position: absolute;
+    bottom: 0;
+   
+  }
+  .secondary-social {
+    color: white;
   }
   @media only screen and (min-width: 1024px) {
     #mobile-nav {

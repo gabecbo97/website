@@ -20,56 +20,7 @@
       aria-label="Toggle navigation"
       onclick="javascript:void(0);"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="40"
-        height="40"
-        viewBox="0 0 172 172"
-        style="fill: #000000"
-      >
-        <g
-          fill="none"
-          fill-rule="nonzero"
-          stroke="none"
-          stroke-width="1"
-          stroke-linecap="butt"
-          stroke-linejoin="miter"
-          stroke-miterlimit="10"
-          stroke-dasharray=""
-          stroke-dashoffset="0"
-          font-family="none"
-          font-weight="none"
-          font-size="none"
-          text-anchor="none"
-          style="mix-blend-mode: normal"
-        >
-          <path d="M0,172v-172h172v172z" fill="none"></path>
-          <g>
-            <path d="M5.375,78.475h161.25v15.05h-161.25z" fill="#ffffff"></path>
-            <path
-              d="M165.55,79.55v12.9h-159.1v-12.9h159.1M167.7,77.4h-163.4v17.2h163.4v-17.2z"
-              fill="#0094a9"
-            ></path>
-            <path d="M5.375,35.475h161.25v15.05h-161.25z" fill="#ffffff"></path>
-            <path
-              d="M165.55,36.55v12.9h-159.1v-12.9h159.1M167.7,34.4h-163.4v17.2h163.4v-17.2z"
-              fill="#0094a9"
-            ></path>
-            <g>
-              <path
-                d="M5.375,121.475h161.25v15.05h-161.25z"
-                fill="#ffffff"
-              ></path>
-              <path
-                d="M165.55,122.55v12.9h-159.1v-12.9h159.1M167.7,120.4h-163.4v17.2h163.4v-17.2z"
-                fill="#0094a9"
-              ></path>
-            </g>
-          </g>
-        </g>
-      </svg>
+      
     </button>
   </div>
 
@@ -232,7 +183,7 @@
               >
 
               <ul class="mega-menu mega-menu--multiLevel">
-                <li>
+                <li class="item-selector">
                   <a
                     href="javascript:void(0);"
                     class="menu-link menu-list-link"
@@ -795,7 +746,7 @@
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li class="item-selector">
                   <a
                     href="javascript:void(0);"
                     class="menu-link mega-menu-link"
@@ -954,12 +905,12 @@
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li class="item-selector">
                   <a
                     href="javascript:void(0);"
                     class="menu-link mega-menu-link"
                     aria-haspopup="true"
-                    >Por necessidade</a
+                    >Por Necessidade</a
                   >
                   <ul class="menu menu-list">
                     <li>
@@ -1615,6 +1566,10 @@
   nav a:visited {
     text-decoration: none;
   }
+  .item-selector{
+    display: flex !important;
+    align-items: center!important;
+  }
   .menu-bar {
     background: #ffffff;
     display: flex;
@@ -1660,7 +1615,7 @@
   .mega-menu--multiLevel {
     flex-direction: column;
     font-size: 13px;
-    height: 30vh;
+    height: 60vh;
   }
   @media all and (min-width: 951px) {
     .nav {
@@ -1707,7 +1662,7 @@
     .mega-menu {
       position: absolute;
       top: 100%;
-      left: 0;
+      left: 6.2%;
       width: 100%;
     }
     .mega-menu:hover {
