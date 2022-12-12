@@ -108,12 +108,12 @@
               >
 
               <ul class="mega-menu mega-menu--multiLevel">
-                <li style="height: 6vh">
+                <li style="height: 6vh;">
                   <a
                     href="javascript:void(0);"
-                    class="menu-link menu-list-link item-selector"
+                    class="menu-link menu-list-link"
                     aria-haspopup="true"
-                    >AIQON - Active Manage</a
+                    >Active Manage</a
                   >
                   <ul class="menu menu-list">
                     <li class="m-4">
@@ -130,12 +130,12 @@
                     </li>
                   </ul>
                 </li>
-                <li style="height: 6vh">
+                <li style="height: 6vh;">
                   <a
                     href="javascript:void(0);"
                     class="menu-link mega-menu-link"
                     aria-haspopup="true"
-                    >AIQON - Active Secure</a
+                    >Active Secure</a
                   >
                   <ul class="menu menu-list">
                     <li class="m-4">
@@ -1151,7 +1151,7 @@
                 >Soluções</a
               >
               <ul class="mega-menu mega-menu--flat">
-                <li class="solution-link">
+                <li class="solution-link" >
                   <p
                     href="#"
                     class="menu-link mega-menu-link solution-link mega-menu-header"
@@ -1244,7 +1244,7 @@
                     href="/#"
                     class="menu-link mega-menu-link solution-link mega-menu-header"
                   >
-                    Segurança de TI
+                    Gerenciamento de TI
                   </p>
                   <ul class="menu menu-list">
                     <li>
@@ -1522,8 +1522,6 @@
   .logo-nav-icon {
     max-width: 150px;
   }
-  .nav {
-  }
   nav ul,
   nav li {
     list-style: none;
@@ -1541,7 +1539,7 @@
   .item-selector {
     display: flex !important;
     align-items: center !important;
-    height: 8vh !important;
+    height: 10vh !important;
   }
   .desc-selector {
     color: gray;
@@ -1551,9 +1549,9 @@
   .menu-bar {
     background: #ffffff;
     display: flex;
-    width: 58vw;
-    margin-left: -5vw;
-    justify-content: space-evenly;
+    width: 60vw;
+    margin-left: -8vw;
+    justify-content: end;
   }
   .menu-link {
     padding: 10px 15px;
@@ -1564,7 +1562,7 @@
     width: 10vw;
   }
   .solution-link {
-    width: 30vw;
+    width: 20vw;
   }
   .menu-link[aria-haspopup="true"] {
     padding-right: 40px;
@@ -1594,6 +1592,7 @@
     flex-direction: column;
     font-size: 13px;
     height: 60vh;
+    
   }
   @media all and (min-width: 951px) {
     .nav {
@@ -1639,8 +1638,8 @@
     }
     .mega-menu {
       position: absolute;
-      top: 100%;
-      left: 6.2%;
+      top: 126%;
+      left: 28%;
       width: 100%;
     }
     .mega-menu:hover {
@@ -1696,7 +1695,7 @@
       top: 0;
     }
     .mega-menu--flat > * {
-      flex: 1;
+      flex: none;
     }
     .mobile-menu-trigger,
     .mobile-menu-header,
