@@ -1,7 +1,7 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5" id="tabs-products-netwrix-desktop">
   <ul class="nav nav-pills">
     <li class="list-item-tab active">
-      <a class="btn-link-tab" href="#tab-1" data-toggle="tab"
+      <a class="btn-link-tab active" href="#tab-1" data-toggle="tab"
         >Quer ter certeza que seus sistemas estão seguros?</a
       >
     </li>
@@ -20,13 +20,22 @@
   <div class="tab-content well">
     <div class="tab-pane active" id="tab-1">
       <div class="row justify-content-center mt-5">
-        <div class="col-md-4"><img src="/assets/img/change-tracker/Compliance_Dashboard.png" class="img-tab-item" alt=""></div>
         <div class="col-md-4">
-          <h4>
+          <img
+            src="/assets/img/change-tracker/Compliance_Dashboard.png"
+            class="img-tab-item"
+            alt=""
+          />
+        </div>
+        <div class="col-md-4">
+          <h4
+            class="title-tabs-netwrix-products"
+            class="title-tabs-netwrix-products"
+          >
             Estabeleça configurações fortes e mantenha a integridade dos seus
             sistemas
           </h4>
-          <p>
+          <p class="desc-tabs-netwrix-products">
             Estabeleça configurações sólidas em seus sistemas vitais de
             infraestrutura e interrompa o desvio de configurações.O Change
             Tracker destaca alterações não autorizadas que podem indicar
@@ -39,13 +48,19 @@
     </div>
     <div class="tab-pane" id="tab-2">
       <div class="row justify-content-center mt-5">
-        <div class="col-md-4"><img src="/assets/img/change-tracker/events.jpg" class="img-tab-item" alt=""></div>
         <div class="col-md-4">
-          <h4>
+          <img
+            src="/assets/img/change-tracker/events.jpg"
+            class="img-tab-item"
+            alt=""
+          />
+        </div>
+        <div class="col-md-4">
+          <h4 class="title-tabs-netwrix-products">
             Aprimore a análise forense da violação com monitoramento e
             verificação constantes
           </h4>
-          <p>
+          <p class="desc-tabs-netwrix-products">
             O Netwrix Change Tracker alerta você sobre alterações de
             configurações não autorizadas em seu ambiente e fornece os
             principais detalhes que facilitam a investigação, acelerando a
@@ -56,13 +71,19 @@
     </div>
     <div class="tab-pane" id="tab-3">
       <div class="row justify-content-center mt-5">
-        <div class="col-md-4"><img src="/assets/img/change-tracker/score.jpg"class="img-tab-item" alt=""></div>
         <div class="col-md-4">
-          <h4>
+          <img
+            src="/assets/img/change-tracker/score.jpg"
+            class="img-tab-item"
+            alt=""
+          />
+        </div>
+        <div class="col-md-4">
+          <h4 class="title-tabs-netwrix-products">
             Aumente a confiança em su aportura de segurança e a capacidade de
             provar sua força
           </h4>
-          <p>
+          <p class="desc-tabs-netwrix-products">
             Muitos regulamentos exigem que você demonstre seu controle sobre a
             integridade de seus sistemas corporativos, Realize a preparação de
             auditoria mais rapidamente com uma ferramenta que automatiza tarefas
@@ -73,6 +94,7 @@
     </div>
   </div>
 </div>
+<div class="container-fluid" id="tabs-products-netwrix-desktop"></div>
 
 <style>
   .tabs-container {
@@ -87,12 +109,11 @@
   }
   .btn-link-tab {
     width: 5vw;
-    
     border-radius: 5px;
     background-color: white;
     padding: 30px;
     border-radius: 5px;
-    
+    font-weight: 500;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -100,20 +121,37 @@
 
   .btn-link-tab.active {
     border-left: 3px solid red;
+    color: gray;
   }
   .btn-link-tab:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
     text-decoration: none;
   }
 
   .list-item-tab a {
     background-color: white;
   }
-  .tab-pane{
-    transition: 0.9ms;
-
-  }
-  .img-tab-item{
+  .img-tab-item {
     max-width: 30vw;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.23);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.23);
+  }
+  .title-tabs-netwrix-products {
+    font-size: 1.8em;
+    font-weight: lighter;
+    margin-bottom: 4vh;
+    margin-top: 10vh;
+  }
+  .desc-tabs-netwrix-products {
+    font-weight: lighter;
+    line-height: 3vh;
+  }
+
+  @media only screen and (max-width: 990px) {
+    #tabs-products-netwrix-desktop {
+      display: none;
+    }
   }
 </style>
