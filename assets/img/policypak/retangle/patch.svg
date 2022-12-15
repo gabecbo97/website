@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 51H5C3.34315 51 2 49.6569 2 48V7C2 5.34315 3.34315 4 5 4H59C60.6568 4 62 5.34315 62 7V48C62 49.6569 60.6569 51 59 51H53.5" stroke="#0068DA" stroke-width="2" stroke-linecap="round"/>
+<path d="M2 15H62" stroke="#0068DA" stroke-width="2" stroke-linecap="round"/>
+<circle cx="8.5" cy="9.5" r="1.5" fill="#0068DA"/>
+<circle cx="21.5" cy="30.5" r="1.5" fill="#0068DA"/>
+<circle cx="41.5" cy="50.5" r="1.5" fill="#0068DA"/>
+<circle cx="31.5" cy="36.5" r="1.5" fill="#0068DA"/>
+<circle cx="27.5" cy="40.5" r="1.5" fill="#0068DA"/>
+<circle cx="36.5" cy="41.5" r="1.5" fill="#0068DA"/>
+<circle cx="32.5" cy="45.5" r="1.5" fill="#0068DA"/>
+<circle cx="14.5" cy="9.5" r="1.5" fill="#0068DA"/>
+<circle cx="20.5" cy="9.5" r="1.5" fill="#0068DA"/>
+<rect x="11.4142" y="31.7279" width="16" height="41" rx="8" transform="rotate(-45 11.4142 31.7279)" stroke="#0068DA" stroke-width="2"/>
+<path d="M31 29L20 40M44 42L33 53" stroke="#0068DA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

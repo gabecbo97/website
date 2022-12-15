@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="47" y="31" width="29" height="29" rx="3" transform="rotate(180 47 31)" stroke="#0068DA" stroke-width="2"/>
+<path d="M44 45C44 46.6569 42.6569 48 41 48L24 48C22.3431 48 21 46.6569 21 45L21 31L44 31L44 45Z" stroke="#0068DA" stroke-width="2"/>
+<rect x="39" y="41" width="4" height="4" rx="0.2" transform="rotate(180 39 41)" stroke="#0068DA" stroke-width="2"/>
+<rect x="30" y="41" width="4" height="4" rx="0.2" transform="rotate(180 30 41)" stroke="#0068DA" stroke-width="2"/>
+<circle cx="9" cy="5" r="3" stroke="#0068DA" stroke-width="2"/>
+<path d="M21 41L13 41" stroke="#0068DA" stroke-width="2"/>
+<circle cx="10" cy="41" r="3" stroke="#0068DA" stroke-width="2"/>
+<path d="M47 19L55 19" stroke="#0068DA" stroke-width="2"/>
+<circle r="3" transform="matrix(-1 0 0 1 58 19)" stroke="#0068DA" stroke-width="2"/>
+<path d="M44 37L52 37" stroke="#0068DA" stroke-width="2"/>
+<circle r="3" transform="matrix(-1 0 0 1 55 37)" stroke="#0068DA" stroke-width="2"/>
+<path d="M32 47L32 56" stroke="#0068DA" stroke-width="2"/>
+<circle cx="32" cy="59" r="3" transform="rotate(-90 32 59)" stroke="#0068DA" stroke-width="2"/>
+<path d="M18 19H9V8" stroke="#0068DA" stroke-width="2"/>
+</svg>
