@@ -1,0 +1,282 @@
+<div class="container-fluid content-tabs-vertical-netwrix">
+  <div class="tabs">
+    <div class="tab">
+      <button class="tab-toggle active">
+        Obtenha visibilidade detalhada dos direitos de acesso
+      </button>
+    </div>
+    <div class="content active">
+      <h3 class="heading"></h3>
+      <p class="description-tabs-vertical-netwrix">
+        Saber exatamente quais direitos são concedidos a seus usuários e grupos
+        é crucial para garantir que ninguém tenha mais acesso do que o
+        necessário para realizar seu trabalho. Obter uma imagem clara é difícil
+        com métodos manuais e ferramentas nativas.
+      </p>
+      <img
+        class="img-tabs-vertical img-fluid"
+        src="/assets/img/groupid/tab-1.jpg"
+        alt=""
+      />
+    </div>
+    <div class="tab">
+      <button class="tab-toggle">
+        Proteja dados confidenciais por meio do Active Directory automatizado e
+        do gerenciamento de grupos do Azure AD
+      </button>
+    </div>
+    <div class="content">
+      <p class="description-tabs-vertical-netwrix">
+        Grupos do Active Directory e do Azure AD mal gerenciados permitem que
+        funcionários desonestos e adversários que comprometem as credenciais do
+        usuário acessem dados confidenciais e outros ativos de TI.
+      </p>
+      <img
+        class="img-tabs-vertical img-fluid"
+        src="/assets/img/groupid/tab-2.jpg"
+        alt=""
+      />
+    </div>
+    <div class="tab">
+      <button class="tab-toggle">
+        Melhore a produtividade dos funcionários e reduza a carga sobre a TI
+      </button>
+    </div>
+    <div class="content">
+      <h3 class="heading"></h3>
+      <p class="description-tabs-vertical-netwrix">
+        Esperar que o helpdesk processe as solicitações de acesso pode paralisar
+        processos críticos de negócios. O Netwrix GroupID permite que os
+        usuários solicitem o acesso de que precisam usando um fluxo de trabalho
+        fácil que notifica automaticamente os proprietários do grupo apropriado,
+        que podem conceder ou negar a solicitação com o clique de um botão - sem
+        nunca envolver seus recursos limitados de TI.
+      </p>
+      <img
+        class="img-tabs-vertical img-fluid"
+        src="/assets/img/groupid/tab-3.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .content-tabs-vertical-netwrix {
+    padding: 10vh 10vw;
+  }
+  .heading {
+    text-align: center;
+  }
+  .description-tabs-vertical-netwrix {
+    color: gray;
+    max-width: 50vw;
+    text-align: center;
+  }
+
+  button,
+  .button {
+    position: relative;
+    display: inline-block;
+    color: #007bff;
+    padding: 0.75rem 2rem;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  button:hover,
+  .button:hover {
+    background-color: #007bff1e;
+  }
+  button:hover:before,
+  button:hover:after,
+  .button:hover:before,
+  .button:hover:after {
+    color: red;
+  }
+  button:after,
+  button:before,
+  .button:after,
+  .button:before {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  /* ---------------------- Vertical Tabs */
+  .tabs {
+    position: relative;
+    min-height: 50vh;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    /* ---------------------- Tab */
+    /* ---------------------- Content */
+  }
+  .tabs .tab {
+    margin-bottom: 1px;
+    /* ---------------------- Tab Toggle */
+  }
+  .img-tabs-vertical {
+    margin-left: 10vw;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+  @media only screen and (max-width: 990px) {
+    .img-tabs-vertical {
+      margin-left: 0;
+    }
+    .description-tabs-vertical-netwrix {
+      max-width: 100vw;
+    }
+  }
+  @media screen and (min-width: 55rem) {
+    .tabs .tab {
+      float: left;
+      clear: left;
+      width: 30%;
+    }
+  }
+  .tabs .tab .tab-toggle {
+    padding: 1rem 4rem 1rem 2rem;
+    position: relative;
+    outline: none;
+    width: 100%;
+  }
+  @media screen and (min-width: 55rem) {
+    .tabs .tab .tab-toggle {
+      text-align: left;
+    }
+  }
+  .tabs .tab .tab-toggle:after {
+    content: "▼";
+    position: absolute;
+    display: block;
+    right: 2rem;
+    top: 50%;
+    -webkit-transform: rotate(0deg) translateY(-50%);
+    -moz-transform: rotate(0deg) translateY(-50%);
+    -ms-transform: rotate(0deg) translateY(-50%);
+    -o-transform: rotate(0deg) translateY(-50%);
+    transform: rotate(0deg) translateY(-50%);
+  }
+  @media screen and (min-width: 55rem) {
+    .tabs .tab .tab-toggle:after {
+      -webkit-transform: rotate(-90deg) translateX(50%);
+      -moz-transform: rotate(-90deg) translateX(50%);
+      -ms-transform: rotate(-90deg) translateX(50%);
+      -o-transform: rotate(-90deg) translateX(50%);
+      transform: rotate(-90deg) translateX(50%);
+    }
+  }
+  .tabs .tab .tab-toggle.active {
+    color: gray;
+    background-color: white;
+    border-left: solid 2px red;
+    cursor: default;
+  }
+  .tabs .tab .tab-toggle.active:after {
+    color: #8099c2;
+    -webkit-transform: rotate(180deg) translateY(50%);
+    -moz-transform: rotate(180deg) translateY(50%);
+    -ms-transform: rotate(180deg) translateY(50%);
+    -o-transform: rotate(180deg) translateY(50%);
+    transform: rotate(180deg) translateY(50%);
+  }
+  @media screen and (min-width: 55rem) {
+    .tabs .tab .tab-toggle.active:after {
+      -webkit-transform: rotate(-90deg) translateX(50%) translateY(0);
+      -moz-transform: rotate(-90deg) translateX(50%) translateY(0);
+      -ms-transform: rotate(-90deg) translateX(50%) translateY(0);
+      -o-transform: rotate(-90deg) translateX(50%) translateY(0);
+      transform: rotate(-90deg) translateX(50%) translateY(0);
+      right: 1rem;
+    }
+  }
+  .tabs .content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 2rem;
+    background-color: transparent;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+  }
+  @media screen and (min-width: 55rem) {
+    .tabs .content {
+      max-height: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 70%;
+      opacity: 0;
+      padding: 0rem 2rem 2rem 2rem;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+  .tabs .content.active {
+    max-height: 1000px;
+  }
+  @media screen and (min-width: 55rem) {
+    .tabs .content.active {
+      max-height: none;
+      opacity: 1;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+    }
+  }
+  .tabs .content > .heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+</style>
+
+<script>
+  // ----------------- Variables
+
+  wrapper = $(".tabs");
+  tabs = wrapper.find(".tab");
+  tabToggle = wrapper.find(".tab-toggle");
+
+  // ----------------- Functions
+
+  function openTab() {
+    var content = $(this).parent().next(".content"),
+      activeItems = wrapper.find(".active");
+
+    if (!$(this).hasClass("active")) {
+      $(this).add(content).add(activeItems).toggleClass("active");
+      wrapper.css("min-height", content.outerHeight());
+    }
+  }
+
+  // ----------------- Interactions
+
+  tabToggle.on("click", openTab);
+
+  // ----------------- Constructor functions
+
+  $(window).load(function () {
+    tabToggle.first().trigger("click");
+  });
+</script>
