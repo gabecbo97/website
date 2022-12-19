@@ -1,0 +1,92 @@
+<!-- 
+
+INSPIRED BY:
+
+Clay: UI/UX Design Agency
+
+https://dribbble.com/shots/14508322-Marqeta-Stacked-Cards
+
+-->
+
+<div class="card-container">
+  <div class="card card1">
+    <p class="card-number">
+      Os dados são o que os agentes de ameaças procuram, portanto, certifique-se
+      de protegê-los adequadamente.
+    </p>
+    <p class="card-details">
+      <img src="/assets/img/netwrix-products/tabs/data.v002.svg" alt="" />
+    </p>
+  </div>
+
+  <div class="card card2">
+    <p class="card-number"></p>
+    <p class="card-details">
+      <img src="/assets/img/netwrix-products/tabs/identity.svg" alt="" />
+    </p>
+  </div>
+
+  <div class="card card3">
+    <p class="card-number"></p>
+    <p class="card-details">
+      <img
+        src="/assets/img/netwrix-products/tabs/infrastructure.v001.svg"
+        alt=""
+      />
+    </p>
+  </div>
+</div>
+
+<style>
+  .card-container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 50px 250px;
+    justify-items: center;
+    font-size: 25px;
+    width: 350px;
+    height: 175px;
+    perspective: 400px;
+    margin: -50px;
+    transition: all 1s ease;
+    border: none;
+    background-color: transparent;
+  }
+
+  .card:hover{
+    margin: 100px;
+  }
+
+  .card1:hover{
+    margin: -75px;
+  }
+
+  .card1 {
+    z-index: 3;
+    background-color: transparent;
+  }
+
+  .card2 {
+    color: white;
+    z-index: 2;
+    background-color: transparent;
+  }
+
+  .card3 {
+    z-index: 1;
+  }
+  .card-number{
+    display: none;
+  }
+  .card:hover +.card-number{
+    display:block;
+    color: white;
+  }
+</style>
