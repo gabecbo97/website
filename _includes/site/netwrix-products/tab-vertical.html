@@ -1,92 +1,115 @@
-<!-- 
-
-INSPIRED BY:
-
-Clay: UI/UX Design Agency
-
-https://dribbble.com/shots/14508322-Marqeta-Stacked-Cards
-
--->
-
-<div class="card-container">
-  <div class="card card1">
-    <p class="card-number">
+<div class="layer-stack__wrap">
+  <div class="layer-stack__layer layer-stack__layer1">
+    <p>
+      <b>SEGURANÇA DE INFRAESTRUTURA</b>Proteja tudo, de endpoints a servidores e
+      do data center à nuvem.
+    </p>
+    <span class="title-stack-card bottom-max">SEGURANÇA DE INFRA</span>
+  </div>
+  <div class="layer-stack__layer layer-stack__layer2">
+    <p>
+      <b>SEGURANÇA DE IDENTIDADE</b>
+      A identidade é o novo perímetro. Proteja as identidades de usuários e
+      administradores para proteger seus dados e sistemas.
+    </p>
+    <span class="title-stack-card middle-max">SEGURANÇA DE IDENTIDADE</span>
+  </div>
+  <div class="layer-stack__layer layer-stack__layer3">
+    <p>
+      <b>SEGURANÇA DE DADOS</b>
       Os dados são o que os agentes de ameaças procuram, portanto, certifique-se
       de protegê-los adequadamente.
     </p>
-    <p class="card-details">
-      <img src="/assets/img/netwrix-products/tabs/data.v002.svg" alt="" />
-    </p>
-  </div>
-
-  <div class="card card2">
-    <p class="card-number"></p>
-    <p class="card-details">
-      <img src="/assets/img/netwrix-products/tabs/identity.svg" alt="" />
-    </p>
-  </div>
-
-  <div class="card card3">
-    <p class="card-number"></p>
-    <p class="card-details">
-      <img
-        src="/assets/img/netwrix-products/tabs/infrastructure.v001.svg"
-        alt=""
-      />
-    </p>
+    <span class="title-stack-card">SEGURANÇA DE DADOS</span>
   </div>
 </div>
 
 <style>
-  .card-container {
-    height: 500px;
+  .title-stack-card {
+    position: absolute;
+    right: -20%;
+    bottom: 50%;
+    transform: rotateX(0deg) rotateZ(270deg) translateZ(0);
+    color: white !important;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .middle-max {
+    position: absolute;
+    right: -27% !important;
+  }
+  .bottom-max {
+    position: absolute;
+    right: -20% !important;
+    color: white !important;
+  }
+  .layer-stack__wrap {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    margin-top: 25vh;
+    color: transparent;
+  }
+  .layer-stack__wrap:hover p {
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 
-  .card {
-    display: grid;
-    grid-template-columns: 50px 250px;
-    justify-items: center;
-    font-size: 25px;
-    width: 350px;
-    height: 175px;
-    perspective: 400px;
-    margin: -50px;
-    transition: all 1s ease;
-    border: none;
-    background-color: transparent;
-  }
-
-  .card:hover{
-    margin: 100px;
-  }
-
-  .card1:hover{
-    margin: -75px;
-  }
-
-  .card1 {
-    z-index: 3;
-    background-color: transparent;
-  }
-
-  .card2 {
+  .layer-stack__wrap:hover {
     color: white;
-    z-index: 2;
-    background-color: transparent;
   }
-
-  .card3 {
-    z-index: 1;
-  }
-  .card-number{
+  .layer-stack__wrap:hover span {
     display: none;
   }
-  .card:hover +.card-number{
-    display:block;
-    color: white;
+
+  .layer-stack__layer {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(0);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease-out;
+    border-radius: 10px;
+  }
+
+  .layer-stack__layer1 {
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(4, 142, 255, 1) 0%,
+      rgba(47, 161, 255, 1) 54%
+    );
+  }
+  .layer-stack__layer2 {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(100px);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(79, 108, 228, 1) 0%,
+      rgba(101, 16, 188, 1) 68%
+    );
+  }
+
+  .layer-stack__layer:hover {
+    transform: translateY(-70px) rotateX(0deg) rotateZ(0deg) translateZ(100px)
+      scale(1.7);
+    z-index: 9;
+  }
+
+  .layer-stack__layer3 {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(200px);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(79, 108, 228, 1) 0%,
+      rgba(4, 45, 216, 1) 100%
+    );
   }
 </style>

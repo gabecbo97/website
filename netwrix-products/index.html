@@ -4,83 +4,109 @@ title: Produtos Netwrix Corporation
 ---
 
 <div class="container-fluid home-netwrix-hall">
-  <div class="container bg-animated">
-    <h2>SEGURANÇA DE DADOS PODEROSA FACILITADA</h2>
-    <h5>
-      Aperte o cinto, sua verdadeira jornada de segurança de dados está prestes
-      a começar
-    </h5>
-    <div class="row">
-      <a class="btn-hall-netwrix" href=""></a
-      ><a class="btn-hall-netwrix" href=""></a>
+  <div class="container-fluid bg-animated text-center">
+    <div class="row justify-content-center">
+      <h2>SEGURANÇA DE DADOS PODEROSA FACILITADA</h2>
+      <h5>
+        Aperte o cinto, sua verdadeira jornada de segurança de dados está
+        prestes a começar
+      </h5>
+    </div>
+
+    <div class="row justify-content-center">
+      <a class="btn-hall-netwrix" href="">Conheça as soluções</a
+      ><a class="btn-hall-netwrix blue" href="">Solicitar uma Demo</a>
     </div>
   </div>
 </div>
 <div class="container-fluid container-hall-netwrix">
   <div class="container-fluid content-float-netwrix text-white">
-    <p>SEGURANÇA NÃO É UM DESTINO, É UMA JORNADA</p>
-    <h2>
-      Como você pode garantir que sua organização seja mais segura amanhã do que
-      é hoje?
-    </h2>
-    <div class="row">
-      <div class="col-md-3 cards-hall-metwrix">
-        <img class="img-card-hall" src="" alt="" />
+    <div class="row justify-content-center">
+      <p class="title-netwrix-solution">
+        SEGURANÇA NÃO É UM DESTINO, É UMA JORNADA
+      </p>
+      <h2 class="title-secondary-hall-netwrix">
+        Como você pode garantir que sua organização seja mais segura amanhã do
+        que é hoje?
+      </h2>
+    </div>
+
+    <div class="row justify-content-center py-5">
+      <div class="col-md-3 cards-hall-netwrix gradient-blue">
+        <img
+          class="img-card-hall"
+          src="/assets/img/netwrix-products/emoji.svg"
+          alt=""
+        />
         <p>
           Os ambientes de TI tornam-se mais complexos. Os ataques aumentam em
           sofisticação.
         </p>
       </div>
-      <div class="col-md-3 cards-hall-metwrix">
-        <img class="img-card-hall" src="" alt="" />
+      <div class="col-md-3 cards-hall-netwrix gradient-aqua">
+        <img
+          class="img-card-hall"
+          src="/assets/img/netwrix-products/mole.svg"
+          alt=""
+        />
         <p>
           Suas equipes lutam com ferramentas diferentes para gerenciar e
           proteger tudo.
         </p>
       </div>
-      <div class="col-md-3 cards-hall-metwrix">
-        <img class="img-card-hall" src="" alt="" />
+      <div class="col-md-3 cards-hall-netwrix gradient-purple">
+        <img
+          class="img-card-hall"
+          src="/assets/img/netwrix-products/skull.svg"
+          alt=""
+        />
         <p>Suas chances de cair nas manchetes de violação estão disparando.</p>
       </div>
     </div>
   </div>
-  <p>SUPERE A SEGURANÇA EM SILOS</p>
-  <h2>
-    Elimine pontos cegos e supere a complexidade para mitigar o risco de uma
-    violação com mais eficiência.
-  </h2>
-  <p>
-    Proteja as informações críticas que você armazena — e os veículos usados
-    ​​para acessá-las — preenchendo as lacunas entre seus vários silos de
-    segurança. Proteja sua organização em todas as principais superfícies de
-    ataque: dados, identidade e infraestrutura.
-  </p>
-  {% include site/netwrix-products/tab-vertical.html %}
-  <div class="row">
-    <div class="col-md-3">
-     
-    </div>
-    <div class="col-md-3"></div>
+  <div class="row after-float-netwrix justify-content-center text-center">
+    <p class="title-netwrix-solution">SUPERE A SEGURANÇA EM SILOS</p>
+    <h2 class="title-tab-hall-netwrix text-center">
+      Elimine pontos cegos e supere a complexidade para mitigar o risco de uma
+      violação com mais eficiência.
+    </h2>
+    {% include site/netwrix-products/tab-vertical.html %}
   </div>
 </div>
+<div class="container-fluid container-timeline-netwrix-products">
+  {% include site/netwrix-products/timeline.html %}
+</div>
+{% include site/netwrix-products/selector-products.html %}
 
 <style>
   .home-netwrix-hall {
     background-color: #000350;
     background-image: url(/assets/img/netwrix-products/static-lines.v002.jpg);
-    background-position: bottom;
     background-repeat: no-repeat;
-    height: 95vh;
+    background-position: bottom;
+    height: 85vh;
     background-size: contain;
-    padding-top: 30vh;
+    padding-top: 20vh;
     color: white;
   }
   .bg-animated {
     background-image: url(/assets/img/netwrix-products/animated-lines.v001.svg);
-    height: 90vh;
+    height: 65vh;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+    padding: 0 10vw 0 10vw;
   }
+  .bg-animated h2 {
+    font-size: 3.8em;
+    color: white;
+    font-weight: bold;
+    width: 55vw;
+  }
+  .bg-animated h5 {
+    font-weight: 400;
+    padding-top: 2vh;
+  }
+
   .content-float-netwrix {
     background-color: #000350ef;
     position: absolute;
@@ -89,9 +115,10 @@ title: Produtos Netwrix Corporation
     height: 80vh;
     margin-top: -10vh;
     width: 75vw;
+    padding: 5vh 5vh 10vh 5vh;
   }
   .container-hall-netwrix {
-    height: 100vh;
+    min-height: 190vh;
     background: -webkit-gradient(
           linear,
           left top,
@@ -111,5 +138,82 @@ title: Produtos Netwrix Corporation
       radial-gradient(at 54% 21%, hsl(267, 72%, 42%) 0, transparent 65%),
       radial-gradient(at 72% 73%, hsl(239, 100%, 27%) 0, transparent 58%),
       #3200bd;
+  }
+  .btn-hall-netwrix {
+    background-color: red;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    padding: 9px;
+    margin: 5vh 1vw;
+  }
+  .blue {
+    background-color: #0778f4 !important;
+  }
+  .btn-hall-netwrix:hover {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid red;
+    color: white;
+  }
+  .blue:hover {
+    border: 1px solid #0778f4;
+    background-color: transparent !important;
+  }
+  .title-netwrix-solution {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 2vh;
+  }
+  .title-secondary-hall-netwrix {
+    font-size: 2.5rem;
+    width: 45vw;
+    text-align: center;
+  }
+  .cards-hall-netwrix {
+    margin: 3vh 2vw;
+    border-radius: 3px;
+    padding: 40px;
+  }
+  .gradient-blue {
+    background: linear-gradient(180deg, #0810c7, #0659fb 50.48%, #1a00b8);
+  }
+  .gradient-aqua {
+    background: linear-gradient(
+      152.92deg,
+      #0cdeec 8.94%,
+      #0c6cfd 39.4%,
+      #0042ec 64.49%,
+      #801efc 91.07%
+    );
+  }
+  .gradient-purple {
+    background: linear-gradient(180deg, #5009e8, #091797 44.93%, #280098);
+  }
+  .cards-hall-netwrix p {
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+  .img-card-hall {
+    margin-bottom: 5vh;
+  }
+  .after-float-netwrix {
+    padding-top: 85vh !important;
+    flex-direction: column;
+    color: white;
+  }
+  .title-tab-hall-netwrix {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .after-float-netwrix p {
+    font-weight: 500;
+    text-align: center;
+  }
+  .container-timeline-netwrix-products {
+    min-height: 150vh;
+    background-color: #0E038E;
   }
 </style>
