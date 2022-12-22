@@ -32,17 +32,17 @@
 </script>
 <div class="container-fluid container-timeline">
   <section class="intro">
-    <div class="row justify-content-center py-5 background-repeat">
+    <div class="row justify-content-center background-repeat">
       <div class="col-md-3">
-        <h2 class="title-color">
-          Uma jornada de sucesso depende de um bom roteiro.
-        </h2>
-        <h2>
+        <span class="title-color"
+          >Uma jornada de sucesso depende de um bom roteiro.
+        </span>
+        <h3>
           Construa um processo sólido para orientar e medir seu progresso.
-        </h2>
+        </h3>
       </div>
       <div class="col-md-3">
-        <p>
+        <p class="">
           Para atingir seus objetivos de segurança, você precisa de uma
           estratégia clara e eficaz. O uso de uma estrutura de segurança como o
           NIST ajudará você em todas as fases de sua jornada de segurança, e a
@@ -109,11 +109,17 @@
 </div>
 
 <style>
+  .title-color {
+    background: linear-gradient(226.93deg, #00c2ff 50.74%, #a93cff 75.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.1rem;
+    font-weight: 600;
+  }
   .background-repeat {
     background-color: #0e038e;
   }
   .container-timeline {
-    min-height: 100vh;
     color: white;
   }
   .intro {
@@ -214,7 +220,7 @@
       #0222c8 50.43%,
       #001cb4 61.54%,
       #0332d9 96.15%
-    );;
+    );
   }
 
   .timeline ul li div {
