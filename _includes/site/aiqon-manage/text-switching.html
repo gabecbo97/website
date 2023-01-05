@@ -1,0 +1,217 @@
+<script>
+  var isLast = function (word) {
+    return $(word).next().length > 0 ? false : true;
+  };
+
+  var getNext = function (word) {
+    return $(word).next();
+  };
+
+  var getVisible = function () {
+    return document.getElementsByClassName("is-visible");
+  };
+
+  var getFirst = function () {
+    var node = $(".words-wrapper").children().first();
+    return node;
+  };
+
+  var switchWords = function (current, next) {
+    $(current).removeClass("is-visible").addClass("is-hidden");
+    $(next).removeClass("is-hidden").addClass("is-visible");
+  };
+
+  var getStarted = function () {
+    //We start by getting the visible element and its sibling
+    var first = getVisible();
+    var next = getNext(first);
+
+    //If our element has a sibling, it's not the last of the list. We switch the classes
+    if (next.length !== 0) {
+      switchWords(first, next);
+    } else {
+      //The element is the last of the list. We remove the visible class of the current element
+      $(first).removeClass("is-visible").addClass("is-hidden");
+
+      //And we get the first element of the list, and we give it the visible class. And it starts again.
+      var newEl = getFirst();
+      $(newEl).removeClass("is-hidden").addClass("is-visible");
+    }
+  };
+
+  var init = function () {
+    setInterval(function () {
+      getStarted();
+    }, 1500);
+  };
+
+  init();
+</script>
+<div class="row">
+  <div class="col-md-6">
+    <div class="text">
+      <h2>
+        100%<br />
+        <span class="words-wrapper">
+          <b class="is-visible">Patch</b>
+          <b>Segurança</b>
+          <b
+            >Remediação dos <br />
+            seus dispositivos</b
+          >
+          <b>AIQON</b>
+        </span>
+      </h2>
+    </div>
+  </div>
+  <div class="col-md-6"></div>
+</div>
+<style>
+  .text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: white;
+    z-index: 300;
+  }
+  .text h2 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  .words-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+  }
+  .words-wrapper b {
+    opacity: 0;
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+    font-size: 3rem !important;
+  }
+  .words-wrapper .is-visible {
+    position: relative;
+    opacity: 1;
+    -webkit-animation: push-in 0.6s;
+    -moz-animation: push-in 0.6s;
+    animation: push-in 0.6s;
+  }
+  .words-wrapper .is-hidden {
+    -webkit-animation: push-out 0.6s;
+    -moz-animation: push-out 0.6s;
+    animation: push-out 0.6s;
+  }
+
+  @-webkit-keyframes push-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-100%);
+    }
+    70% {
+      opacity: 1;
+      -webkit-transform: translateX(10%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  @-moz-keyframes push-in {
+    0% {
+      opacity: 0;
+      -moz-transform: translateX(-100%);
+    }
+    60% {
+      opacity: 1;
+      -moz-transform: translateX(10%);
+    }
+    100% {
+      opacity: 1;
+      -moz-transform: translateX(0);
+    }
+  }
+  @keyframes push-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translateX(10%);
+      -moz-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+      -o-transform: translateX(10%);
+      transform: translateX(10%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes push-out {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    60% {
+      opacity: 0;
+      -webkit-transform: translateX(110%);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(100%);
+    }
+  }
+  @-moz-keyframes push-out {
+    0% {
+      opacity: 1;
+      -moz-transform: translateX(0);
+    }
+    60% {
+      opacity: 0;
+      -moz-transform: translateX(110%);
+    }
+    100% {
+      opacity: 0;
+      -moz-transform: translateX(100%);
+    }
+  }
+  @keyframes push-out {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+    }
+    60% {
+      opacity: 0;
+      -webkit-transform: translateX(110%);
+      -moz-transform: translateX(110%);
+      -ms-transform: translateX(110%);
+      -o-transform: translateX(110%);
+      transform: translateX(110%);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+</style>
