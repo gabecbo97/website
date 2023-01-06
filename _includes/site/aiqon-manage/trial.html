@@ -1,0 +1,266 @@
+<style>
+  .form-control {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ced4da;
+  }
+  .form-control:focus {
+    background-color: unset;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    color: white;
+  }
+  .-trial-container {
+    padding: 10 !important;
+    background: transparent;
+    z-index: 1000 !important;
+    position: relative !important;
+  }
+  .-trial-container h1,
+  .-trial-container h4 {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .-trial-form {
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .-trial-form input {
+    margin: 5px;
+  }
+  .-trial-form input::placeholder {
+    color: white;
+    opacity: 0.7;
+  }
+  .-trial-form input[type="number"]::-webkit-inner-spin-button,
+  .-trial-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  #formSuccessMessage {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+  }
+  @media (max-width: 768px) {
+    .-trial-container h4 {
+      font-size: 1em;
+    }
+    .-trial-container .form-control {
+      font-size: 0.9em;
+    }
+  }
+</style>
+<div class="container-fluid p-0 m-0 -trial-container" id="trial-container">
+  <div class="row">
+    <div
+      class="col d-flex flex-column justify-content-center align-items-center mt-5"
+    >
+      <h1 class="text-center text-bolder">{{ include.title }}</h1>
+      <h4>
+        É grátis! Um de nossos especialistas está pronto para tirar todas as
+        suas dúvidas.
+      </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col d-flex flex-column justify-content-center align-items-center"
+    >
+      <form class="-trial-form pb-5" id="{{ include.id }}">
+        <div class="form-row">
+          <div class="col">
+            <input
+              aria-label="Primeiro nome."
+              class="form-control"
+              type="text"
+              name="firstname"
+              id="name"
+              placeholder="Nome"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite seu nome.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+          <div class="col">
+            <input
+              aria-label="Sobrenome"
+              class="form-control"
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Sobrenome"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite seu sobrenome.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input
+              aria-label="E-mail profissional."
+              class="form-control"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="E-mail profissional"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="E-mail profissional."
+              class="form-control"
+              type="text"
+              name="company"
+              id="company"
+              placeholder="Empresa"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+          <div class="col">
+            <input
+              style="color: black"
+              aria-label="Cargo"
+              class="form-control"
+              type="text"
+              name="cargo"
+              id="cargo"
+              placeholder="Cargo"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite um e-mail profissional válido.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <input
+              aria-label="Número de telefone."
+              class="form-control"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Telefone"
+              required
+              oninvalid="this.setCustomValidity('Por favor, digite seu telefone.')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+          <div class="col">
+            <input
+              aria-label="Ramal."
+              class="form-control"
+              type="number"
+              name="branch"
+              id="branch"
+              placeholder="Ramal"
+              maxlength="5"
+            />
+          </div>
+          <div class="form-row py-3">
+            <div class="form-check">
+              <label style="color: white">
+                <input
+                  type="checkbox"
+                  data-privacy="true"
+                  name="communications"
+                  value="1"
+                  required
+                />
+
+                Eu concordo em receber comunicações e ofertas personalizadas de
+                acordo com meus interesses.
+              </label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label style="color: white">
+              <input
+                type="hidden"
+                data-privacy="true"
+                name="privacy_policy"
+                value="1"
+              />
+              Ao informar meus dados, eu concordo com a
+              <a href="/politica/">Política de Privacidade</a>
+            </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div
+            class="col d-flex justify-content-center align-items-center py-3"
+          >
+            <input
+              aria-label="Enviar solicitação."
+              type="submit"
+              value="Enviar solicitação"
+              class="btn btn-trial"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="../../assets/js/dist/jquery.min.js"></script>
+<script src="../../assets/js/formMask.js"></script>
+<script src="/assets/js/phoneMask.js"></script>
+<script>
+  const form = document.getElementById("trialForm");
+  const url = "https://us-central1-aiqondb.cloudfunctions.net/api/trial";
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("Enviando formulário...");
+
+    const formData = new FormData(this);
+    const origin = window.location.pathname;
+    const trialRequestJson = {};
+
+    for (const pair of formData) {
+      trialRequestJson[pair[0]] = pair[1];
+    }
+    trialRequestJson["origin"] = origin;
+    fetch(url, {
+      method: "post",
+      body: JSON.stringify(trialRequestJson),
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "same-origin",
+    })
+      .then(formSuccess())
+      .catch(function (err) {
+        console.log("Ocorreu um erro: ", err);
+      });
+  });
+
+  // function formSuccess() {
+  // const form = document.querySelector(".-trial-container")
+  // const formFields = document.querySelectorAll("input")
+  // for (field of formFields) {
+  //   field.value = ""
+  // }
+  // form.innerHTML = `<p id='formSuccessMessage'>
+  //     Mensagem enviada! <br> Entraremos em contato em breve.
+  //   </p>`
+  // window.location.href = "/obrigado"
+  //}
+</script>

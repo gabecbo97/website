@@ -47,7 +47,7 @@
 
   init();
 </script>
-<div class="row">
+<div class="row content-color-animed-mobile">
   <div class="col-md-6">
     <div class="text">
       <h2>
@@ -62,11 +62,20 @@
           <b>AIQON</b>
         </span>
       </h2>
+      <h5>
+        82% das violações ocorrem por meio de vulnerabilidades conhecidas e
+        reparáveis.
+      </h5>
     </div>
   </div>
-  <div class="col-md-6"></div>
+  <div class="col-md-5 device-animed" style="z-index: 300">
+    {% include site/aiqon-manage/device-animed.html %}
+  </div>
 </div>
 <style>
+  .device-animed {
+    padding: 25vh 20vw 0 0;
+  }
   .text {
     position: absolute;
     top: 40%;
@@ -105,7 +114,20 @@
     -moz-animation: push-out 0.6s;
     animation: push-out 0.6s;
   }
-
+  @media only screen and (max-width: 990px) {
+    .text h2 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+     .words-wrapper b {
+      font-size: 2rem !important;
+      
+     }
+     .resize-box {
+     max-width: 290px;
+     height: 430px;
+     }
+  }
   @-webkit-keyframes push-in {
     0% {
       opacity: 0;
