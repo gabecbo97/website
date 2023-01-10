@@ -1,0 +1,125 @@
+<div class="container-fluid content-file-stack">
+  <div id="tab1"></div>
+  <div id="tab2"></div>
+  <div id="tab3"></div>
+  <div id="tab4"></div>
+</div>
+
+<style>
+  .content-file-stack {
+    margin-top: 50vh;
+    height: 100vh;
+  }
+  .tab,
+  #tab4,
+  #tab3,
+  #tab2,
+  #tab1,
+  #tab0 {
+    height: 100%;
+    position: absolute;
+    box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+  }
+  .tab:hover ~ div,
+  #tab4:hover ~ div,
+  #tab3:hover ~ div,
+  #tab2:hover ~ div,
+  #tab1:hover ~ div,
+  #tab0:hover ~ div {
+    transform: translateX(-80vw);
+  }
+
+  #tab0 {
+    width: 100vw;
+    background: linear-gradient(
+      90deg,
+      rgba(5, 113, 251, 1) 0%,
+      rgba(5, 27, 219, 1) 100%
+    );
+  }
+
+  #tab1 {
+    width: 95vw;
+    background: #31152b;
+  }
+  #tab1::after {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: #31152b;
+    border-radius: 0 20px 20px 0;
+    top: 75%;
+    right: -4vw;
+  }
+
+  #tab2 {
+    width: 90vw;
+    background: linear-gradient(
+      90deg,
+      rgba(6, 151, 255, 1) 0%,
+      rgba(1, 133, 255, 1) 100%
+    );
+  }
+  #tab2::after {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: linear-gradient(
+      -90deg,
+      rgba(6, 151, 255, 1) 0%,
+      rgba(1, 133, 255, 1) 100%
+    );
+    border-radius: 0 20px 20px 0;
+    top: 50%;
+    right: -4vw;
+  }
+
+  #tab3 {
+    width: 85vw;
+    background: linear-gradient(
+      90deg,
+      rgba(155, 79, 251, 1) 0%,
+      rgba(95, 7, 183, 1) 100%
+    );
+  }
+  #tab3::after {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: linear-gradient(
+      -90deg,
+      rgba(155, 79, 251, 1) 0%,
+      rgba(95, 7, 183, 1) 100%
+    );
+    border-radius: 0 20px 20px 0;
+    top: 25%;
+    right: -4vw;
+  }
+
+  #tab4 {
+    width: 80vw;
+    background: linear-gradient(
+      90deg,
+      rgba(5, 113, 251, 1) 0%,
+      rgba(5, 27, 219, 1) 100%
+    );
+  }
+  #tab4::after {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: linear-gradient(
+      -90deg,
+      rgba(5, 113, 251, 1) 0%,
+      rgba(5, 27, 219, 1) 100%
+    );
+    border-radius: 0 20px 20px 0;
+    top: 0;
+    right: -4vw;
+  }
+</style>
