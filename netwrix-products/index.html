@@ -72,13 +72,12 @@ title: Produtos Netwrix Corporation
     </h2>
     {% include site/netwrix-products/tab-vertical.html %}
   </div>
-  {% include site/netwrix-products/file-stack.html %}
 </div>
 <div class="container-fluid container-timeline-netwrix-products">
   {% include site/netwrix-products/timeline.html %}
 </div>
-{% include site/netwrix-products/selector-products.html %} {% include
-site/trial.html title="Solicite uma demonstração" id="group-id_form" %}
+{% include site/netwrix-products/selector-products.html %} 
+{% include site/trial.html title="Solicite uma demonstração" id="group-id_form" %}
 
 <style>
   .home-netwrix-hall {
@@ -217,5 +216,17 @@ site/trial.html title="Solicite uma demonstração" id="group-id_form" %}
   .container-timeline-netwrix-products {
     min-height: 150vh;
     background-color: #0e038e;
+  }
+  #mobile-nav {
+    position: fixed !important;
+  }
+  @media only screen and (max-width:768px){
+    .bg-animated h2 {
+      font-size: 2.5em;
+      width: 100vw;
+    }
+    .home-netwrix-hall {
+      background-size: cover;
+    }
   }
 </style>
