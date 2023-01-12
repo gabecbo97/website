@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2521.16 382.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1d71b8;
+        stroke-miterlimit: 10;
+        stroke-width: 30px;
+      }
+
+      .cls-2 {
+        fill: #1d71b8;
+      }
+
+      .cls-3 {
+        fill: #575756;
+        font-family: OpenSans-Semibold, 'Open Sans';
+        font-size: 256.28px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <circle class="cls-1" cx="125.91" cy="125.91" r="110.91"/>
+    <circle class="cls-2" cx="125.91" cy="125.91" r="71.1"/>
+    <polygon class="cls-2" points="63.91 231.76 63.91 382.89 128.09 318.42 191.74 382.89 191.74 231.76 63.91 231.76"/>
+    <text class="cls-3" transform="translate(336.92 271.47)"><tspan x="0" y="0">Netwrix Certifield</tspan></text>
+  </g>
+</svg>

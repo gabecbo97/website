@@ -40,7 +40,7 @@ site/home/home_mobile.html %}
             <div class="row">
               <div class="col d-flex flex-column justify-content-center">
                 <img
-                  class="mx-auto d-block py-3 logo"
+                  class="mx-auto d-block py-3 logo logo-slide-home"
                   src="/assets/img/common/lgpd_teal.svg"
                   alt="Primeiro slide: LGPD"
                 />
@@ -403,3 +403,13 @@ site/home/home_mobile.html %}
 {% include site/deal.html %} {% include site/customers.html %} {% include
 site/trial.html title="Solicite uma demonstração" id="home_form" %} {% include
 site/js/collapsible.html %}
+
+
+<style>
+  .logo-slide-home{
+    position: unset !important;
+    display: flex !important;
+    align-self: center !important;
+    margin: 0 !important;
+  }
+</style>

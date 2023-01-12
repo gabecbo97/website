@@ -55,11 +55,12 @@
 </script>
 <div id="mobile-nav">
   <div class="logo">
-    <img
-      class="logo logo-aiq justify-content-start"
-      src="/assets/img/common/aiqon.svg"
-      alt="Logotipo AIQON."
-    />
+    <a href="/">
+      <img
+        class="logo logo-aiq justify-content-start"
+        src="/assets/img/common/aiqon.svg"
+        alt="Logotipo AIQON."
+    /></a>
   </div>
   <div class="menu-button">
     <svg
@@ -115,7 +116,7 @@
   </div>
   <ul>
     <li>
-      <a href="/"> </a>
+      <a class="mt-5" href="/netwrix-products/">Netwrix</a>
     </li>
     <li class="parent">
       <a href="#">Serviços</a>
@@ -124,10 +125,10 @@
           <a href="#">AIQON - Active Manage</a>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              soluta quis omnis facere tempore corporis corrupti saepe ex quod
-              sit perferendis esse ipsam, sed culpa. In aliquam illum veritatis
-              eveniet?<a href="#">Saiba Mais</a>
+              Tornamos a aplicação de patches nos seus servidores e endpoints
+              mais fácil. Nosso serviço de patch escaneia, detecta e aplica as
+              atualizações Microsoft e terceiros(Adobe, Java, etc), em sistemas
+              Windows, Linux e MacOS.<a href="/aiqon-manage/">Saiba Mais</a>
             </li>
           </ul>
         </li>
@@ -135,10 +136,10 @@
           <a href="#">AIQON - Active Secure</a>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              magni explicabo, officia aperiam doloribus placeat neque, hic
-              pariatur est dicta nostrum quos? Ipsum odio vel possimus sed,
-              soluta dolore cupiditate.<a href="#">Saiba Mais</a>
+              AIQON Secure mantém você seguro e protegido identificando
+              vulnerabilidades e patches automaticamente em servidores e
+              endpoints(locais ou remoto). Com suporte para sistemas Windows
+              Linux e MacOS.<a href="/aiqon-secure/">Saiba Mais</a>
             </li>
           </ul>
         </li>
@@ -182,7 +183,11 @@
               <a href="#">Active Directory</a>
               <ul>
                 <li><a href="/netwrix/">Netwrix Auditor</a></li>
-                <li><a href="/policy-enforcer/">Netwrix Password Policy Enforcer</a></li>
+                <li>
+                  <a href="/policy-enforcer/"
+                    >Netwrix Password Policy Enforcer</a
+                  >
+                </li>
                 <li><a href="/password-reset/">Netwrix Password Reset</a></li>
                 <li><a href="/policypak/">Netwrix PolicyPak</a></li>
                 <li><a href="/sbpam/">Netwrix SbPAM</a></li>
@@ -298,7 +303,9 @@
                 <li class="parent">
                   <a href="#">Salesforce</a>
                   <ul>
-                    <li><a href="/change-tracker/">Netwrix Change Tracker</a></li>
+                    <li>
+                      <a href="/change-tracker/">Netwrix Change Tracker</a>
+                    </li>
                     <li><a href="/stealthaudit/">Netwrix StealthAUDIT</a></li>
                     <li><a href="/swimlane/">Swimlane</a></li>
                   </ul>
@@ -306,7 +313,9 @@
                 <li class="parent">
                   <a href="#">Github</a>
                   <ul>
-                    <li><a href="/change-tracker/">Netwrix Change Tracker</a></li>
+                    <li>
+                      <a href="/change-tracker/">Netwrix Change Tracker</a>
+                    </li>
                     <li><a href="/stealthaudit/">Netwrix StealthAUDIT</a></li>
                     <li><a href="/swimlane/">Swimlane</a></li>
                   </ul>
@@ -314,7 +323,9 @@
                 <li class="parent">
                   <a href="#">Crowdstrike</a>
                   <ul>
-                    <li><a href="/change-tracker/">Netwrix Change Tracker</a></li>
+                    <li>
+                      <a href="/change-tracker/">Netwrix Change Tracker</a>
+                    </li>
                     <li><a href="/stealthaudit/">Netwrix StealthAUDIT</a></li>
                     <li><a href="/swimlane/">Swimlane</a></li>
                   </ul>
@@ -524,7 +535,6 @@
         >
       </div>
     </div>
-    
   </ul>
 </div>
 
@@ -632,7 +642,6 @@
     margin: 0 !important;
     position: absolute;
     bottom: 0;
-   
   }
   .secondary-social {
     color: white;

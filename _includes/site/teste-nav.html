@@ -87,6 +87,25 @@
           <ul class="menu menu-bar">
             <li>
               <a
+                style="display: flex; justify-content: space-around"
+                href="/netwrix-products/"
+                class="menu-link menu-bar-link netwrix-hover"
+                >Netwrix
+                <span class="badge"
+                  ><img
+                    style="
+                      width: 0.8vw;
+                      position: absolute;
+                      right: 10px;
+                      top: 23%;
+                    "
+                    src="/assets/img/netwrix-products/icons/icon-netwrix-certifield.svg"
+                    alt=""
+                /></span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="javascript:void(0);"
                 class="menu-link menu-bar-link"
                 aria-haspopup="true"
@@ -1457,6 +1476,12 @@
   html {
     overflow-x: hidden;
   }
+  .netwrix-hover:hover {
+    background-color: white !important;
+    color: white !important;
+    transition: 0.5s;
+    box-shadow: inset 250px 0 0 0 rgba(19, 19, 133, 0.918);
+  }
   .navbar {
     padding: 0rem;
     z-index: 1000000;
@@ -1732,6 +1757,7 @@
       -webkit-box-shadow: 10px 100vw 5px 100vw rgba(0, 0, 0, 0.5);
       -moz-box-shadow: 10px 100vw 5px 100vw rgba(0, 0, 0, 0.5);
       box-shadow: 10px 100vw 5px 100vw rgba(0, 0, 0, 0.5);
+      transition: 1s;
     }
     .mega-menu a:hover {
       color: #136a73;
