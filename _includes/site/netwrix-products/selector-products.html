@@ -1,6 +1,8 @@
 <div class="container-fluid content-selector-products">
   <div class="container selector-products">
-    <p class="title-netwrix-solution">ATENDA A CADA SETOR DO SEU AMBIENTE</p>
+    <p class="title-netwrix-solution" style="color: blue !important">
+      ATENDA A CADA SETOR DO SEU AMBIENTE
+    </p>
     <h2 class="title-tab-hall-netwrix">
       Obtenha a proteção abrangente que você precisa
     </h2>
@@ -617,7 +619,7 @@
   <div class="container-fluid img-customers-hall py-5">
     <div class="row justify-content-center">
       <img
-        class="img-customers-metwrix-hall"
+        class="img-customers-netwrix-hall"
         src="/assets/img/netwrix-products/customers/homepage_logoroll_lg.webp"
         alt=""
       />
@@ -1014,5 +1016,18 @@
   }
   .ndc-remediation {
     content: url(/assets/img/netwrix-products/icons/ndc-remediation.svg);
+  }
+  @media only screen and (max-width: 768px) {
+    .selector-products {
+      padding: 6vh 8vw;
+    }
+    .title-tab-hall-netwrix {
+      font-size: 2em !important;
+    }
+    .img-customers-netwrix-hall{
+      width: 100vw;
+      padding: 15px;
+      margin-top: 10vh;
+    }
   }
 </style>

@@ -1,5 +1,12 @@
+@media only screen and (max-width:768px){
+  body{
+    overflow-y: hidden;
+  }
+}
+
 body {
   background-color: #f9f9f9;
+  
 }
 .container-fluid {
   .row {

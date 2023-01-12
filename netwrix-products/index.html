@@ -30,8 +30,7 @@ title: Produtos Netwrix Corporation
         que é hoje?
       </h2>
     </div>
-
-    <div class="row justify-content-center py-5">
+    <div class="row justify-content-center row-cards-float py-5">
       <div class="col-md-3 cards-hall-netwrix gradient-blue">
         <img
           class="img-card-hall"
@@ -65,7 +64,9 @@ title: Produtos Netwrix Corporation
     </div>
   </div>
   <div class="row after-float-netwrix justify-content-center text-center">
-    <p class="title-netwrix-solution">SUPERE A SEGURANÇA EM SILOS</p>
+    <p class="title-netwrix-solution text-float-hall">
+      SUPERE A SEGURANÇA EM SILOS
+    </p>
     <h2 class="title-tab-hall-netwrix text-center">
       Elimine pontos cegos e supere a complexidade para mitigar o risco de uma
       violação com mais eficiência.
@@ -76,8 +77,8 @@ title: Produtos Netwrix Corporation
 <div class="container-fluid container-timeline-netwrix-products">
   {% include site/netwrix-products/timeline.html %}
 </div>
-{% include site/netwrix-products/selector-products.html %} 
-{% include site/trial.html title="Solicite uma demonstração" id="group-id_form" %}
+{% include site/netwrix-products/selector-products.html %} {% include
+site/trial.html title="Solicite uma demonstração" id="group-id_form" %}
 
 <style>
   .home-netwrix-hall {
@@ -163,7 +164,7 @@ title: Produtos Netwrix Corporation
   }
   .title-netwrix-solution {
     font-size: 15px;
-    color: white;
+    color: white !important;
     font-weight: 500;
     letter-spacing: 4px;
     margin-bottom: 2vh;
@@ -217,16 +218,43 @@ title: Produtos Netwrix Corporation
     min-height: 150vh;
     background-color: #0e038e;
   }
-  #mobile-nav {
-    position: fixed !important;
-  }
-  @media only screen and (max-width:768px){
+ 
+  @media only screen and (max-width: 768px) {
     .bg-animated h2 {
       font-size: 2.5em;
       width: 100vw;
     }
     .home-netwrix-hall {
       background-size: cover;
+    }
+    .title-secondary-hall-netwrix {
+      font-size: 1.8em;
+      width: 100vw;
+    }
+    .content-float-netwrix {
+      padding: 30px;
+    }
+    .cards-hall-netwrix {
+      padding: 20px;
+    }
+    .content-float-netwrix {
+      width: 90vw;
+      height: 60vh;
+    }
+    .after-float-netwrix {
+    }
+    .text-float-hall {
+      margin-top: 73vh;
+    }
+   
+    .container-hall-netwrix {
+      min-height: 260vh;
+    }
+    .background-repeat h3 {
+      display: none;
+    }
+    .text-hall-mobile-hidden {
+      display: none;
     }
   }
 </style>

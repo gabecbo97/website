@@ -25,13 +25,18 @@
 </div>
 
 <style>
-  @media only screen and (max-width: 990px) {
+  @media only screen and (max-width: 768px) {
     .layer-stack__layer {
+
       height: 200px !important;
       width: 200px !important;
     }
      .title-stack-card {
       font-size: 10px !important;
+     }
+     .layer-stack__wrap:hover p{
+      padding-top: 3vh !important;
+      
      }
   }
   .title-stack-card {
@@ -69,6 +74,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    transition: transform 1s;
   }
 
   .layer-stack__wrap:hover {
