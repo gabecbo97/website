@@ -1,0 +1,106 @@
+<div id="accordionNav">
+  <section id="section1">
+    <div class="align">
+      <h2>Accordion Navigation!</h2>
+      <h3>Amazing!</h3>
+    </div>
+    <div id="btn1" class="btn">Autumn</div>
+  </section>
+
+  <section id="section2">
+    <div class="align">
+      <h2>Another section?</h2>
+      <h3>Wow!</h3>
+    </div>
+    <div id="btn2" class="btn">Winter</div>
+  </section>
+
+  <section id="section3">
+    <div class="align">
+      <h2>It's Raining?</h2>
+      <h3>Yeesh!</h3>
+    </div>
+    <div id="btn3" class="btn">Spring</div>
+  </section>
+
+  <section id="section4">
+    <div class="align">
+      <h2>Must be hot out!</h2>
+      <h3>Look at the size of that ice cube!</h3>
+    </div>
+    <div id="btn4" class="btn">Summer</div>
+  </section>
+</div>
+
+<style>
+  /* Classes */
+
+  .cover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .btn {
+    width: 100%;
+    height: 40px;
+    background: rgb(45, 45, 45);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+    transition: 0.5s;
+  }
+  .btn:hover {
+    cursor: pointer;
+    background: rgb(85, 85, 85);
+  }
+
+  /* IDs */
+
+  #btn1 {
+    border-bottom: 0px solid white;
+  }
+
+  #section1 {
+    background: url("http://indiemegabooth.com/wp-cargo/uploads/2013/08/DLC_Poster_Autumn.png")
+      no-repeat center center fixed;
+    z-index: 1;
+  }
+
+  #section2 {
+    background: url("http://indiemegabooth.com/wp-cargo/uploads/2013/08/DLC_Poster_Winter.png")
+      no-repeat center center fixed;
+    transform: translateY(calc(-100vh + 120px));
+    z-index: 2;
+  }
+
+  #section3 {
+    background: url("http://indiemegabooth.com/wp-cargo/uploads/2013/08/DLC_Poster_Spring.png")
+      no-repeat center center fixed;
+    transform: translateY(calc(-100vh + 80px));
+    z-index: 3;
+  }
+
+  #section4 {
+    background: url("http://indiemegabooth.com/wp-cargo/uploads/2013/08/DLC_Poster_Summer.png")
+      no-repeat center center fixed;
+    transform: translateY(calc(-100vh + 40px));
+    z-index: 4;
+  }
+
+  #accordionNav section {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    transition: 0.8s;
+    position: fixed;
+  }
+</style>
