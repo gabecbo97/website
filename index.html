@@ -2,8 +2,7 @@
 layout: default
 ---
 
- {% include site/home/home.html %} {% include
-site/home/home_mobile.html %}
+{% include site/home/home-cyber.html %} {% include site/home/home_mobile.html %}
 
 <!--
 <div class="container-fluid -aiqon">
@@ -27,6 +26,7 @@ site/home/home_mobile.html %}
   <script src="assets/js/typer.js"></script>
 </div>
 -->
+<!--
 <div class="container-fluid -slides d-flex align-items-center">
   <div class="row py-5">
     <div class="col-lg-12">
@@ -325,7 +325,7 @@ site/home/home_mobile.html %}
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-item">
+         <div class="carousel-item">
             <div class="row">
               <div class="col d-flex flex-column justify-content-center">
                 <img
@@ -382,7 +382,7 @@ site/home/home_mobile.html %}
                 <a href="/waf" class="btn btn-aiq btn-lg">Saiba mais</a>
               </div>
             </div>
-          </div> -->
+          </div> 
         </div>
         <ol class="carousel-indicators">
           <li
@@ -394,19 +394,23 @@ site/home/home_mobile.html %}
           <li data-target="#slide-solutions" data-slide-to="2"></li>
           <li data-target="#slide-solutions" data-slide-to="3"></li>
           <li data-target="#slide-solutions" data-slide-to="4"></li>
-          <!-- <li data-target="#slide-solutions" data-slide-to="5"></li>-->
+          <li data-target="#slide-solutions" data-slide-to="5"></li>
         </ol>
       </div>
     </div>
   </div>
+</div> -->
+{% include site/deal.html %} {% include site/customers.html %} 
+
+<div class="container-fluid" style="padding: 0; margin: 0; position: sticky; z-index: 10;">
+  {% include
+    site/trial.html title="Solicite uma demonstração" id="home_form" %} 
 </div>
-{% include site/deal.html %} {% include site/customers.html %} {% include
-site/trial.html title="Solicite uma demonstração" id="home_form" %} {% include
+{% include
 site/js/collapsible.html %}
 
-
 <style>
-  .logo-slide-home{
+  .logo-slide-home {
     position: unset !important;
     display: flex !important;
     align-self: center !important;

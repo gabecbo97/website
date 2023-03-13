@@ -1,0 +1,206 @@
+<div class="container-fluid homescreen">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="title-primary-home">
+        O que você quer <br />
+        <span style="color: teal">proteger</span> hoje?
+      </h2>
+    </div>
+    <div class="col-md-6">{% include site/home/components/circle.html %}</div>
+  </div>
+  <div class="container text-center row-keep-security">
+    <h2 class="title-home-secondary">Como Protegemos</h2>
+    <br />
+    <p class="text-gray">
+      Oferecemos soluções que auxiliam nossos clientes a se protegerem de
+      ameaças cibernéticas e a otimizarem seus ambientes de tecnologia
+    </p>
+  </div>
+</div>
+
+{% include site/home/components/horizontal-slider.html %}
+
+<div class="container-fluid content-keep-compliance text-center py-5 px-5">
+  <div class="row row-bg-compliance justify-content-center">
+    <h2>Se Mantenha em Conformidade</h2>
+  </div>
+  <div class="row justify-content-center">
+    <h3>
+      Inicie um gerenciamento eficiente de Compliance dentro da sua organização
+    </h3>
+    <p class="px-5">
+      A Compliance e é sempre uma experiência dolorosa. A crescente complexidade
+      de sua infraestrutura de TI torna difícil saber se seus controles internos
+      estão funcionando, e as auditorias nós fazem gastar semanas ou até meses
+      coletando as evidências que os auditores exigem. O software de Compliance
+      da AIQON pode ajudá-lo a resolver esses desafios das seguintes maneiras:
+    </p>
+  </div>
+</div>
+<div class="container-fluid content-card-compliance">
+  <div class="row text-center text-gray mb-5 justify-content-center">
+    <h3>
+      Descubra exatamente como as soluções da AIQON podem ajudar a cumprir os
+      principais padrões regulatórios.
+    </h3>
+  </div>
+  <div class="row content-compliance justify-content-center">
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/hippa/"
+        ><img
+          src="/assets/img/compliance/hipaa.svg"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p class="text-uppercase">hippa</p>
+      </a>
+    </div>
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/gdpr/">
+        <img
+          src="/assets/img/compliance/gdpr.svg"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p></p>
+        <p class="text-uppercase">gdpr</p>
+      </a>
+    </div>
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/lgpd/"
+        ><img
+          src="/assets/img/compliance/lgpd.svg"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p class="text-uppercase">lgpd</p></a
+      >
+    </div>
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/pci/"
+        ><img
+          src="/assets/img/compliance/pci_dss.svg"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p class="text-uppercase">PCI dds</p>
+      </a>
+    </div>
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/glba/">
+        <img
+          src="/assets/img/compliance/glba.svg"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p class="text-uppercase">glba</p></a
+      >
+    </div>
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/sox/"
+        ><img
+          src="/assets/img/compliance/sox.png"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p class="text-uppercase">sox</p></a
+      >
+    </div>
+
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/iso/"
+        ><img
+          src="/assets/img/compliance/iso_iec.svg"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p class="text-uppercase">iso/iec</p></a
+      >
+    </div>
+
+    <div class="col-md-2 text-center card-compliance">
+      <a href="/compliance/ccpa/"
+        ><img
+          src="/assets/img/compliance/ccpa.svg"
+          class="img-card-compliance img-fluid"
+          alt=""
+        />
+        <p class="text-uppercase">ccpa</p></a
+      >
+    </div>
+  </div>
+</div>
+
+<style>
+  .homescreen {
+    min-height: 120vh;
+    padding-top: 20vh;
+
+    background: linear-gradient(
+      159deg,
+      rgba(167, 167, 167, 1) 0%,
+      rgba(201, 209, 209, 1) 31%,
+      rgba(237, 246, 246, 1) 100%
+    );
+  }
+  .card-compliance {
+    width: 50%;
+    height: 15vh;
+    border-radius: 1mm;
+    margin: 10px;
+    padding-top: 2vh;
+    --webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+  }
+  .card-compliance:hover {
+    --webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+  }
+  .content-compliance{
+    padding: 0 18vw !important;
+  }
+  .img-card-compliance {
+    max-width: 70px;
+  }
+  .text-uppercase {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    color: #2196f3;
+  }
+  .content-keep-compliance,
+  .content-card-compliance {
+    background-color: white;
+    position: sticky;
+    z-index: 100;
+  }
+  .title-primary-home {
+    font-weight: bold;
+    font-size: 100px;
+    padding-top: 3vh;
+    padding-left: 5vw;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.502);
+  }
+  .title-home-secondary{
+    text-transform: uppercase;
+    color: gray;
+    font-weight:600;
+    font-size: 40px;
+  }
+  .row-keep-security {
+    padding-top: 20vh !important ;
+    padding-bottom: 15vh;
+  }
+  .content-card-compliance{
+    padding-bottom: 10vh;
+  
+  }
+
+</style>
