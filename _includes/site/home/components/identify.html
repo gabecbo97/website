@@ -1,0 +1,189 @@
+<script>
+  let currIndex = 1;
+  const securityStack = document.querySelector(".security-stack");
+  const securityScreens = document.querySelectorAll(".security-stack .screen");
+  const securityTriggers = document.querySelectorAll(".clickable li");
+  const securityTotal =
+    getComputedStyle(securityStack).getPropertyValue("--total");
+
+  let timer = setInterval(goToNext, 1500);
+  let reset = false;
+  let resetTimer;
+
+  function goToNext() {
+    if (currIndex === 5) {
+      resetTimer = setTimeout(function () {
+        securityStack.classList.add("reset");
+        currIndex = 1;
+        hiddenScreens();
+        securityStack.style.setProperty("--offset", 1);
+        reset = true;
+      }, 601);
+    }
+    if (reset) {
+      securityStack.classList.remove("reset");
+    }
+    currIndex = currIndex >= 6 ? 1 : currIndex + 1;
+    securityTriggers.forEach(function (ne) {
+      ne.classList.remove("active");
+    });
+    securityStack.style.setProperty("--offset", currIndex);
+    document
+      .querySelector(
+        ".clickable li#stack_trigger_" + (currIndex === 6 ? 1 : currIndex)
+      )
+      .classList.add("active");
+    hiddenScreens();
+  }
+
+  function hiddenScreens() {
+    securityScreens.forEach(function (e) {
+      let stack = getComputedStyle(e).getPropertyValue("--stack");
+      if (
+        parseInt(stack) < currIndex ||
+        parseInt(stack) - currIndex + 1 > parseInt(securityTotal)
+      ) {
+        e.classList.add("hidden");
+      } else {
+        e.classList.remove("hidden");
+      }
+    });
+  }
+</script>
+
+<div class="wrapper">
+  <div class="clickable">
+    <ul>
+      <li id="trigger-default stack_trigger_1" class="active" data-offset="1">
+        
+      </li>
+      <li id="stack_trigger_2" data-offset="2"></li>
+      <li id="stack_trigger_3" data-offset="3"></li>
+      <li id="stack_trigger_4" data-offset="4"></li>
+      <li id="stack_trigger_5" data-offset="5"></li>
+    </ul>
+  </div>
+  <div class="security-stack" style="--offset: 1; --total: 5">
+    <div class="screen" id="screen_stack_1" style="--stack: 1">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-2fa.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_2" style="--stack: 2">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-bank.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_3" style="--stack: 3">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-cloud.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_4" style="--stack: 4">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-readonly.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_5" style="--stack: 5">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-touchid.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_1a" style="--stack: 6">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-2fa.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_2a" style="--stack: 7">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-bank.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_3a" style="--stack: 8">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-cloud.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_4a" style="--stack: 9">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-readonly.png"
+        alt=""
+      />
+    </div>
+    <div class="screen" id="screen_stack_5a" style="--stack: 10">
+      <img
+        src="https://s3uploader-s3uploadbucket-1otimne7yyez2.s3-ap-southeast-2.amazonaws.com/images/stack-touchid.png"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .wrapper {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh;
+  }
+  .security-stack {
+    width: 600px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+  }
+  .screen {
+    transition: ease-out 600ms opacity, ease-out 600ms transform,
+      filter ease-out 800ms;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translate3d(
+      0,
+      calc((var(--stack) - var(--offset)) * (var(--total) * 3%)),
+      0
+    );
+    z-index: calc(11 - var(--stack));
+    opacity: calc(
+      calc(100 - calc((var(--stack) - var(--offset)) * calc(var(--total) * 4))) /
+        100
+    );
+  }
+  .security-stack.reset .screen {
+    transition: none;
+  }
+  .screen.hidden {
+    opacity: 0;
+    /* transform: scale(0.2);*/
+    filter: blur(40px);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .clickable {
+    padding-right: 100px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    
+  }
+  li.active {
+   
+  }
+</style>
